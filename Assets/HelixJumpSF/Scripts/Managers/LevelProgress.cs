@@ -16,11 +16,12 @@ public class LevelProgress : BallEvent
         {
             Reset();
         }
+
         if (Input.GetKeyDown(KeyCode.F2) == true)
         {
-
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
+
         if (Input.GetKeyDown(KeyCode.Escape) == true)
         {
             Application.Quit();
