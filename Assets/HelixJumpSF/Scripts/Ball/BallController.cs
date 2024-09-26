@@ -13,7 +13,7 @@ public class BallController : OnColliderTrigger
 
     private void Start()
     {
-        movement = GetComponent<BallMovement>();
+        if (movement == null) movement = GetComponent<BallMovement>();
     }
 
     protected override void OnOneTriggerEnter(Collider other)

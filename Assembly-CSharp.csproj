@@ -102,8 +102,8 @@
     <Compile Include="Assets\HelixJumpSF\Scripts\MouseRotator.cs" />
     <Compile Include="Assets\YandexGame\Example\Scripts\InitExample.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Initialization\InitYGAttribute.cs" />
-    <Compile Include="Assets\YandexGame\ScriptsYG\Language\UtilsLang.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\ReviewYG.cs" />
+    <Compile Include="Assets\YandexGame\ScriptsYG\Language\UtilsLang.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Payments\InternalScripts\UtilsPayments.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Storage\Storage_yg.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Language\Lang_yg.cs" />
