@@ -20,6 +20,8 @@ public class BallController : OnColliderTrigger
     {
         Segment segment = other.GetComponent<Segment>();
 
+        if (segment == null) segment = other.GetComponentInParent<Segment>();
+
         if(segment != null)
         {
             if(segment.Type == SegmentType.Empty)
@@ -32,12 +34,12 @@ public class BallController : OnColliderTrigger
                 movement.Jump();
             }
 
-            if (segment.Type == SegmentType.Trap || segment.Type == SegmentType.Finish)
+            if (segment.Type == SegmentType.Spike || segment.Type == SegmentType.Finish || segment.Type == SegmentType.Piston || segment.Type == SegmentType.Fan)
             {
                 movement.Stop();
             }
-        }
 
-        CollisionSegment.Invoke(segment.Type);
+            CollisionSegment.Invoke(segment.Type);
+        }        
     }
 }

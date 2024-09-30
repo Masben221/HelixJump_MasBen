@@ -14,7 +14,7 @@ public class UIGamePanel : BallEvent
     }
     protected override void OnBallCollisionSegment(SegmentType type)
     {
-        if (type == SegmentType.Trap)
+        if (type == SegmentType.Spike || type == SegmentType.Piston || type == SegmentType.Fan)
         {
             defeatPanel.SetActive(true);
         }

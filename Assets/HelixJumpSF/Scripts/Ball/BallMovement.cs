@@ -21,7 +21,7 @@ public class BallMovement : MonoBehaviour
         enabled = false;
 
         animator = GetComponent<Animator>();
-}
+    }
     private void Update()
     {
         if(transform.position.y > floorY)
@@ -52,6 +52,8 @@ public class BallMovement : MonoBehaviour
         enabled = true;
         floorY = startFloorY - fallHeight;
     }
+
+
 
     public void Stop()
     {

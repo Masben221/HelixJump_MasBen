@@ -16,7 +16,7 @@ public class DestroyLevel : BallEvent
             levelGenerator.DestroyFloors[levelGenerator.DestroyFloors.Count - 1].gameObject.SetActive(true);
             levelGenerator.DestroyFloors.Remove(levelGenerator.DestroyFloors[levelGenerator.DestroyFloors.Count - 1]);
            
-            if (type != SegmentType.Default && type != SegmentType.Trap)
+            if (type != SegmentType.Default && type != SegmentType.Spike)
             {
                 for (int i = 0; i < ballTrail.Blots.Count; i++)
                 {

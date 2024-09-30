@@ -412,37 +412,47 @@ MonoBehaviour:
   - AxisColor: {r: 0.77679276, g: 0.8867924, b: 0.5479708, a: 1}
     BallColor: {r: 0.3490566, g: 0.1794472, b: 0.018111428, a: 1}
     DefaultSegmentColor: {r: 0.6036763, g: 0.062745094, b: 0.7647059, a: 1}
-    TrapSegmentColor: {r: 0.8584906, g: 0.405163, b: 0.10123708, a: 1}
+    SpikeSegmentColor: {r: 0.7830189, g: 0.1071111, b: 0.1071111, a: 1}
     FinishSegmentColor: {r: 0.2899061, g: 0.8490566, b: 0.108134575, a: 1}
-    BackgroundColor: {r: 0.8018868, g: 0.66193485, b: 0.66193485, a: 0}
+    FanSegmentColor: {r: 0.1745283, g: 0.56778705, b: 1, a: 1}
+    PistonSegmentColor: {r: 0.8679245, g: 0.3717716, b: 0, a: 1}
+    BackgroundColor: {r: 0.8018868, g: 0.66193485, b: 0.66193485, a: 1}
     CameraBackgroundColor: {r: 0.9716981, g: 0.93044674, b: 0.93044674, a: 1}
   - AxisColor: {r: 0.8498428, g: 0.6650943, b: 0.8867924, a: 1}
     BallColor: {r: 0.6226415, g: 0.35304102, b: 0.09692062, a: 1}
     DefaultSegmentColor: {r: 0.26864412, g: 0.2238786, b: 0.4056604, a: 1}
-    TrapSegmentColor: {r: 0.8018868, g: 0.08699717, b: 0.51322186, a: 1}
+    SpikeSegmentColor: {r: 0.6509434, g: 0, b: 0.54284406, a: 1}
     FinishSegmentColor: {r: 0.05873976, g: 0.3728413, b: 0.8301887, a: 1}
+    FanSegmentColor: {r: 0.3638367, g: 0.8584906, b: 0.28751338, a: 1}
+    PistonSegmentColor: {r: 0.8396226, g: 0.1731442, b: 0.011881431, a: 1}
     BackgroundColor: {r: 0.22054112, g: 0.62653244, b: 0.7924528, a: 1}
     CameraBackgroundColor: {r: 0.057849795, g: 0.9433962, b: 0.9168402, a: 1}
   - AxisColor: {r: 0.53889287, g: 0.5662901, b: 0.6603774, a: 1}
     BallColor: {r: 0.5188679, g: 0.26464045, b: 0.03671235, a: 1}
     DefaultSegmentColor: {r: 0.8509804, g: 0.81402206, b: 0.117647074, a: 1}
-    TrapSegmentColor: {r: 0.8490566, g: 0.171578, b: 0.12415449, a: 1}
+    SpikeSegmentColor: {r: 0.9433962, g: 0.37900445, b: 0.022249907, a: 1}
     FinishSegmentColor: {r: 0.040628344, g: 0.7830189, b: 0.6119779, a: 1}
+    FanSegmentColor: {r: 0, g: 1, b: 0.18060637, a: 1}
+    PistonSegmentColor: {r: 0.7166028, g: 0.0141509175, b: 1, a: 1}
     BackgroundColor: {r: 0.87315726, g: 0.7688679, b: 1, a: 1}
     CameraBackgroundColor: {r: 0.6367924, g: 0.76071525, b: 1, a: 1}
   - AxisColor: {r: 0.6376379, g: 0.8396226, b: 0.7897386, a: 1}
     BallColor: {r: 0.6792453, g: 0.38192195, b: 0.041651852, a: 1}
     DefaultSegmentColor: {r: 0.06314526, g: 0.31132078, b: 0.14980975, a: 1}
-    TrapSegmentColor: {r: 0.7799027, g: 0.1342115, b: 0.9811321, a: 1}
+    SpikeSegmentColor: {r: 0.2875162, g: 0.9607843, b: 0, a: 1}
     FinishSegmentColor: {r: 0.39858082, g: 0.19904771, b: 0.5943396, a: 1}
+    FanSegmentColor: {r: 0.033018887, g: 1, b: 0.88917065, a: 1}
+    PistonSegmentColor: {r: 0.5471698, g: 0, b: 0, a: 1}
     BackgroundColor: {r: 0.84849495, g: 0.990566, b: 0.630785, a: 1}
     CameraBackgroundColor: {r: 0.62793696, g: 0.9716981, b: 0.7768893, a: 1}
-  axisMaterial: {fileID: 2100000, guid: 786bfd4a7d6a8814282c696f7e3fc7cb, type: 2}
-  ballMaterial: {fileID: 2100000, guid: 545c7a83cad13f54aa2dbb312ad322b6, type: 2}
-  defaultMaterial: {fileID: 2100000, guid: 2b04ed9eac6f8f44a8ea2d7e87b4bc91, type: 2}
-  trapMaterial: {fileID: 2100000, guid: f31d5d85fa0b78e4e994f21f07b4201b, type: 2}
-  finishMaterial: {fileID: 2100000, guid: 54b296b4b6e997a42aae2966ce6d70d0, type: 2}
-  backgroundImage: {fileID: 1008303868}
+  m_AxisMaterial: {fileID: 2100000, guid: 786bfd4a7d6a8814282c696f7e3fc7cb, type: 2}
+  m_BallMaterial: {fileID: 2100000, guid: 545c7a83cad13f54aa2dbb312ad322b6, type: 2}
+  m_DefaultMaterial: {fileID: 2100000, guid: 2b04ed9eac6f8f44a8ea2d7e87b4bc91, type: 2}
+  m_SpikeMaterial: {fileID: 2100000, guid: f31d5d85fa0b78e4e994f21f07b4201b, type: 2}
+  m_FinishMaterial: {fileID: 2100000, guid: 54b296b4b6e997a42aae2966ce6d70d0, type: 2}
+  m_FanMaterial: {fileID: 2100000, guid: 3e5f63de88194a84a910f27099d662d1, type: 2}
+  m_PistonMaterial: {fileID: 2100000, guid: a4abe014e174891498af31b03f33fbe1, type: 2}
+  m_BackgroundImage: {fileID: 1008303868}
   camera: {fileID: 956469105}
 --- !u!1001 &1719020469
 PrefabInstance:
@@ -624,7 +634,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 320080563047852086, guid: 3a547cd0f306925479577f732d14dd04, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 400.98785
+      value: 183.49782
       objectReference: {fileID: 0}
     - target: {fileID: 320080563367766142, guid: 3a547cd0f306925479577f732d14dd04, type: 3}
       propertyPath: m_Text
@@ -640,15 +650,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 320080563367766143, guid: 3a547cd0f306925479577f732d14dd04, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 200
+      value: -152.4377
       objectReference: {fileID: 0}
     - target: {fileID: 320080563367766143, guid: 3a547cd0f306925479577f732d14dd04, type: 3}
       propertyPath: m_SizeDelta.y
       value: 162.99
       objectReference: {fileID: 0}
     - target: {fileID: 320080563367766143, guid: 3a547cd0f306925479577f732d14dd04, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 76.21875
+      objectReference: {fileID: 0}
+    - target: {fileID: 320080563367766143, guid: 3a547cd0f306925479577f732d14dd04, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 244.49
+      value: 27
       objectReference: {fileID: 0}
     - target: {fileID: 320080563521799300, guid: 3a547cd0f306925479577f732d14dd04, type: 3}
       propertyPath: m_AnchorMax.x
@@ -679,8 +693,12 @@ PrefabInstance:
       value: -712
       objectReference: {fileID: 0}
     - target: {fileID: 320080563955867243, guid: 3a547cd0f306925479577f732d14dd04, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -352
+      objectReference: {fileID: 0}
+    - target: {fileID: 320080563955867243, guid: 3a547cd0f306925479577f732d14dd04, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 269.79987
+      value: -102.200165
       objectReference: {fileID: 0}
     - target: {fileID: 320080563997039734, guid: 3a547cd0f306925479577f732d14dd04, type: 3}
       propertyPath: m_AnchorMax.x
@@ -704,7 +722,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 320080563997039734, guid: 3a547cd0f306925479577f732d14dd04, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 400.98785
+      value: 183.49782
       objectReference: {fileID: 0}
     - target: {fileID: 320080564452940173, guid: 3a547cd0f306925479577f732d14dd04, type: 3}
       propertyPath: m_FontData.m_MaxSize
@@ -748,11 +766,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 320080564579271292, guid: 3a547cd0f306925479577f732d14dd04, type: 3}
       propertyPath: m_SizeDelta.y
-      value: -1820
+      value: -1733.5117
       objectReference: {fileID: 0}
     - target: {fileID: 320080564579271292, guid: 3a547cd0f306925479577f732d14dd04, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 528
+      value: 866.75586
       objectReference: {fileID: 0}
     - target: {fileID: 320080564638152966, guid: 3a547cd0f306925479577f732d14dd04, type: 3}
       propertyPath: m_AnchorMax.x
@@ -783,12 +801,20 @@ PrefabInstance:
       value: -712
       objectReference: {fileID: 0}
     - target: {fileID: 320080564765400287, guid: 3a547cd0f306925479577f732d14dd04, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 498
+      objectReference: {fileID: 0}
+    - target: {fileID: 320080564765400287, guid: 3a547cd0f306925479577f732d14dd04, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 264.99988
+      value: -107.00015
+      objectReference: {fileID: 0}
+    - target: {fileID: 320080564819846860, guid: 3a547cd0f306925479577f732d14dd04, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 73
       objectReference: {fileID: 0}
     - target: {fileID: 320080564819846860, guid: 3a547cd0f306925479577f732d14dd04, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 266
+      value: -106
       objectReference: {fileID: 0}
     - target: {fileID: 320080564952945886, guid: 3a547cd0f306925479577f732d14dd04, type: 3}
       propertyPath: m_AnchorMax.x
@@ -980,11 +1006,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 320080565034151484, guid: 3a547cd0f306925479577f732d14dd04, type: 3}
       propertyPath: m_SizeDelta.y
-      value: -1820
+      value: -1407.5
       objectReference: {fileID: 0}
     - target: {fileID: 320080565034151484, guid: 3a547cd0f306925479577f732d14dd04, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 311
+      value: 517.26
       objectReference: {fileID: 0}
     - target: {fileID: 320080565110309747, guid: 3a547cd0f306925479577f732d14dd04, type: 3}
       propertyPath: m_AnchorMax.x

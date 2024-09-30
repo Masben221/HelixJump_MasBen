@@ -8,7 +8,7 @@ public class InputManager : BallEvent
 
     protected override void OnBallCollisionSegment(SegmentType type)
     {
-        if (type == SegmentType.Finish || type == SegmentType.Trap)
+        if (type == SegmentType.Finish || type == SegmentType.Spike || type == SegmentType.Piston || type == SegmentType.Fan)
         {
             InputRotator.enabled = false;
         }

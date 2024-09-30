@@ -24,10 +24,11 @@ public class Floor : MonoBehaviour
         for(int i = 0; i < amount; i++)
         {
             int index = Random.Range(0, defaultSegments.Count);
-
-            defaultSegments[index].SetTrap();
+            int typeTrap = Random.Range(0, 3);
+            if (typeTrap == 0) defaultSegments[index].SetSpike();
+            if (typeTrap == 1) defaultSegments[index].SetPiston();
+            if (typeTrap == 2) defaultSegments[index].SetFan();
             defaultSegments.RemoveAt(index);
-
         }
     }
 

@@ -23,7 +23,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\bin\Debug\</OutputPath>
-    <DefineConstants>UNITY_2022_3_45;UNITY_2022_3;UNITY_2022;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_NAVIGATION_PACKAGE_DEBUG_VISUALIZATION;ENABLE_NAVIGATION_HEIGHTMESH_RUNTIME_SUPPORT;ENABLE_NAVIGATION_UI_REQUIRES_PACKAGE;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;PLATFORM_INITIALIZES_MEMORY_MANAGER_EXPLICITLY;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;YG_PLUGIN_YANDEX_GAME;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>UNITY_2022_3_45;UNITY_2022_3;UNITY_2022;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;UNITY_2022_1_OR_NEWER;UNITY_2022_2_OR_NEWER;UNITY_2022_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_EDITOR_GAME_SERVICES;ENABLE_UNITY_GAME_SERVICES_ANALYTICS_SUPPORT;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_GENERATE_NATIVE_PLUGINS_FOR_ASSEMBLIES_API;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;ENABLE_NAVIGATION_PACKAGE_DEBUG_VISUALIZATION;ENABLE_NAVIGATION_HEIGHTMESH_RUNTIME_SUPPORT;ENABLE_NAVIGATION_UI_REQUIRES_PACKAGE;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;PLATFORM_INITIALIZES_MEMORY_MANAGER_EXPLICITLY;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;NET_STANDARD_2_1;NETSTANDARD;NETSTANDARD2_1;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;TEXTCORE_FONT_ENGINE_1_5_OR_NEWER;YG_PLUGIN_YANDEX_GAME;CROSS_PLATFORM_INPUT;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169;USG0001</NoWarn>
@@ -60,26 +60,45 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.45f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Sources\StandartPlayer\Utility\ActivateTrigger.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\TimerBeforeAdsYG.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\PromptYG.cs" />
     <Compile Include="Assets\HelixJumpSF\Scripts\UI\UIScoreText.cs" />
     <Compile Include="Assets\YandexGame\Example\Scripts\LanguageExample.cs" />
+    <Compile Include="Assets\Sources\StandartPlayer\Utility\SimpleActivatorMenu.cs" />
+    <Compile Include="Assets\Sources\StandartPlayer\CrossPlatformInput\Scripts\TiltInput.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Language\LangYGAdditionalText.cs" />
+    <Compile Include="Assets\Sources\StandartPlayer\Utility\FPSCounter.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\ForVisualScriptYG.cs" />
+    <Compile Include="Assets\Sources\StandartPlayer\Utility\EventSystemChecker.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Payments\ConsumePurchasesYG.cs" />
     <Compile Include="Assets\YandexGame\Example\Scripts\SaverTest.cs" />
+    <Compile Include="Assets\Sources\StandartPlayer\CrossPlatformInput\Scripts\VirtualInput.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Leaderboards\LeaderboardYG.cs" />
     <Compile Include="Assets\YandexGame\WorkingData\SavesYG.cs" />
     <Compile Include="Assets\YandexGame\Example\Scripts\RewardedAd.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\ActivityOnAuthorizationYG.cs" />
+    <Compile Include="Assets\Sources\StandartPlayer\Utility\CameraRefocus.cs" />
     <Compile Include="Assets\YandexGame\Example\Scripts\OpenAuthorizationDialog.cs" />
+    <Compile Include="Assets\Sources\StandartPlayer\Utility\SmoothFollow.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Leaderboards\LBPlayerDataYG.cs" />
+    <Compile Include="Assets\Sources\StandartPlayer\Utility\SimpleMouseRotator.cs" />
+    <Compile Include="Assets\Sources\StandartPlayer\Utility\TimedObjectDestructor.cs" />
     <Compile Include="Assets\HelixJumpSF\Scripts\Managers\ScoreCollector.cs" />
+    <Compile Include="Assets\Sources\StandartPlayer\Utility\AutoMoveAndRotate.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Payments\InternalScripts\Payments_yg.cs" />
+    <Compile Include="Assets\Sources\StandartPlayer\CrossPlatformInput\Scripts\PlatformSpecific\MobileInput.cs" />
+    <Compile Include="Assets\Sources\StandartPlayer\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\GameReadyAPI\GRA_yg.cs" />
+    <Compile Include="Assets\Sources\StandartPlayer\Characters\FirstPersonCharacter\Scripts\MouseLook.cs" />
+    <Compile Include="Assets\Sources\StandartPlayer\CrossPlatformInput\Scripts\Joystick.cs" />
     <Compile Include="Assets\HelixJumpSF\Scripts\OnColliderTrigger.cs" />
+    <Compile Include="Assets\Sources\Scripts\Teleporter.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Leaderboards\InternalScripts\Leaderboards_yg.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\YandexMetrica\JsonUtils.cs" />
+    <Compile Include="Assets\Sources\StandartPlayer\CrossPlatformInput\Scripts\ButtonHandler.cs" />
+    <Compile Include="Assets\Sources\StandartPlayer\Characters\ThirdPersonCharacter\Scripts\AICharacterControl.cs" />
+    <Compile Include="Assets\Sources\StandartPlayer\Utility\FOVKick.cs" />
     <Compile Include="Assets\HelixJumpSF\Scripts\Managers\LevelColors.cs" />
     <Compile Include="Assets\HelixJumpSF\Scripts\Level\LevelGenerator.cs" />
     <Compile Include="Assets\YandexGame\DebuggingMode\Scripts\DebuggingModeYG.cs" />
@@ -87,49 +106,83 @@
     <Compile Include="Assets\YandexGame\ScriptsYG\EnvironmentData\EnvirData_yg.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\YandexGame.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Inside\ConfigYG.cs" />
+    <Compile Include="Assets\Sources\Scripts\ActivateAnimationByDelay.cs" />
     <Compile Include="Assets\HelixJumpSF\Scripts\Ball\BallController.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Payments\PaymentsCatalogYG.cs" />
     <Compile Include="Assets\HelixJumpSF\Scripts\Level\DestroyLevel.cs" />
+    <Compile Include="Assets\Sources\StandartPlayer\Utility\ObjectResetter.cs" />
+    <Compile Include="Assets\Sources\StandartPlayer\Utility\ParticleSystemDestroyer.cs" />
+    <Compile Include="Assets\Sources\StandartPlayer\Utility\PlatformSpecificContent.cs" />
     <Compile Include="Assets\YandexGame\Example\Scripts\GetPlayerData.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\UnityToolbag-main\ConditionallyVisiblePropertyDrawer\Runtime\ConditionallyVisibleAttribute.cs" />
+    <Compile Include="Assets\Sources\StandartPlayer\Characters\FirstPersonCharacter\Scripts\HeadBob.cs" />
     <Compile Include="Assets\HelixJumpSF\Scripts\Blot.cs" />
+    <Compile Include="Assets\Sources\StandartPlayer\Utility\AlphaButtonClickMask.cs" />
     <Compile Include="Assets\YandexGame\Example\Scripts\SwitchSceneTest.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\ViewingAdsYG.cs" />
+    <Compile Include="Assets\Sources\StandartPlayer\Characters\ThirdPersonCharacter\Scripts\ThirdPersonCharacter.cs" />
+    <Compile Include="Assets\Sources\StandartPlayer\Utility\TimedObjectActivator.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\YandexMetrica\YandexMetrica.cs" />
     <Compile Include="Assets\HelixJumpSF\Scripts\Ball\BallTrail.cs" />
+    <Compile Include="Assets\Sources\StandartPlayer\CrossPlatformInput\Scripts\PlatformSpecific\StandaloneInput.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\GraphicSettingsYG.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\LocalStorage\LocalStorage_yg.cs" />
     <Compile Include="Assets\HelixJumpSF\Scripts\MouseRotator.cs" />
     <Compile Include="Assets\YandexGame\Example\Scripts\InitExample.cs" />
+    <Compile Include="Assets\Sources\StandartPlayer\Utility\LerpControlledBob.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Initialization\InitYGAttribute.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\ReviewYG.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Language\UtilsLang.cs" />
+    <Compile Include="Assets\Sources\StandartPlayer\Utility\AutoMobileShaderSwitch.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Payments\InternalScripts\UtilsPayments.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Storage\Storage_yg.cs" />
+    <Compile Include="Assets\Sources\Scripts\Acceleration.cs" />
+    <Compile Include="Assets\Sources\Scripts\Coin.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Language\Lang_yg.cs" />
     <Compile Include="Assets\HelixJumpSF\Scripts\Level\Segment.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\GetPlayerYG.cs" />
     <Compile Include="Assets\HelixJumpSF\Scripts\Managers\LevelProgress.cs" />
+    <Compile Include="Assets\Sources\StandartPlayer\CrossPlatformInput\Scripts\MobileControlRig.cs" />
+    <Compile Include="Assets\Sources\Scripts\AttachCharacterControllerToMove.cs" />
     <Compile Include="Assets\HelixJumpSF\Scripts\UI\UILevelDrawProgress.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\InfoYG\InfoYG.cs" />
+    <Compile Include="Assets\Sources\StandartPlayer\Utility\WaypointProgressTracker.cs" />
+    <Compile Include="Assets\Sources\StandartPlayer\Characters\FirstPersonCharacter\Scripts\RigidbodyFirstPersonController.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Inside\CallingAnEvent.cs" />
+    <Compile Include="Assets\Sources\StandartPlayer\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
     <Compile Include="Assets\YandexGame\Example\Scripts\YandexMetricaExample.cs" />
     <Compile Include="Assets\HelixJumpSF\Scripts\Ball\BallMovement.cs" />
     <Compile Include="Assets\HelixJumpSF\Scripts\Managers\CseneSetup.cs" />
+    <Compile Include="Assets\Sources\Scripts\Timer.cs" />
+    <Compile Include="Assets\Sources\StandartPlayer\Utility\DragRigidbody.cs" />
+    <Compile Include="Assets\Sources\Scripts\Button.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\AdNotificationYG.cs" />
+    <Compile Include="Assets\Sources\StandartPlayer\CrossPlatformInput\Scripts\TouchPad.cs" />
     <Compile Include="Assets\HelixJumpSF\Scripts\Level\Floor.cs" />
     <Compile Include="Assets\HelixJumpSF\Scripts\Level\FloorDestroy.cs" />
     <Compile Include="Assets\YandexGame\Example\Scripts\NewResultLBExample.cs" />
     <Compile Include="Assets\HelixJumpSF\Scripts\UI\UIGamePanel.cs" />
+    <Compile Include="Assets\Sources\Scripts\Trigger.cs" />
+    <Compile Include="Assets\Sources\StandartPlayer\Utility\FollowTarget.cs" />
+    <Compile Include="Assets\Sources\Scripts\KillZone.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Leaderboards\InternalScripts\UtilsLB.cs" />
+    <Compile Include="Assets\Sources\StandartPlayer\Utility\ForcedReset.cs" />
+    <Compile Include="Assets\Sources\StandartPlayer\Utility\WaypointCircuit.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Authorization\Auth_yg.cs" />
+    <Compile Include="Assets\Sources\StandartPlayer\Characters\RollerBall\Scripts\Ball.cs" />
+    <Compile Include="Assets\Sources\StandartPlayer\Utility\DynamicShadowSettings.cs" />
     <Compile Include="Assets\HelixJumpSF\Scripts\Managers\InputManager.cs" />
     <Compile Include="Assets\YandexGame\Example\Scripts\DebugViewing.cs" />
+    <Compile Include="Assets\Sources\StandartPlayer\Characters\RollerBall\Scripts\BallUserControl.cs" />
     <Compile Include="Assets\YandexGame\Example\Scripts\ReceivingPurchaseExample.cs" />
+    <Compile Include="Assets\Sources\StandartPlayer\Characters\ThirdPersonCharacter\Scripts\ThirdPersonUserControl.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Language\LanguageYG.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Payments\PurchaseYG.cs" />
     <Compile Include="Assets\HelixJumpSF\Scripts\Ball\BallEvent.cs" />
     <Compile Include="Assets\HelixJumpSF\Scripts\SceneHelper.cs" />
+    <Compile Include="Assets\Sources\StandartPlayer\Characters\FirstPersonCharacter\Scripts\FirstPersonController.cs" />
+    <Compile Include="Assets\Sources\StandartPlayer\Utility\CurveControlledBob.cs" />
+    <Compile Include="Assets\Sources\StandartPlayer\CrossPlatformInput\Scripts\InputAxisScrollbar.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\WebGLTemplates\Notices.txt" />
@@ -139,6 +192,7 @@
     <None Include="Assets\YandexGame\Fonts\LICENSE.txt" />
     <None Include="Assets\YandexGame\ScriptsYG\UnityToolbag-main\Notices.txt" />
     <None Include="Assets\YandexGame\Third-Party Notices.txt" />
+    <None Include="Assets\Sources\Environment\Shaders\SimpleWater.shader" />
     <None Include="Assets\YandexGame\ScriptsYG\UnityToolbag-main\LICENSE.txt" />
   </ItemGroup>
   <ItemGroup>

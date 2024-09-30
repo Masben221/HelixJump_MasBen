@@ -13,7 +13,7 @@ public class UIScoreText : BallEvent
     }
     protected override void OnBallCollisionSegment(SegmentType type)
     {
-        if (type != SegmentType.Trap)
+        if (type != SegmentType.Spike)
         {
             scoreText.text = scoreCollector.Scores.ToString();
         }

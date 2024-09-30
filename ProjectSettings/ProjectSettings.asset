@@ -858,7 +858,10 @@ PlayerSettings:
   webGLMemoryGeometricGrowthCap: 96
   webGLPowerPreference: 2
   scriptingDefineSymbols:
-    Standalone: YG_PLUGIN_YANDEX_GAME
+    Android: CROSS_PLATFORM_INPUT;MOBILE_INPUT
+    Standalone: YG_PLUGIN_YANDEX_GAME;CROSS_PLATFORM_INPUT
+    Windows Store Apps: MOBILE_INPUT
+    iPhone: CROSS_PLATFORM_INPUT;MOBILE_INPUT
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
