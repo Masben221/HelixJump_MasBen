@@ -17,7 +17,7 @@ public abstract class OnColliderTrigger : MonoBehaviour
         OnOneTriggerEnter(other);
     }
 
-    private void OnTriggerExit(Collider other)
+    protected virtual void OnTriggerExit(Collider other)
     {
         if (lastCollider == other)
             lastCollider = null;

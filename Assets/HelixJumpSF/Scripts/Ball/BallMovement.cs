@@ -20,18 +20,18 @@ public class BallMovement : MonoBehaviour
     {
         enabled = false;
 
-        animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();        
     }
     private void Update()
     {
-        if(transform.position.y > floorY)
+        if (transform.position.y >= floorY)
         {
             transform.Translate(0, -fallSpeed * Time.deltaTime, 0);
-            
-            if(fallSpeed < fallSpeedMax)
+
+            if (fallSpeed < fallSpeedMax)
             {
                 fallSpeed += fallSpeedAxeleration * Time.deltaTime;
-            }
+            }           
         }
         else
         {
@@ -43,18 +43,33 @@ public class BallMovement : MonoBehaviour
     public void Jump()
     {
         animator.speed = 1;
+        animator.SetBool("Fly", false);
+        animator.SetBool("Jump", true);
         fallSpeed = fallSpeedDefault;
     }
 
     public void Fall(float startFloorY)
     {
-        animator.speed = 0;
         enabled = true;
+        animator.speed = 0;       
         floorY = startFloorY - fallHeight;
     }
+    public void Fly()
+    {
+        animator.speed = 1;
+        animator.SetBool("Jump", false);
+        animator.SetBool("Fly", true);
+        fallSpeed = fallSpeedDefault;
+    }
+    public void Death()
+    {
+        animator.speed = 1;
+        animator.SetTrigger("Death");
+        animator.SetBool("Jump", false);
+        animator.SetBool("Fly", false);
 
-
-
+        Invoke(nameof(Stop), 0.7f);
+    }
     public void Stop()
     {
         animator.speed = 0;

@@ -24,7 +24,8 @@ public class Segment : MonoBehaviour
     
     [SerializeField] private GameObject m_Fan;
     [SerializeField] private GameObject m_Spike;
-    [SerializeField] private GameObject m_Piston;    
+    [SerializeField] private GameObject m_Piston; 
+    [SerializeField] private GameObject m_PistonUp; 
 
     public SegmentType Type => m_Type;
 
@@ -43,14 +44,16 @@ public class Segment : MonoBehaviour
         meshRender.enabled = true;
         meshRender.material = m_SpikeMaterial;
         m_Spike.SetActive(true);
-        m_Type = SegmentType.Spike;
+        m_Type = SegmentType.Spike;       
     }
     public void SetPiston()
     {
         meshRender.enabled = true;
         meshRender.material = m_PistonMaterial;
-        m_Piston.SetActive(true);
-        m_Type = SegmentType.Piston;
+        int pist = Random.Range(0, 2);
+        if (pist == 0) m_Piston.SetActive(true);
+        if (pist == 1) m_PistonUp.SetActive(true);
+        m_Type = SegmentType.Piston;        
     }
     public void SetFan()
     {

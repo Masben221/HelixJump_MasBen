@@ -26,7 +26,9 @@ public class BallController : OnColliderTrigger
         {
             if(segment.Type == SegmentType.Empty)
             {
+                movement.enabled = true;
                 movement.Fall(other.transform.position.y);
+                segment.GetComponent<MeshCollider>().enabled = false;
             }
 
             if (segment.Type == SegmentType.Default)
@@ -34,12 +36,39 @@ public class BallController : OnColliderTrigger
                 movement.Jump();
             }
 
-            if (segment.Type == SegmentType.Spike || segment.Type == SegmentType.Finish || segment.Type == SegmentType.Piston || segment.Type == SegmentType.Fan)
+            if (segment.Type == SegmentType.Fan)
+            {
+                movement.Fly();
+            }
+
+            if (segment.Type == SegmentType.Spike || segment.Type == SegmentType.Piston)
+            {
+                movement.Death();
+                segment.GetComponent<MeshCollider>().enabled = false;
+            }
+            
+            if (segment.Type == SegmentType.Finish)
             {
                 movement.Stop();
             }
 
             CollisionSegment.Invoke(segment.Type);
-        }        
+        }       
+    }
+    protected override void OnTriggerExit(Collider other)
+    {
+        base.OnTriggerExit(other);
+
+        Segment segment = other.GetComponent<Segment>();
+
+        if (segment == null) segment = other.GetComponentInParent<Segment>();
+
+        if (segment != null)
+        {
+            if (segment.Type == SegmentType.Fan)
+            {
+                movement.Jump();
+            }
+        }
     }
 }

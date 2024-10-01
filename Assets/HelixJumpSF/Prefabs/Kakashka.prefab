@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6197480995896361728}
   - component: {fileID: 6692590422565081095}
   - component: {fileID: 8551122849007211482}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Kaka
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -112,7 +112,7 @@ GameObject:
   - component: {fileID: 9036133257031903109}
   - component: {fileID: 3960076214540966267}
   - component: {fileID: 4055315628749684310}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: "\u0420\u043E\u0442"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -217,7 +217,7 @@ GameObject:
   - component: {fileID: 4553998257923020584}
   - component: {fileID: 1927966910783528129}
   - component: {fileID: 6956821396519687581}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: "\u0413\u043B\u0430\u0437 \u043F\u0440\u0430\u0432\u044B\u0439"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -323,7 +323,7 @@ GameObject:
   - component: {fileID: 8613524260984931058}
   - component: {fileID: 1057655403043949874}
   - component: {fileID: 9049301423679827489}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: "\u0413\u043B\u0430\u0437 \u043B\u0435\u0432\u044B\u0439"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -429,7 +429,7 @@ GameObject:
   - component: {fileID: 5997998633239595275}
   - component: {fileID: 6203297966077582461}
   - component: {fileID: 985588489279528237}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: "\u0417\u0440\u0430\u0447\u043E\u043A"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -533,7 +533,7 @@ GameObject:
   - component: {fileID: 6779023948138564434}
   - component: {fileID: 6779023948138564437}
   - component: {fileID: 6779023948138564436}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -628,7 +628,7 @@ GameObject:
   - component: {fileID: 1169256811}
   - component: {fileID: 1169256812}
   - component: {fileID: 2724685440607524911}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Kakashka
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -761,7 +761,7 @@ GameObject:
   - component: {fileID: 3138594922189019179}
   - component: {fileID: 3661425191857964693}
   - component: {fileID: 4843321724263226815}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: "\u0417\u0440\u0430\u0447\u043E\u043A"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -866,7 +866,7 @@ GameObject:
   - component: {fileID: 5411937213491075090}
   - component: {fileID: 8842875786786470855}
   - component: {fileID: 2541779678819709332}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1023,6 +1023,10 @@ PrefabInstance:
     - target: {fileID: 5461531115270944444, guid: 274d974daeb2dde4c95069c9674419a1, type: 3}
       propertyPath: m_Name
       value: "\u044D\u043A\u0441\u043A\u0440\u0435\u043C\u0435\u043D\u0442\u044B"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5461531115270944444, guid: 274d974daeb2dde4c95069c9674419a1, type: 3}
+      propertyPath: m_Layer
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 5821955768137029481, guid: 274d974daeb2dde4c95069c9674419a1, type: 3}
       propertyPath: m_Enabled
