@@ -3,71 +3,95 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-[RequireComponent(typeof(BallMovement) )]
-
-public class BallController : OnColliderTrigger
+namespace HelixJump
 {
-    [SerializeField] private BallMovement movement;
+    [RequireComponent(typeof(BallMovement))]
 
-    [HideInInspector] public UnityEvent<SegmentType> CollisionSegment;
-
-    private void Start()
+    public class BallController : OnColliderTrigger
     {
-        if (movement == null) movement = GetComponent<BallMovement>();
-    }
+        [SerializeField] private BallMovement movement;
 
-    protected override void OnOneTriggerEnter(Collider other)
-    {
-        Segment segment = other.GetComponent<Segment>();
+        [HideInInspector] public UnityEvent<SegmentType> CollisionSegment;
 
-        if (segment == null) segment = other.GetComponentInParent<Segment>();
-
-        if(segment != null)
+        private void Start()
         {
-            if(segment.Type == SegmentType.Empty)
-            {
-                movement.enabled = true;
-                movement.Fall(other.transform.position.y);
-                segment.GetComponent<MeshCollider>().enabled = false;
-            }
+            if (movement == null) movement = GetComponent<BallMovement>();
+        }
 
-            if (segment.Type == SegmentType.Default)
-            {
-                movement.Jump();
-            }
-
-            if (segment.Type == SegmentType.Fan)
-            {
-                movement.Fly();
-            }
-
-            if (segment.Type == SegmentType.Spike || segment.Type == SegmentType.Piston)
-            {
-                movement.Death();
-                segment.GetComponent<MeshCollider>().enabled = false;
-            }
-            
-            if (segment.Type == SegmentType.Finish)
-            {
-                movement.Stop();
-            }
-
-            CollisionSegment.Invoke(segment.Type);
-        }       
-    }
-    protected override void OnTriggerExit(Collider other)
-    {
-        base.OnTriggerExit(other);
-
-        Segment segment = other.GetComponent<Segment>();
-
-        if (segment == null) segment = other.GetComponentInParent<Segment>();
-
-        if (segment != null)
+        protected override void OnOneTriggerEnter(Collider other)
         {
-            if (segment.Type == SegmentType.Fan)
+            Segment segment = other.GetComponent<Segment>();
+
+            if (segment == null) segment = other.GetComponentInParent<Segment>();
+
+            if (segment != null)
             {
-                movement.Jump();
+                if (segment.Type == SegmentType.Empty)
+                {
+                    movement.enabled = true;
+                    movement.Fall(other.transform.position.y);
+                    segment.GetComponent<MeshCollider>().enabled = false;
+                }
+
+                if (segment.Type == SegmentType.Default)
+                {
+                    movement.Jump();
+                }
+
+                if (segment.Type == SegmentType.Fan)
+                {
+                    movement.Fly();
+                }
+
+                if (segment.Type == SegmentType.Spike || segment.Type == SegmentType.Piston)
+                {
+                    movement.Death();
+                    segment.GetComponent<MeshCollider>().enabled = false;
+                }
+
+                if (segment.Type == SegmentType.Finish)
+                {
+                    movement.Stop();
+                }
+
+                CollisionSegment.Invoke(segment.Type);
+            }
+        }
+
+        private void OnTriggerStay(Collider other)
+        {
+            Segment segment = other.GetComponent<Segment>();
+
+            if (segment == null) segment = other.GetComponentInParent<Segment>();           
+
+            if (segment != null)
+            {
+                if (segment.Type == SegmentType.Fan)
+                {
+                    movement.Fly();                    
+                }               
+            }
+        }
+
+        protected override void OnTriggerExit(Collider other)
+        {
+            base.OnTriggerExit(other);
+
+            Segment segment = other.GetComponent<Segment>();
+
+            if (segment == null) segment = other.GetComponentInParent<Segment>();            
+
+            if (segment != null)
+            {
+                if (segment.Type == SegmentType.Fan)
+                {
+                    movement.Jump();
+                    //movement.FlyStop();
+                }
+                if (segment.Type == SegmentType.Default)
+                {
+                    // movement.JumpStop();
+                }
             }
         }
     }

@@ -2,15 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InputManager : BallEvent
+namespace HelixJump
 {
-    [SerializeField] private MouseRotator InputRotator;
-
-    protected override void OnBallCollisionSegment(SegmentType type)
+    public class InputManager : BallEvent
     {
-        if (type == SegmentType.Finish || type == SegmentType.Spike || type == SegmentType.Piston)
+        [SerializeField] private MouseRotator InputRotator;
+
+        protected override void OnBallCollisionSegment(SegmentType type)
         {
-            InputRotator.enabled = false;
+            if (type == SegmentType.Finish || type == SegmentType.Spike || type == SegmentType.Piston)
+            {
+                InputRotator.enabled = false;
+            }
         }
     }
 }
+

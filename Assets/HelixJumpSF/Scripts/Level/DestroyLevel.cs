@@ -1,29 +1,33 @@
 using UnityEngine;
 
-public class DestroyLevel : BallEvent
+namespace HelixJump
 {
-    [SerializeField] private LevelGenerator levelGenerator;
-    [SerializeField] private BallTrail ballTrail;
-
-    protected override void OnBallCollisionSegment(SegmentType type)
+    public class DestroyLevel : BallEvent
     {
-        if (type == SegmentType.Empty)
-        {
-            Destroy(levelGenerator.Floors[levelGenerator.Floors.Count - 1].gameObject);
-            levelGenerator.Floors.Remove(levelGenerator.Floors[levelGenerator.Floors.Count - 1]);
+        [SerializeField] private LevelGenerator levelGenerator;
+        [SerializeField] private BallTrail ballTrail;        
 
-            Destroy(levelGenerator.DestroyFloors[levelGenerator.DestroyFloors.Count - 1].gameObject, 1.0f);
-            levelGenerator.DestroyFloors[levelGenerator.DestroyFloors.Count - 1].gameObject.SetActive(true);
-            levelGenerator.DestroyFloors.Remove(levelGenerator.DestroyFloors[levelGenerator.DestroyFloors.Count - 1]);
-           
-            if (type != SegmentType.Default && type != SegmentType.Spike)// тупое условие
+        protected override void OnBallCollisionSegment(SegmentType type)
+        {
+            if (type == SegmentType.Empty)
             {
-                for (int i = 0; i < ballTrail.Blots.Count; i++)
+                Destroy(levelGenerator.Floors[levelGenerator.Floors.Count - 1].gameObject);
+                levelGenerator.Floors.Remove(levelGenerator.Floors[levelGenerator.Floors.Count - 1]);
+
+                Destroy(levelGenerator.DestroyFloors[levelGenerator.DestroyFloors.Count - 1].gameObject, 1.0f);
+                levelGenerator.DestroyFloors[levelGenerator.DestroyFloors.Count - 1].gameObject.SetActive(true);
+                levelGenerator.DestroyFloors.Remove(levelGenerator.DestroyFloors[levelGenerator.DestroyFloors.Count - 1]);                
+
+                if (type != SegmentType.Default && type != SegmentType.Spike)// тупое условие
                 {
-                    ballTrail.Blots[i].gameObject.SetActive(false);
-                    //Destroy(ballTrail.Blots[i].gameObject);
+                    for (int i = 0; i < ballTrail.Blots.Count; i++)
+                    {
+                        ballTrail.Blots[i].gameObject.SetActive(false);
+                        //Destroy(ballTrail.Blots[i].gameObject);
+                    }
                 }
             }
         }
     }
+
 }

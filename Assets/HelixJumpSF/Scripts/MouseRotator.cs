@@ -2,16 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MouseRotator : MonoBehaviour
+namespace HelixJump
 {
-    [SerializeField] private string mouseInputAxis;
-    [SerializeField] private float sensitive;
-
-    private void Update()
+    public class MouseRotator : MonoBehaviour
     {
-        if(Input.GetMouseButton(0)== true)
+        [SerializeField] private string mouseInputAxis;
+        [SerializeField] private float sensitive;
+
+        private void Update()
         {
-            transform.Rotate(0, Input.GetAxis(mouseInputAxis) * -sensitive, 0);
+            if (Input.GetMouseButton(0) == true)
+            {
+                transform.Rotate(0, Input.GetAxis(mouseInputAxis) * -sensitive, 0);
+            }
         }
     }
+
 }

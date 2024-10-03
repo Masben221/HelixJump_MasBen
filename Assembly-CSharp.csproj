@@ -71,10 +71,13 @@
     <Compile Include="Assets\Sources\StandartPlayer\Utility\FPSCounter.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\ForVisualScriptYG.cs" />
     <Compile Include="Assets\Sources\StandartPlayer\Utility\EventSystemChecker.cs" />
+    <Compile Include="Assets\HelixJumpSF\Scripts\Sounds\Sound.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Payments\ConsumePurchasesYG.cs" />
     <Compile Include="Assets\YandexGame\Example\Scripts\SaverTest.cs" />
     <Compile Include="Assets\Sources\StandartPlayer\CrossPlatformInput\Scripts\VirtualInput.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Leaderboards\LeaderboardYG.cs" />
+    <Compile Include="Assets\HelixJumpSF\Scripts\Sounds\OnEnableSound.cs" />
+    <Compile Include="Assets\HelixJumpSF\Scripts\Sounds\MusicPlayer.cs" />
     <Compile Include="Assets\YandexGame\WorkingData\SavesYG.cs" />
     <Compile Include="Assets\YandexGame\Example\Scripts\RewardedAd.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\ActivityOnAuthorizationYG.cs" />
@@ -103,6 +106,8 @@
     <Compile Include="Assets\HelixJumpSF\Scripts\Level\LevelGenerator.cs" />
     <Compile Include="Assets\YandexGame\DebuggingMode\Scripts\DebuggingModeYG.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\ImageLoadYG.cs" />
+    <Compile Include="Assets\HelixJumpSF\Scripts\Sounds\SoundPlayer.cs" />
+    <Compile Include="Assets\HelixJumpSF\Scripts\Sounds\SoundHook.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\EnvironmentData\EnvirData_yg.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\YandexGame.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Inside\ConfigYG.cs" />
@@ -157,6 +162,7 @@
     <Compile Include="Assets\Sources\StandartPlayer\Utility\DragRigidbody.cs" />
     <Compile Include="Assets\Sources\Scripts\Button.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\AdNotificationYG.cs" />
+    <Compile Include="Assets\HelixJumpSF\Scripts\Sounds\BallSounds.cs" />
     <Compile Include="Assets\Sources\StandartPlayer\CrossPlatformInput\Scripts\TouchPad.cs" />
     <Compile Include="Assets\HelixJumpSF\Scripts\Level\Floor.cs" />
     <Compile Include="Assets\HelixJumpSF\Scripts\Level\FloorDestroy.cs" />
@@ -174,6 +180,8 @@
     <Compile Include="Assets\HelixJumpSF\Scripts\Managers\InputManager.cs" />
     <Compile Include="Assets\YandexGame\Example\Scripts\DebugViewing.cs" />
     <Compile Include="Assets\Sources\StandartPlayer\Characters\RollerBall\Scripts\BallUserControl.cs" />
+    <Compile Include="Assets\HelixJumpSF\Scripts\Sounds\Sounds.cs" />
+    <Compile Include="Assets\HelixJumpSF\Scripts\MonoSingleton.cs" />
     <Compile Include="Assets\YandexGame\Example\Scripts\ReceivingPurchaseExample.cs" />
     <Compile Include="Assets\Sources\StandartPlayer\Characters\ThirdPersonCharacter\Scripts\ThirdPersonUserControl.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Language\LanguageYG.cs" />

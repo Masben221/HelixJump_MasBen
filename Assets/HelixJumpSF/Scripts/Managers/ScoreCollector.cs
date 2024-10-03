@@ -2,54 +2,58 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ScoreCollector : BallEvent
+namespace HelixJump
 {
-    [SerializeField] private LevelProgress levelProgress;
-
-    [SerializeField] private int scores;
-    public int Scores => scores;
-
-    [SerializeField] private int maxScore;
-    public int MaxScore => maxScore;
-
-    private bool doubleShoot = false; 
-
-    protected override void Awake()
+    public class ScoreCollector : BallEvent
     {
-        base.Awake();
-        LoadMaxScores();
-    }
+        [SerializeField] private LevelProgress levelProgress;
 
-    protected override void OnBallCollisionSegment(SegmentType type)
-    {
-        if (type != SegmentType.Empty)
+        [SerializeField] private int scores;
+        public int Scores => scores;
+
+        [SerializeField] private int maxScore;
+        public int MaxScore => maxScore;
+
+        private bool doubleShoot = false;
+
+        protected override void Awake()
         {
-            doubleShoot = false;
+            base.Awake();
+            LoadMaxScores();
         }
 
-        if (type == SegmentType.Empty)
+        protected override void OnBallCollisionSegment(SegmentType type)
         {
-            scores += levelProgress.CurrentLevel;
-            if (doubleShoot == true) scores += levelProgress.CurrentLevel;
-            doubleShoot = true;
-        }
-
-        if (type == SegmentType.Finish)
-        {            
-            if (scores > maxScore)
+            if (type != SegmentType.Empty)
             {
-                maxScore = scores;
-                SaveMaxScores();
+                doubleShoot = false;
+            }
+
+            if (type == SegmentType.Empty)
+            {
+                scores += levelProgress.CurrentLevel;
+                if (doubleShoot == true) scores += levelProgress.CurrentLevel;
+                doubleShoot = true;
+            }
+
+            if (type == SegmentType.Finish)
+            {
+                if (scores > maxScore)
+                {
+                    maxScore = scores;
+                    SaveMaxScores();
+                }
             }
         }
-    }
-    private void SaveMaxScores()
-    {
-       PlayerPrefs.SetInt("ScoreCollector:MaxScore", maxScore);
+        private void SaveMaxScores()
+        {
+            PlayerPrefs.SetInt("ScoreCollector:MaxScore", maxScore);
+        }
+
+        private void LoadMaxScores()
+        {
+            maxScore = PlayerPrefs.GetInt("ScoreCollector:MaxScore", 0);
+        }
     }
 
-    private void LoadMaxScores()
-    {
-       maxScore = PlayerPrefs.GetInt("ScoreCollector:MaxScore", 0);
-    }
 }

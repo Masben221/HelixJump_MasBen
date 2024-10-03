@@ -3,24 +3,28 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class SceneHelper : MonoBehaviour
+namespace HelixJump
 {
-    public void RestartLevel()
+    public class SceneHelper : MonoBehaviour
     {
-        SceneManager.LoadScene( SceneManager.GetActiveScene().buildIndex );
-    }
+        public void RestartLevel()
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
 
-    public void LoadLevel(int buildIndex)
-    {
-        SceneManager.LoadScene(buildIndex);
-    }
+        public void LoadLevel(int buildIndex)
+        {
+            SceneManager.LoadScene(buildIndex);
+        }
 
-    public void Quit()
-    {
-        Application.Quit();
-    }
-    public void ScenePause(int buildIndex)
-    {
-        SceneManager.LoadScene(buildIndex);
+        public void Quit()
+        {
+            Application.Quit();
+        }
+        public void ScenePause(int buildIndex)
+        {
+            SceneManager.LoadScene(buildIndex);
+        }
     }
 }
+

@@ -2,24 +2,28 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class OnColliderTrigger : MonoBehaviour
+namespace HelixJump
 {
-    private Collider lastCollider;
-
-    protected virtual void OnOneTriggerEnter(Collider other) { }
-
-    private void OnTriggerEnter(Collider other)
+    public abstract class OnColliderTrigger : MonoBehaviour
     {
-        if (lastCollider != null && lastCollider != other) return;
+        private Collider lastCollider;
 
-        lastCollider = other;
+        protected virtual void OnOneTriggerEnter(Collider other) { }
 
-        OnOneTriggerEnter(other);
+        private void OnTriggerEnter(Collider other)
+        {
+            if (lastCollider != null && lastCollider != other) return;
+
+            lastCollider = other;
+
+            OnOneTriggerEnter(other);
+        }
+
+        protected virtual void OnTriggerExit(Collider other)
+        {
+            if (lastCollider == other)
+                lastCollider = null;
+        }
     }
 
-    protected virtual void OnTriggerExit(Collider other)
-    {
-        if (lastCollider == other)
-            lastCollider = null;
-    }
 }

@@ -1,7 +1,11 @@
 using UnityEngine;
 using System;
 
-public class FloorDestroy : MonoBehaviour
+namespace HelixJump
 {
-    
+    public class FloorDestroy : MonoBehaviour
+    {
+
+    }
+
 }

@@ -1,15 +1,18 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
-public class KillZone : MonoBehaviour
+namespace HelixJump
 {
-	void OnTriggerEnter(Collider col)
+	public class KillZone : MonoBehaviour
 	{
-		if(col.CompareTag("Player") == true)
+		void OnTriggerEnter(Collider col)
 		{
-			SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+			if (col.CompareTag("Player") == true)
+			{
+				SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+			}
 		}
+
 	}
 
 }

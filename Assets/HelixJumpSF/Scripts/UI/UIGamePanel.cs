@@ -2,26 +2,30 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UIGamePanel : BallEvent
+namespace HelixJump
 {
-    [SerializeField] private GameObject passedPanel;
-    [SerializeField] private GameObject defeatPanel;
-
-    private void Start()
+    public class UIGamePanel : BallEvent
     {
-        passedPanel.SetActive(false);
-        defeatPanel.SetActive(false);
-    }
-    protected override void OnBallCollisionSegment(SegmentType type)
-    {
-        if (type == SegmentType.Spike || type == SegmentType.Piston)
-        {
-            defeatPanel.SetActive(true);
-        }
+        [SerializeField] private GameObject passedPanel;
+        [SerializeField] private GameObject defeatPanel;
 
-        if (type == SegmentType.Finish)
+        private void Start()
         {
-            passedPanel.SetActive(true);
+            passedPanel.SetActive(false);
+            defeatPanel.SetActive(false);
+        }
+        protected override void OnBallCollisionSegment(SegmentType type)
+        {
+            if (type == SegmentType.Spike || type == SegmentType.Piston)
+            {
+                defeatPanel.SetActive(true);
+            }
+
+            if (type == SegmentType.Finish)
+            {
+                passedPanel.SetActive(true);
+            }
         }
     }
+
 }
