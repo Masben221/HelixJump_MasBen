@@ -13,18 +13,18 @@ MonoBehaviour:
   m_Name: Sounds
   m_EditorClassIdentifier: 
   m_Sounds:
-  - {fileID: 8300000, guid: 0dee429456897bf4d95433317993e266, type: 3}
-  - {fileID: 8300000, guid: 576ed821499fdb342bbab25fff5a0e6b, type: 3}
-  - {fileID: 8300000, guid: 6f71cc27c134de04ea2998bcd4eb3e4c, type: 3}
+  - {fileID: 8300000, guid: 35a833a973ab70c4fb4a0105671750d8, type: 3}
+  - {fileID: 8300000, guid: 3bc9af9eaae7fc0428df52bc3ae08311, type: 3}
+  - {fileID: 8300000, guid: fd8d970a6faabe649bced0942dc5bb0d, type: 3}
   - {fileID: 8300000, guid: 606223f6b08617c449f4fd9dde10d766, type: 3}
+  - {fileID: 8300000, guid: bf224eea013287c4d8a6e58e20d9d544, type: 3}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 8300000, guid: 6c66ccb096083674688ce7c891886134, type: 3}
-  - {fileID: 8300000, guid: 14a06a9efb8da1146b0495989fa2b12e, type: 3}
+  - {fileID: 8300000, guid: c69ee6cc42b573646a31852fdfaba297, type: 3}
+  - {fileID: 8300000, guid: 1625c3915c183db43b7947a5740df9d3, type: 3}
+  - {fileID: 8300000, guid: e35452256b4d97246a767dfec81979a2, type: 3}
   - {fileID: 8300000, guid: 2f16ed7c3e59ae44c8bea375dcdfcb68, type: 3}
-  - {fileID: 8300000, guid: 3e16717e952a14b4ea13f47b272d312d, type: 3}
+  - {fileID: 8300000, guid: 063626cdcb8e7fb41af4ff397b904de3, type: 3}
   - {fileID: 8300000, guid: 538fd574286775f4daedfe4389bd6aa0, type: 3}
   - {fileID: 0}
   - {fileID: 0}

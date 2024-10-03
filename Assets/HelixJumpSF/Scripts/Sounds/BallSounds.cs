@@ -30,11 +30,13 @@ namespace HelixJump
 
             if (type == SegmentType.Spike)
             {
+                m_SpikeSound.Play();
                 m_DieSound.Play();
             }
 
             if (type == SegmentType.Piston)
             {
+                m_PistonSound.Play();
                 m_DieSound.Play();
             }
             

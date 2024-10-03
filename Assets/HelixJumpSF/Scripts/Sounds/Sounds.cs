@@ -31,8 +31,7 @@ namespace HelixJump
                                     $"{(Sound)i}:", target.m_Sounds[i], typeof(AudioClip), false) as AudioClip;
                             }
 
-                            EditorUtility.SetDirty(target);
-                            //Можете сразу после цикла вызывать = Артем написал
+                            EditorUtility.SetDirty(target);                            
                     }
                 }       
         #endif        

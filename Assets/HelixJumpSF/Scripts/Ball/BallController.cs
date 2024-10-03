@@ -30,7 +30,7 @@ namespace HelixJump
                 {
                     movement.enabled = true;
                     movement.Fall(other.transform.position.y);
-                    segment.GetComponent<MeshCollider>().enabled = false;
+                    segment.GetComponent<MeshCollider>().enabled = false;                   
                 }
 
                 if (segment.Type == SegmentType.Default)
@@ -47,6 +47,14 @@ namespace HelixJump
                 {
                     movement.Death();
                     segment.GetComponent<MeshCollider>().enabled = false;
+                    var childs = segment.GetComponentsInChildren<BoxCollider>();
+                    if (childs != null)
+                    {
+                        for (int i = 0; i < childs.Length; i++)
+                        {
+                            childs[i].enabled = false;
+                        }
+                    }
                 }
 
                 if (segment.Type == SegmentType.Finish)
