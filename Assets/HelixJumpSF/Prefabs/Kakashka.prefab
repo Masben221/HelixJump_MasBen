@@ -625,10 +625,12 @@ GameObject:
   - component: {fileID: 6779023948604643150}
   - component: {fileID: 425816385131246}
   - component: {fileID: 6770112291159489473}
+  - component: {fileID: 5172955138726162585}
   - component: {fileID: 1169256811}
   - component: {fileID: 1169256812}
   - component: {fileID: 2724685440607524911}
   - component: {fileID: 6677313025283608458}
+  - component: {fileID: 938645641277141327}
   m_Layer: 9
   m_Name: Kakashka
   m_TagString: Untagged
@@ -702,6 +704,20 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &5172955138726162585
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6779023948604643137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9311982a1fb08f478ebdb682ccf99fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_DoNotDestroyOnLoad: 0
+  m_BallController: {fileID: 1169256811}
 --- !u!114 &1169256811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -746,7 +762,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6dce4833cbfe1374787c19231f8ba85e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ballController: {fileID: 1169256811}
   parentTransform: {fileID: 0}
   visualMeshRenderer: {fileID: 8551122849007211482}
   blotPrefab: {fileID: 7796030945595199937, guid: 3ad7520f8edd7db4b9575af4d7c5e0c9, type: 3}
@@ -846,6 +861,27 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &938645641277141327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6779023948604643137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bca1892389cb63449473762bfcba922, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FloorDestroySound: 10
+  m_FinishSound: 8
+  m_ToiletSound: 3
+  m_SpikeSound: 7
+  m_PistonSound: 4
+  m_BoltSound: 2
+  m_JumpSound: 0
+  m_FlySound: 1
+  m_DieSound: 9
 --- !u!1 &8453244739292641867
 GameObject:
   m_ObjectHideFlags: 0

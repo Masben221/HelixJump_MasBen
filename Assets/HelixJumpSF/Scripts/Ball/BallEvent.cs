@@ -1,22 +1,20 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace HelixJump
 {
     public abstract class BallEvent : MonoBehaviour
     {
-        [SerializeField] private BallController ballController;
+         [SerializeField] private BallController m_BallController;
 
         protected virtual void Awake()
-        {
-            ballController.CollisionSegment.AddListener(OnBallCollisionSegment);
+        {            
+            if (Player.Instance != null && m_BallController == null) m_BallController = Player.Instance.BallController;
+            m_BallController.CollisionSegment.AddListener(OnBallCollisionSegment);
         }
 
         private void OnDestroy()
         {
-            ballController.CollisionSegment.RemoveListener(OnBallCollisionSegment);
+            m_BallController.CollisionSegment.RemoveListener(OnBallCollisionSegment);
         }
 
         protected virtual void OnBallCollisionSegment(SegmentType type)

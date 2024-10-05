@@ -94,6 +94,7 @@
     <Compile Include="Assets\Sources\StandartPlayer\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\GameReadyAPI\GRA_yg.cs" />
     <Compile Include="Assets\Sources\StandartPlayer\Characters\FirstPersonCharacter\Scripts\MouseLook.cs" />
+    <Compile Include="Assets\UnityTechnologies\ParticlePack\Shared\Scripts\ProximityActivate.cs" />
     <Compile Include="Assets\Sources\StandartPlayer\CrossPlatformInput\Scripts\Joystick.cs" />
     <Compile Include="Assets\HelixJumpSF\Scripts\OnColliderTrigger.cs" />
     <Compile Include="Assets\Sources\Scripts\Teleporter.cs" />
@@ -156,12 +157,16 @@
     <Compile Include="Assets\YandexGame\ScriptsYG\Inside\CallingAnEvent.cs" />
     <Compile Include="Assets\Sources\StandartPlayer\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
     <Compile Include="Assets\YandexGame\Example\Scripts\YandexMetricaExample.cs" />
+    <Compile Include="Assets\UnityTechnologies\ParticlePack\Shared\Ramps\Runtime\RampAsset.cs" />
     <Compile Include="Assets\HelixJumpSF\Scripts\Ball\BallMovement.cs" />
     <Compile Include="Assets\HelixJumpSF\Scripts\Managers\CseneSetup.cs" />
+    <Compile Include="Assets\UnityTechnologies\ParticlePack\Shared\Scripts\AdjustTimeScale.cs" />
     <Compile Include="Assets\Sources\Scripts\Timer.cs" />
     <Compile Include="Assets\Sources\StandartPlayer\Utility\DragRigidbody.cs" />
+    <Compile Include="Assets\HelixJumpSF\Scripts\Ball\Player.cs" />
     <Compile Include="Assets\Sources\Scripts\Button.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\AdNotificationYG.cs" />
+    <Compile Include="Assets\UnityTechnologies\ParticlePack\Shared\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\HelixJumpSF\Scripts\Sounds\BallSounds.cs" />
     <Compile Include="Assets\Sources\StandartPlayer\CrossPlatformInput\Scripts\TouchPad.cs" />
     <Compile Include="Assets\HelixJumpSF\Scripts\Level\Floor.cs" />
@@ -172,9 +177,11 @@
     <Compile Include="Assets\Sources\StandartPlayer\Utility\FollowTarget.cs" />
     <Compile Include="Assets\Sources\Scripts\KillZone.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Leaderboards\InternalScripts\UtilsLB.cs" />
+    <Compile Include="Assets\UnityTechnologies\ParticlePack\EffectExamples\Misc Effects\Scripts\SpawnEffect.cs" />
     <Compile Include="Assets\Sources\StandartPlayer\Utility\ForcedReset.cs" />
     <Compile Include="Assets\Sources\StandartPlayer\Utility\WaypointCircuit.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Authorization\Auth_yg.cs" />
+    <Compile Include="Assets\UnityTechnologies\ParticlePack\Shared\Scripts\SimpleCharacterMotor.cs" />
     <Compile Include="Assets\Sources\StandartPlayer\Characters\RollerBall\Scripts\Ball.cs" />
     <Compile Include="Assets\Sources\StandartPlayer\Utility\DynamicShadowSettings.cs" />
     <Compile Include="Assets\HelixJumpSF\Scripts\Managers\InputManager.cs" />
@@ -193,15 +200,40 @@
     <Compile Include="Assets\Sources\StandartPlayer\CrossPlatformInput\Scripts\InputAxisScrollbar.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Assets\UnityTechnologies\ParticlePack\TextMesh Pro\Shaders\TMPro.cginc" />
+    <None Include="Assets\UnityTechnologies\ParticlePack\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
+    <None Include="Assets\UnityTechnologies\ParticlePack\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
+    <None Include="Assets\UnityTechnologies\ParticlePack\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
+    <None Include="Assets\UnityTechnologies\ParticlePack\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
+    <None Include="Assets\UnityTechnologies\ParticlePack\EffectExamples\Misc Effects\Prefabs\Readme_Dissolve_Respawn_.txt" />
+    <None Include="Assets\UnityTechnologies\ParticlePack\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\WebGLTemplates\Notices.txt" />
+    <None Include="Assets\UnityTechnologies\ParticlePack\EffectExamples\Magic Effects\Shaders\Ice.shader" />
     <None Include="Assets\WebGLTemplates\LICENSE.txt" />
+    <None Include="Assets\UnityTechnologies\ParticlePack\EffectExamples\Misc Effects\Shaders\Respawn.shader" />
     <None Include="Assets\YandexGame\LICENSE.txt" />
+    <None Include="Assets\UnityTechnologies\ParticlePack\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
+    <None Include="Assets\UnityTechnologies\ParticlePack\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
+    <None Include="Assets\UnityTechnologies\ParticlePack\TextMesh Pro\Shaders\TMP_SDF.shader" />
+    <None Include="Assets\UnityTechnologies\ParticlePack\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
     <None Include="Assets\YandexGame\Readme.txt" />
+    <None Include="Assets\UnityTechnologies\ParticlePack\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
+    <None Include="Assets\UnityTechnologies\ParticlePack\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
+    <None Include="Assets\UnityTechnologies\ParticlePack\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
+    <None Include="Assets\UnityTechnologies\ParticlePack\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\YandexGame\Fonts\LICENSE.txt" />
+    <None Include="Assets\UnityTechnologies\ParticlePack\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
     <None Include="Assets\YandexGame\ScriptsYG\UnityToolbag-main\Notices.txt" />
+    <None Include="Assets\UnityTechnologies\ParticlePack\EffectExamples\Misc Effects\Shaders\FireFly.shader" />
     <None Include="Assets\YandexGame\Third-Party Notices.txt" />
     <None Include="Assets\Sources\Environment\Shaders\SimpleWater.shader" />
+    <None Include="Assets\UnityTechnologies\ParticlePack\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
+    <None Include="Assets\UnityTechnologies\ParticlePack\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
+    <None Include="Assets\UnityTechnologies\ParticlePack\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
+    <None Include="Assets\UnityTechnologies\ParticlePack\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
     <None Include="Assets\YandexGame\ScriptsYG\UnityToolbag-main\LICENSE.txt" />
+    <None Include="Assets\UnityTechnologies\ParticlePack\EffectExamples\Misc Effects\Shaders\Dissolve.shader" />
+    <None Include="Assets\UnityTechnologies\ParticlePack\TextMesh Pro\Shaders\TMP_Sprite.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

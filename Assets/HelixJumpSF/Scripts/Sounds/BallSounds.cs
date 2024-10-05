@@ -13,7 +13,10 @@ namespace HelixJump
         [SerializeField] private Sound m_JumpSound = Sound.Jump;
         [SerializeField] private Sound m_FlySound = Sound.Fly;
         [SerializeField] private Sound m_DieSound = Sound.Die;
-
+        protected override void Awake()
+        {
+            base.Awake();
+        }
         protected override void OnBallCollisionSegment(SegmentType type)
         {
             if (type == SegmentType.Default)

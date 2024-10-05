@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,6 +12,11 @@ namespace HelixJump
         [SerializeField] private Image progressBar;
 
         private float fillAmountStep;
+
+        protected override void Awake()
+        {
+            base.Awake();
+        }
         private void Start()
         {
             currentLevelText.text = levelProgress.CurrentLevel.ToString();

@@ -81,6 +81,7 @@
     <Compile Include="Assets\YandexGame\ScriptsYG\Editor\PostProcessBuild\ModifyIndexFile\BackgroundFormat.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Storage\Editor\CloudStorage_build.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Editor\CreateYandexGameEditor.cs" />
+    <Compile Include="Assets\UnityTechnologies\ParticlePack\Shared\Ramps\Editor\RampAssetEditor.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Editor\PostProcessBuild\ModifyIndexFile\PixelRatioMobile.cs" />
     <Compile Include="Assets\Sources\StandartPlayer\Editor\CrossPlatformInput\CrossPlatformInputInitialize.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Editor\PostProcessBuild\ModifyIndexFile\LogoFormat.cs" />

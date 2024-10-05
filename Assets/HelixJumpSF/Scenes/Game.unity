@@ -188,7 +188,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2724685440607524911, guid: 7bd49cbab6722c942b2e17e318a1ce19, type: 3}
   m_PrefabInstance: {fileID: 1719020469}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1810788565}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6dce4833cbfe1374787c19231f8ba85e, type: 3}
@@ -199,7 +199,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1169256811, guid: 7bd49cbab6722c942b2e17e318a1ce19, type: 3}
   m_PrefabInstance: {fileID: 1719020469}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1810788565}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fd3cdee8941f6864a8fdfee87b61e07d, type: 3}
@@ -387,7 +387,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e846387d8faf1d441858605b0013b5f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ballController: {fileID: 366762499}
+  m_BallController: {fileID: 366762499}
   levelGenerator: {fileID: 1284444363}
   ballTrail: {fileID: 366762496}
 --- !u!1 &1294105948
@@ -725,7 +725,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7c0c71853b2cc8468d18d2ab5ddcc05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ballController: {fileID: 366762499}
+  m_BallController: {fileID: 366762499}
   scoreCollector: {fileID: 1515895998}
 --- !u!114 &1515895997
 MonoBehaviour:
@@ -740,7 +740,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levelGenerator: {fileID: 1284444363}
-  ballController: {fileID: 366762499}
+  m_BallController: {fileID: 366762499}
   levelProgress: {fileID: 1515895996}
 --- !u!114 &1515895998
 MonoBehaviour:
@@ -754,7 +754,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d446170da98fd6f4b8aa44d94bea01b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ballController: {fileID: 366762499}
+  m_BallController: {fileID: 366762499}
   levelProgress: {fileID: 1515895996}
   scores: 0
   maxScore: 0
@@ -770,7 +770,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71889d90357009f478a6a7803afeea93, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ballController: {fileID: 366762499}
+  m_BallController: {fileID: 366762499}
   InputRotator: {fileID: 1284444362}
 --- !u!114 &1515896000
 MonoBehaviour:
@@ -1027,14 +1027,22 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 938645641277141327, guid: 7bd49cbab6722c942b2e17e318a1ce19, type: 3}
+      propertyPath: m_BallController
+      value: 
+      objectReference: {fileID: 366762499}
     - target: {fileID: 2724685440607524911, guid: 7bd49cbab6722c942b2e17e318a1ce19, type: 3}
       propertyPath: parentTransform
       value: 
       objectReference: {fileID: 1284444361}
     - target: {fileID: 2724685440607524911, guid: 7bd49cbab6722c942b2e17e318a1ce19, type: 3}
-      propertyPath: visualMeshRenderer
+      propertyPath: m_BallController
       value: 
-      objectReference: {fileID: 1719020470}
+      objectReference: {fileID: 366762499}
+    - target: {fileID: 5172955138726162585, guid: 7bd49cbab6722c942b2e17e318a1ce19, type: 3}
+      propertyPath: m_BallController
+      value: 
+      objectReference: {fileID: 366762499}
     - target: {fileID: 6779023948604643137, guid: 7bd49cbab6722c942b2e17e318a1ce19, type: 3}
       propertyPath: m_Name
       value: Kakashka
@@ -1079,50 +1087,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8551122849007211482, guid: 7bd49cbab6722c942b2e17e318a1ce19, type: 3}
-      propertyPath: m_Enabled
-      value: 1
+    - target: {fileID: 8842986384506793814, guid: 7bd49cbab6722c942b2e17e318a1ce19, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 6779023948604643137, guid: 7bd49cbab6722c942b2e17e318a1ce19, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1810788570}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7bd49cbab6722c942b2e17e318a1ce19, type: 3}
---- !u!23 &1719020470 stripped
-MeshRenderer:
-  m_CorrespondingSourceObject: {fileID: 8551122849007211482, guid: 7bd49cbab6722c942b2e17e318a1ce19, type: 3}
-  m_PrefabInstance: {fileID: 1719020469}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1810788565 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6779023948604643137, guid: 7bd49cbab6722c942b2e17e318a1ce19, type: 3}
-  m_PrefabInstance: {fileID: 1719020469}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1810788570
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1810788565}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9bca1892389cb63449473762bfcba922, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ballController: {fileID: 366762499}
-  m_FloorDestroySound: 10
-  m_FinishSound: 8
-  m_ToiletSound: 3
-  m_SpikeSound: 7
-  m_PistonSound: 4
-  m_BoltSound: 2
-  m_JumpSound: 0
-  m_FlySound: 1
-  m_DieSound: 9
 --- !u!1 &1975105828
 GameObject:
   m_ObjectHideFlags: 0
@@ -1339,6 +1312,10 @@ PrefabInstance:
       propertyPath: levelGenerator
       value: 
       objectReference: {fileID: 1284444363}
+    - target: {fileID: 320080564579271267, guid: 3a547cd0f306925479577f732d14dd04, type: 3}
+      propertyPath: m_BallController
+      value: 
+      objectReference: {fileID: 366762499}
     - target: {fileID: 320080564579271292, guid: 3a547cd0f306925479577f732d14dd04, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1
@@ -1603,6 +1580,10 @@ PrefabInstance:
       propertyPath: ballController
       value: 
       objectReference: {fileID: 366762499}
+    - target: {fileID: 320080565000626315, guid: 3a547cd0f306925479577f732d14dd04, type: 3}
+      propertyPath: m_BallController
+      value: 
+      objectReference: {fileID: 366762499}
     - target: {fileID: 320080565034151459, guid: 3a547cd0f306925479577f732d14dd04, type: 3}
       propertyPath: ballController
       value: 
@@ -1611,6 +1592,10 @@ PrefabInstance:
       propertyPath: scoreCollector
       value: 
       objectReference: {fileID: 1515895998}
+    - target: {fileID: 320080565034151459, guid: 3a547cd0f306925479577f732d14dd04, type: 3}
+      propertyPath: m_BallController
+      value: 
+      objectReference: {fileID: 366762499}
     - target: {fileID: 320080565034151484, guid: 3a547cd0f306925479577f732d14dd04, type: 3}
       propertyPath: m_AnchorMax.x
       value: 1

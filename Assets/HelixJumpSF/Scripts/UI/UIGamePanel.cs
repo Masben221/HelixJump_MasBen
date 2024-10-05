@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace HelixJump
@@ -8,7 +6,10 @@ namespace HelixJump
     {
         [SerializeField] private GameObject passedPanel;
         [SerializeField] private GameObject defeatPanel;
-
+        protected override void Awake()
+        {
+            base.Awake();
+        }
         private void Start()
         {
             passedPanel.SetActive(false);

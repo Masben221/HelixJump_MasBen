@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace HelixJump
@@ -8,7 +6,7 @@ namespace HelixJump
     {
         private Collider lastCollider;
 
-        protected virtual void OnOneTriggerEnter(Collider other) { }
+        protected virtual void OnOneTriggerEnter(Collider other) { }       
 
         private void OnTriggerEnter(Collider other)
         {

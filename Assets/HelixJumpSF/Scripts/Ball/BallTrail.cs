@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -12,7 +11,10 @@ namespace HelixJump
 
         private List<Blot> blots = new List<Blot>();
         public List<Blot> Blots => blots;
-
+        protected override void Awake()
+        {
+            base.Awake();
+        }
         protected override void OnBallCollisionSegment(SegmentType type)
         {
             if (type == SegmentType.Default)

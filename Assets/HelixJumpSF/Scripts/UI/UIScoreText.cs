@@ -8,7 +8,10 @@ namespace HelixJump
         [SerializeField] private Text scoreText;
         [SerializeField] private Text maxScoreText;
         [SerializeField] private ScoreCollector scoreCollector;
-
+        protected override void Awake()
+        {
+            base.Awake();
+        }
         private void Start()
         {
             maxScoreText.text = scoreCollector.MaxScore.ToString();
@@ -24,11 +27,7 @@ namespace HelixJump
                 maxScoreText.text = scoreCollector.MaxScore.ToString();
             }
 
-        }
-        protected override void Awake()
-        {
-            base.Awake();
-        }
+        }        
     }
 
 }

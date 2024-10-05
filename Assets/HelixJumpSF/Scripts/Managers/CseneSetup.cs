@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace HelixJump
@@ -7,13 +5,17 @@ namespace HelixJump
     public class CseneSetup : MonoBehaviour
     {
         [SerializeField] private LevelGenerator levelGenerator;
-        [SerializeField] private BallController ballController;
+        [SerializeField] private BallController m_BallController;
         [SerializeField] private LevelProgress levelProgress;
-
+       
+        private void Awake()
+        {
+            if (Player.Instance != null && m_BallController == null) m_BallController = Player.Instance.BallController;            
+        }
         void Start()
         {
             levelGenerator.Generate(levelProgress.CurrentLevel);
-            ballController.transform.position = new Vector3(ballController.transform.position.x, levelGenerator.LastFloorY, ballController.transform.position.z);
+            m_BallController.transform.position = new Vector3(m_BallController.transform.position.x, levelGenerator.LastFloorY, m_BallController.transform.position.z);
         }
 
     }

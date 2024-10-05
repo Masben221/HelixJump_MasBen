@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -8,10 +6,10 @@ namespace HelixJump
     [RequireComponent(typeof(BallMovement))]
 
     public class BallController : OnColliderTrigger
-    {
+    {     
         [SerializeField] private BallMovement movement;
 
-        [HideInInspector] public UnityEvent<SegmentType> CollisionSegment;
+        [HideInInspector] public UnityEvent<SegmentType> CollisionSegment;       
 
         private void Start()
         {
@@ -93,13 +91,8 @@ namespace HelixJump
             {
                 if (segment.Type == SegmentType.Fan)
                 {
-                    movement.Jump();
-                    //movement.FlyStop();
-                }
-                if (segment.Type == SegmentType.Default)
-                {
-                    // movement.JumpStop();
-                }
+                    movement.Jump();                    
+                }               
             }
         }
     }

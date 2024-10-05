@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -10,6 +8,11 @@ namespace HelixJump
         [SerializeField] private ScoreCollector scoreCollector;
         private int currentLevel = 1;
         public int CurrentLevel => currentLevel;
+        protected override void Awake()
+        {
+            base.Awake();
+            Load();
+        }
 
         //#if UNITY_EDITOR
         private void Update()
@@ -49,12 +52,7 @@ namespace HelixJump
         {
             currentLevel = PlayerPrefs.GetInt("LevelProgress:CurrentLevel", 1);
         }
-
-        protected override void Awake()
-        {
-            base.Awake();
-            Load();
-        }
+        
 
         //#if UNITY_EDITOR
         private void Reset()

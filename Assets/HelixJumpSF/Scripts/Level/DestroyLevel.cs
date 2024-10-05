@@ -5,8 +5,11 @@ namespace HelixJump
     public class DestroyLevel : BallEvent
     {
         [SerializeField] private LevelGenerator levelGenerator;
-        [SerializeField] private BallTrail ballTrail;        
-
+        [SerializeField] private BallTrail ballTrail;
+        protected override void Awake()
+        {
+            base.Awake();
+        }
         protected override void OnBallCollisionSegment(SegmentType type)
         {
             if (type == SegmentType.Empty)

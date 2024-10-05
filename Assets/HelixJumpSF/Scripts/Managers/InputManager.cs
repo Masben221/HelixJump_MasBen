@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace HelixJump
@@ -7,7 +5,10 @@ namespace HelixJump
     public class InputManager : BallEvent
     {
         [SerializeField] private MouseRotator InputRotator;
-
+        protected override void Awake()
+        {
+            base.Awake();
+        }
         protected override void OnBallCollisionSegment(SegmentType type)
         {
             if (type == SegmentType.Finish || type == SegmentType.Spike || type == SegmentType.Piston)
