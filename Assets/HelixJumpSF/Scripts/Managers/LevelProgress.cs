@@ -8,6 +8,7 @@ namespace HelixJump
         [SerializeField] private ScoreCollector scoreCollector;
         private int currentLevel = 1;
         public int CurrentLevel => currentLevel;
+
         protected override void Awake()
         {
             base.Awake();
@@ -40,6 +41,7 @@ namespace HelixJump
             {
                 currentLevel++;
                 Save();
+                Player.Instance.KakaFinish();
             }
         }
 

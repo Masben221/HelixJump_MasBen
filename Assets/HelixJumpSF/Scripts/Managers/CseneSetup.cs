@@ -14,6 +14,11 @@ namespace HelixJump
         }
         void Start()
         {
+            LevelGenerate();
+        }
+
+        public void LevelGenerate()
+        {
             levelGenerator.Generate(levelProgress.CurrentLevel);
             m_BallController.transform.position = new Vector3(m_BallController.transform.position.x, levelGenerator.LastFloorY, m_BallController.transform.position.z);
         }

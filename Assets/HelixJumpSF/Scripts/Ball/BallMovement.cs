@@ -22,6 +22,16 @@ namespace HelixJump
             enabled = false;
 
             animator = GetComponent<Animator>();
+
+            if (Player.Instance != null)
+            {
+                var player = Player.Instance;
+
+                player.OnDie += Death;
+                player.OnFinish += Stop;
+                player.OnStart += Jump;
+                player.OnDamage += Damage;                
+            }
         }
         private void Update()
         {
@@ -45,8 +55,9 @@ namespace HelixJump
         {
             animator.speed = 1;
             animator.SetBool("Fly", false);
-            animator.SetBool("Jump", true);
-            fallSpeed = fallSpeedDefault;
+            //animator.SetBool("Death", false);
+            animator.SetBool("Jump", true);            
+            fallSpeed = fallSpeedDefault;            
         }
 
         public void Fall(float startFloorY)
@@ -59,6 +70,7 @@ namespace HelixJump
         {
             animator.speed = 1;
             animator.SetBool("Jump", false);
+            //animator.SetBool("Death", false);
             animator.SetBool("Fly", true);
             fallSpeed = fallSpeedDefault;
         }
@@ -80,8 +92,14 @@ namespace HelixJump
             animator.SetBool("Jump", false);
             animator.SetBool("Fly", false);
 
-            Invoke(nameof(Stop), 0.7f);
+            Invoke(nameof(Stop), 1.5f);
         }
+        public void Damage()// добавить анимацию
+        {
+            animator.speed = 1;            
+        }
+
+
         public void Stop()
         {
             animator.speed = 0;

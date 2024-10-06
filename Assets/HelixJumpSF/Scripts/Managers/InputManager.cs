@@ -9,12 +9,32 @@ namespace HelixJump
         {
             base.Awake();
         }
-        protected override void OnBallCollisionSegment(SegmentType type)
+
+        private void Start()
+        {
+            if (Player.Instance != null)
+            {
+                var player = Player.Instance;
+
+                player.OnStart += StartRotate;
+                player.OnFinish += StopRotate;
+                player.OnDie += StopRotate;                
+            }           
+        }
+        /*protected override void OnBallCollisionSegment(SegmentType type)
         {
             if (type == SegmentType.Finish || type == SegmentType.Spike || type == SegmentType.Piston)
             {
                 InputRotator.enabled = false;
             }
+        }*/
+        private void StartRotate()
+        {
+            InputRotator.enabled = true;
+        } 
+        private void StopRotate()
+        {
+            InputRotator.enabled = false;
         }
     }
 }

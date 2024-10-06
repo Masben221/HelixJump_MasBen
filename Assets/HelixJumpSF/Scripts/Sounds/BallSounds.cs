@@ -17,6 +17,15 @@ namespace HelixJump
         {
             base.Awake();
         }
+        private void Start()
+        {
+            if (Player.Instance != null)
+            {
+                var player = Player.Instance;
+
+                player.OnDie += SoundDeath;                
+            }
+        }
         protected override void OnBallCollisionSegment(SegmentType type)
         {
             if (type == SegmentType.Default)
@@ -33,14 +42,12 @@ namespace HelixJump
 
             if (type == SegmentType.Spike)
             {
-                m_SpikeSound.Play();
-                m_DieSound.Play();
+                m_SpikeSound.Play();                
             }
 
             if (type == SegmentType.Piston)
             {
-                m_PistonSound.Play();
-                m_DieSound.Play();
+                m_PistonSound.Play();                
             }
             
             if (type == SegmentType.Fan)
@@ -51,8 +58,9 @@ namespace HelixJump
             if (type == SegmentType.Empty)
             {
                 m_FloorDestroySound.Play();
-            }
-        }       
+            }            
+        } 
+        private void SoundDeath () { m_DieSound.Play(); }
     }
 }
 

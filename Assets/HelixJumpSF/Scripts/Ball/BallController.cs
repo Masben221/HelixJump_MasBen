@@ -9,11 +9,19 @@ namespace HelixJump
     {     
         [SerializeField] private BallMovement movement;
 
-        [HideInInspector] public UnityEvent<SegmentType> CollisionSegment;       
+        [HideInInspector] public UnityEvent<SegmentType> CollisionSegment;
+
+        private Collider m_CurrentKillZoneCollider;
 
         private void Start()
         {
             if (movement == null) movement = GetComponent<BallMovement>();
+            if (Player.Instance != null)
+            {
+                var player = Player.Instance;
+
+                player.OnDie += DisableCollider;                
+            }
         }
 
         protected override void OnOneTriggerEnter(Collider other)
@@ -28,20 +36,20 @@ namespace HelixJump
                 {
                     movement.enabled = true;
                     movement.Fall(other.transform.position.y);
-                    segment.GetComponent<MeshCollider>().enabled = false;                   
+                    segment.GetComponent<MeshCollider>().enabled = false;
                 }
 
                 if (segment.Type == SegmentType.Default)
                 {
                     movement.Jump();
-                }
+                }                
 
                 if (segment.Type == SegmentType.Fan)
                 {
                     movement.Fly();
                 }
 
-                if (segment.Type == SegmentType.Spike || segment.Type == SegmentType.Piston)
+                /*if (segment.Type == SegmentType.Spike || segment.Type == SegmentType.Piston)
                 {
                     movement.Death();
                     segment.GetComponent<MeshCollider>().enabled = false;
@@ -53,7 +61,7 @@ namespace HelixJump
                             childs[i].enabled = false;
                         }
                     }
-                }
+                }*/
 
                 if (segment.Type == SegmentType.Finish)
                 {
@@ -62,6 +70,25 @@ namespace HelixJump
 
                 CollisionSegment.Invoke(segment.Type);
             }
+
+            var killZone = other.GetComponent<KillZone>();
+
+            if (killZone == null) killZone = other.GetComponentInParent<KillZone>();
+
+            if (killZone != null)
+            {
+                if (Player.Instance != null)
+                {
+                    var player = Player.Instance;
+                    player.ApplyDamage(killZone.Damage);
+                    m_CurrentKillZoneCollider = other;
+                }
+            }
+        }
+
+        private void DisableCollider()
+        {
+            //m_CurrentKillZoneCollider.gameObject.SetActive(false);
         }
 
         private void OnTriggerStay(Collider other)

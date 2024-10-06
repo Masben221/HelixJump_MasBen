@@ -72,6 +72,7 @@
     <Compile Include="Assets\YandexGame\ScriptsYG\ForVisualScriptYG.cs" />
     <Compile Include="Assets\Sources\StandartPlayer\Utility\EventSystemChecker.cs" />
     <Compile Include="Assets\HelixJumpSF\Scripts\Sounds\Sound.cs" />
+    <Compile Include="Assets\HelixJumpSF\Scripts\RotateAround.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Payments\ConsumePurchasesYG.cs" />
     <Compile Include="Assets\YandexGame\Example\Scripts\SaverTest.cs" />
     <Compile Include="Assets\Sources\StandartPlayer\CrossPlatformInput\Scripts\VirtualInput.cs" />
@@ -91,6 +92,7 @@
     <Compile Include="Assets\Sources\StandartPlayer\Utility\AutoMoveAndRotate.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Payments\InternalScripts\Payments_yg.cs" />
     <Compile Include="Assets\Sources\StandartPlayer\CrossPlatformInput\Scripts\PlatformSpecific\MobileInput.cs" />
+    <Compile Include="Assets\HelixJumpSF\Scripts\KillZone.cs" />
     <Compile Include="Assets\Sources\StandartPlayer\CrossPlatformInput\Scripts\AxisTouchButton.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\GameReadyAPI\GRA_yg.cs" />
     <Compile Include="Assets\Sources\StandartPlayer\Characters\FirstPersonCharacter\Scripts\MouseLook.cs" />
@@ -137,14 +139,18 @@
     <Compile Include="Assets\YandexGame\Example\Scripts\InitExample.cs" />
     <Compile Include="Assets\Sources\StandartPlayer\Utility\LerpControlledBob.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Initialization\InitYGAttribute.cs" />
+    <Compile Include="Assets\HelixJumpSF\Scripts\UI\UIShieldProgress.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\ReviewYG.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Language\UtilsLang.cs" />
     <Compile Include="Assets\Sources\StandartPlayer\Utility\AutoMobileShaderSwitch.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Payments\InternalScripts\UtilsPayments.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Storage\Storage_yg.cs" />
     <Compile Include="Assets\Sources\Scripts\Acceleration.cs" />
+    <Compile Include="Assets\HelixJumpSF\Scripts\UI\UIHPProgress.cs" />
+    <Compile Include="Assets\HelixJumpSF\Scripts\UI\UISuperPowerProgress.cs" />
     <Compile Include="Assets\Sources\Scripts\Coin.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Language\Lang_yg.cs" />
+    <Compile Include="Assets\HelixJumpSF\Scripts\UI\LivesUI.cs" />
     <Compile Include="Assets\HelixJumpSF\Scripts\Level\Segment.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\GetPlayerYG.cs" />
     <Compile Include="Assets\HelixJumpSF\Scripts\Managers\LevelProgress.cs" />
@@ -164,7 +170,6 @@
     <Compile Include="Assets\Sources\Scripts\Timer.cs" />
     <Compile Include="Assets\Sources\StandartPlayer\Utility\DragRigidbody.cs" />
     <Compile Include="Assets\HelixJumpSF\Scripts\Ball\Player.cs" />
-    <Compile Include="Assets\Sources\Scripts\Button.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\AdNotificationYG.cs" />
     <Compile Include="Assets\UnityTechnologies\ParticlePack\Shared\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\HelixJumpSF\Scripts\Sounds\BallSounds.cs" />
@@ -175,11 +180,11 @@
     <Compile Include="Assets\HelixJumpSF\Scripts\UI\UIGamePanel.cs" />
     <Compile Include="Assets\Sources\Scripts\Trigger.cs" />
     <Compile Include="Assets\Sources\StandartPlayer\Utility\FollowTarget.cs" />
-    <Compile Include="Assets\Sources\Scripts\KillZone.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Leaderboards\InternalScripts\UtilsLB.cs" />
     <Compile Include="Assets\UnityTechnologies\ParticlePack\EffectExamples\Misc Effects\Scripts\SpawnEffect.cs" />
     <Compile Include="Assets\Sources\StandartPlayer\Utility\ForcedReset.cs" />
     <Compile Include="Assets\Sources\StandartPlayer\Utility\WaypointCircuit.cs" />
+    <Compile Include="Assets\HelixJumpSF\Scripts\UI\DamageStats.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Authorization\Auth_yg.cs" />
     <Compile Include="Assets\UnityTechnologies\ParticlePack\Shared\Scripts\SimpleCharacterMotor.cs" />
     <Compile Include="Assets\Sources\StandartPlayer\Characters\RollerBall\Scripts\Ball.cs" />
@@ -192,6 +197,7 @@
     <Compile Include="Assets\YandexGame\Example\Scripts\ReceivingPurchaseExample.cs" />
     <Compile Include="Assets\Sources\StandartPlayer\Characters\ThirdPersonCharacter\Scripts\ThirdPersonUserControl.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Language\LanguageYG.cs" />
+    <Compile Include="Assets\HelixJumpSF\Scripts\Rotator.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Payments\PurchaseYG.cs" />
     <Compile Include="Assets\HelixJumpSF\Scripts\Ball\BallEvent.cs" />
     <Compile Include="Assets\HelixJumpSF\Scripts\SceneHelper.cs" />
