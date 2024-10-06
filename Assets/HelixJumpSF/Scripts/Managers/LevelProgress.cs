@@ -35,7 +35,7 @@ namespace HelixJump
         }
         //#endif
 
-        protected override void OnBallCollisionSegment(SegmentType type)
+        protected override void OnBallCollisionSegment(SegmentType type, bool isKillZone)
         {
             if (type == SegmentType.Finish)
             {

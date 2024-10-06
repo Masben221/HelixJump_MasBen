@@ -143,6 +143,7 @@ namespace HelixJump
             m_PassedPanel.SetActive(false);
             m_LossPanel.SetActive(false);
             m_PausePanel.SetActive(false);
+
             Time.timeScale = 0f;
         }
 

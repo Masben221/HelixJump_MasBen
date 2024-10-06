@@ -55,7 +55,7 @@ namespace HelixJump
         {
             animator.speed = 1;
             animator.SetBool("Fly", false);
-            //animator.SetBool("Death", false);
+            //animator.SetBool("Damage", false);
             animator.SetBool("Jump", true);            
             fallSpeed = fallSpeedDefault;            
         }
@@ -70,7 +70,7 @@ namespace HelixJump
         {
             animator.speed = 1;
             animator.SetBool("Jump", false);
-            //animator.SetBool("Death", false);
+            //animator.SetBool("Damage", false);
             animator.SetBool("Fly", true);
             fallSpeed = fallSpeedDefault;
         }
@@ -91,14 +91,15 @@ namespace HelixJump
             animator.SetTrigger("Death");
             animator.SetBool("Jump", false);
             animator.SetBool("Fly", false);
-
+            //animator.SetBool("Damage", false);
             Invoke(nameof(Stop), 1.5f);
         }
-        public void Damage()// добавить анимацию
+        public void Damage()
         {
-            animator.speed = 1;            
+            animator.speed = 1;
+            animator.SetTrigger("Damage");
+            fallSpeed = fallSpeedDefault;
         }
-
 
         public void Stop()
         {

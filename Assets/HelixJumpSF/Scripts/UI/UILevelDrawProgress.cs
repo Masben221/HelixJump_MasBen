@@ -25,7 +25,7 @@ namespace HelixJump
 
             fillAmountStep = 1 / levelGenerator.FloorAmount;
         }
-        protected override void OnBallCollisionSegment(SegmentType type)
+        protected override void OnBallCollisionSegment(SegmentType type, bool isKillZone)
         {
             if (type == SegmentType.Empty || type == SegmentType.Finish)
             {

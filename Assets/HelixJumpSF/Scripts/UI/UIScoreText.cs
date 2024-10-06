@@ -16,7 +16,7 @@ namespace HelixJump
         {
             maxScoreText.text = scoreCollector.MaxScore.ToString();
         }
-        protected override void OnBallCollisionSegment(SegmentType type)
+        protected override void OnBallCollisionSegment(SegmentType type, bool isKillZone)
         {
             if (type != SegmentType.Spike)
             {

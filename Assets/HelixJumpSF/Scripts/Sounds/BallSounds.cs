@@ -26,7 +26,7 @@ namespace HelixJump
                 player.OnDie += SoundDeath;                
             }
         }
-        protected override void OnBallCollisionSegment(SegmentType type)
+        protected override void OnBallCollisionSegment(SegmentType type, bool isKillZone)
         {
             if (type == SegmentType.Default)
             {
@@ -40,12 +40,12 @@ namespace HelixJump
                 m_FinishSound.Play();                
             } 
 
-            if (type == SegmentType.Spike)
+            if (type == SegmentType.Spike && isKillZone)
             {
                 m_SpikeSound.Play();                
             }
 
-            if (type == SegmentType.Piston)
+            if (type == SegmentType.Piston && isKillZone)
             {
                 m_PistonSound.Play();                
             }

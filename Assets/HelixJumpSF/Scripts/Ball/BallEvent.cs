@@ -17,7 +17,7 @@ namespace HelixJump
             m_BallController.CollisionSegment.RemoveListener(OnBallCollisionSegment);
         }
 
-        protected virtual void OnBallCollisionSegment(SegmentType type)
+        protected virtual void OnBallCollisionSegment(SegmentType type, bool isKillZone)
         { }
 
     }

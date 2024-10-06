@@ -9,22 +9,9 @@ namespace HelixJump
     {     
         [SerializeField] private BallMovement movement;
 
-        [HideInInspector] public UnityEvent<SegmentType> CollisionSegment;
-
-        private Collider m_CurrentKillZoneCollider;
-
-        private void Start()
-        {
-            if (movement == null) movement = GetComponent<BallMovement>();
-            if (Player.Instance != null)
-            {
-                var player = Player.Instance;
-
-                player.OnDie += DisableCollider;                
-            }
-        }
-
-        protected override void OnOneTriggerEnter(Collider other)
+        [HideInInspector] public UnityEvent<SegmentType, bool> CollisionSegment;
+        
+        protected override void OnOneTriggerEnter(Collider other, bool isKillZone)
         {
             Segment segment = other.GetComponent<Segment>();
 
@@ -68,7 +55,7 @@ namespace HelixJump
                     movement.Stop();
                 }
 
-                CollisionSegment.Invoke(segment.Type);
+                CollisionSegment.Invoke(segment.Type, isKillZone);
             }
 
             var killZone = other.GetComponent<KillZone>();
@@ -80,17 +67,11 @@ namespace HelixJump
                 if (Player.Instance != null)
                 {
                     var player = Player.Instance;
-                    player.ApplyDamage(killZone.Damage);
-                    m_CurrentKillZoneCollider = other;
+                    player.ApplyDamage(killZone.Damage);                    
                 }
             }
         }
-
-        private void DisableCollider()
-        {
-            //m_CurrentKillZoneCollider.gameObject.SetActive(false);
-        }
-
+       
         private void OnTriggerStay(Collider other)
         {
             Segment segment = other.GetComponent<Segment>();
