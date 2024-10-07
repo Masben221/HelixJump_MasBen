@@ -13,7 +13,7 @@ namespace HelixJump
 			if (col.GetComponentInParent<Player>() == true)
 			{
 				//col.GetComponentInParent<Player>().ApplyDamage(m_Damage);
-				Debug.Log("damage!");
+				//Debug.Log("damage!");
 			}
 		}
 

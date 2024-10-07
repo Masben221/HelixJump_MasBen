@@ -5,27 +5,28 @@ namespace HelixJump
 {
     public class UIShieldProgress : MonoBehaviour
     {
-        [SerializeField] private Image m_ShildProgressBar;        
-
-        private float m_FillAmountStep;
-        public float FillAmountStep { get => m_FillAmountStep; set => m_FillAmountStep = value; }
+        [SerializeField] private Text m_ShieldProgressText;        
+        [SerializeField] private GameObject m_Shield;        
 
         private void Start()
-        {
-            m_ShildProgressBar.fillAmount = 1;
-
+        {            
             var player = Player.Instance;
-
-            if (player != null)
+            
+            if (player != null )
             {
-                FillAmountStep = 1f / (float)player.Shild;
-                player.EventOnUpdateShild?.AddListener(UpdateShildProgress);
-            }
+                if (player.CurrentShield > 0) m_Shield.SetActive(true);
+                else m_Shield.SetActive(false);
+                m_ShieldProgressText.text = player.CurrentShield.ToString();
+                player.EventOnUpdateShield?.AddListener(UpdateShildProgress);
+            }            
         }
 
         public void UpdateShildProgress(float ShildCount)
         {
-            m_ShildProgressBar.fillAmount = ShildCount * m_FillAmountStep;            
+            var player = Player.Instance;
+            m_ShieldProgressText.text = player.CurrentShield.ToString();
+            if (player.CurrentShield > 0) m_Shield.SetActive(true);
+            else m_Shield.SetActive(false);
         } 
     }
 }

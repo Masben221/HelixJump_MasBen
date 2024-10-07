@@ -25,15 +25,12 @@ namespace HelixJump
             //Убирает шкалу прогресса если главное меню активно
             if (IsActivMainMenu == true)
             {
-                MainMenu();
+                MainMenu();               
             }
+
             else
             {
-                m_MainMenuPanel.SetActive(false);
-                m_LevelPanel.SetActive(true);
-                m_PassedPanel.SetActive(false);
-                m_LossPanel.SetActive(false);
-                m_PausePanel.SetActive(false);
+                LevelPanel();                
             }
 
             IsActivMainMenu = false;
@@ -77,13 +74,7 @@ namespace HelixJump
         public void Continue() //Продолжает игру и показывает рекламу
         {
             // показ рекламы
-
-            Time.timeScale = 1f;
-
-            m_MainMenuPanel.SetActive(false);
-            m_LevelPanel.SetActive(true);
-            m_PassedPanel.SetActive(false);
-            m_LossPanel.SetActive(false);
+            LevelPanel();           
 
             if (Player.Instance != null)
             {
@@ -98,10 +89,21 @@ namespace HelixJump
             //Invoke(nameof(StopTimeScale), 1.0f);
         }
         
+        public void LevelPanel()
+        {
+            Time.timeScale = 1f;
+
+            m_MainMenuPanel.SetActive(false);
+            m_LevelPanel.SetActive(true);
+            m_PassedPanel.SetActive(false);
+            m_LossPanel.SetActive(false);
+            m_PausePanel.SetActive(false);
+        }
+        
         public void PassedPanel()
         {
             m_PassedPanel.SetActive(true);            
-            Invoke(nameof(StopTimeScale), 1.5f);
+            Invoke(nameof(StopTimeScale), 5.0f);
         }
         
         private void StopTimeScale()
@@ -124,12 +126,21 @@ namespace HelixJump
         public void Pause()
         {
             if (m_MainMenuPanel.activeSelf) return;
-            
+            if (m_PassedPanel.activeSelf) return;
+            if (m_LossPanel.activeSelf) return;
+
+            if (Player.Instance != null)
+            {
+                var player = Player.Instance;
+                player.EventPause();
+            }
+
             if (m_PausePanel.activeSelf == false)
             {
                 Time.timeScale = 0;
                 m_PausePanel.SetActive(true);
             }
+
             else
             {
                 Time.timeScale = 1;

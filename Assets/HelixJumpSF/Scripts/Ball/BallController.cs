@@ -34,25 +34,11 @@ namespace HelixJump
                 if (segment.Type == SegmentType.Fan)
                 {
                     movement.Fly();
-                }
-
-                /*if (segment.Type == SegmentType.Spike || segment.Type == SegmentType.Piston)
-                {
-                    movement.Death();
-                    segment.GetComponent<MeshCollider>().enabled = false;
-                    var childs = segment.GetComponentsInChildren<BoxCollider>();
-                    if (childs != null)
-                    {
-                        for (int i = 0; i < childs.Length; i++)
-                        {
-                            childs[i].enabled = false;
-                        }
-                    }
-                }*/
+                }               
 
                 if (segment.Type == SegmentType.Finish)
                 {
-                    movement.Stop();
+                    //movement.Stop();
                 }
 
                 CollisionSegment.Invoke(segment.Type, isKillZone);

@@ -18,15 +18,7 @@ namespace HelixJump
         private float floorY;
         private void Awake()
         {
-            if (Player.Instance != null)
-            {
-                var player = Player.Instance;
-
-                player.OnDie += Death;
-                player.OnFinish += Stop;
-                player.OnStart += Jump;
-                player.OnDamage += Damage;
-            }
+            
         }
 
         private void Start()
@@ -60,6 +52,8 @@ namespace HelixJump
             {
                 transform.position = new Vector3(transform.position.x, floorY, transform.position.z);
                 enabled = false;
+                
+                animator.speed = 1;               
             }
         }
 
@@ -68,14 +62,13 @@ namespace HelixJump
             animator.speed = 1;
             animator.SetBool("Fly", false);            
             animator.SetBool("Jump", true);            
-            fallSpeed = fallSpeedDefault;
-            animator.speed = 1;
+            fallSpeed = fallSpeedDefault;            
         }
 
         public void Fall(float startFloorY)
         {
-            enabled = true;
             animator.speed = 0;
+            enabled = true;            
             floorY = startFloorY - fallHeight;
         }
         public void Fly()
@@ -83,8 +76,7 @@ namespace HelixJump
             animator.speed = 1;
             animator.SetBool("Jump", false);            
             animator.SetBool("Fly", true);
-            fallSpeed = fallSpeedDefault;
-            animator.speed = 1;
+            fallSpeed = fallSpeedDefault;            
         }
         public void FlyStop()
         {
@@ -109,8 +101,7 @@ namespace HelixJump
         {
             animator.speed = 1;
             animator.SetTrigger("Damage");
-            fallSpeed = fallSpeedDefault;
-            animator.speed = 1;
+            fallSpeed = fallSpeedDefault;           
         }
 
         public void Stop()

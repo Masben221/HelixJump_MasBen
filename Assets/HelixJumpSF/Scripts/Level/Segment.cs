@@ -30,7 +30,7 @@ namespace HelixJump
         [SerializeField] private GameObject m_PistonUp;
         [SerializeField] private GameObject m_Default;
 
-        public SegmentType Type => m_Type;
+        public SegmentType Type { get => m_Type; set => m_Type = value; }
 
         private MeshRenderer meshRender;
 

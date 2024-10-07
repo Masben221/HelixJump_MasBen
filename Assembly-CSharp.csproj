@@ -127,6 +127,7 @@
     <Compile Include="Assets\YandexGame\ScriptsYG\UnityToolbag-main\ConditionallyVisiblePropertyDrawer\Runtime\ConditionallyVisibleAttribute.cs" />
     <Compile Include="Assets\Sources\StandartPlayer\Characters\FirstPersonCharacter\Scripts\HeadBob.cs" />
     <Compile Include="Assets\Sources\StandartPlayer\Utility\AlphaButtonClickMask.cs" />
+    <Compile Include="Assets\HelixJumpSF\Scripts\Ball\SuperPowerTrigger.cs" />
     <Compile Include="Assets\YandexGame\Example\Scripts\SwitchSceneTest.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\ViewingAdsYG.cs" />
     <Compile Include="Assets\Sources\StandartPlayer\Characters\ThirdPersonCharacter\Scripts\ThirdPersonCharacter.cs" />

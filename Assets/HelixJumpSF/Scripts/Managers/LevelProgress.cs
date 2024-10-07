@@ -8,11 +8,13 @@ namespace HelixJump
         [SerializeField] private ScoreCollector scoreCollector;
         private int currentLevel = 1;
         public int CurrentLevel => currentLevel;
+        private bool m_IsFinish;
 
         protected override void Awake()
         {
             base.Awake();
             Load();
+            m_IsFinish = false;
         }
 
         //#if UNITY_EDITOR
@@ -39,9 +41,13 @@ namespace HelixJump
         {
             if (type == SegmentType.Finish)
             {
-                currentLevel++;
-                Save();
-                Player.Instance.KakaFinish();
+                if (m_IsFinish == false)
+                {
+                    currentLevel++;
+                    Save();
+                    Player.Instance.KakaFinish();
+                    m_IsFinish = true;
+                }                    
             }
         }
 

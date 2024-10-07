@@ -18,7 +18,8 @@ namespace HelixJump
 
                 player.OnStart += StartRotate;
                 player.OnFinish += StopRotate;
-                player.OnDie += StopRotate;                
+                player.OnDie += StopRotate;
+                player.OnPause += InversRotate;                
             }           
         }
         /*protected override void OnBallCollisionSegment(SegmentType type)
@@ -35,6 +36,10 @@ namespace HelixJump
         private void StopRotate()
         {
             InputRotator.enabled = false;
+        }
+        private void InversRotate()
+        {
+            InputRotator.enabled = !InputRotator.enabled;
         }
     }
 }

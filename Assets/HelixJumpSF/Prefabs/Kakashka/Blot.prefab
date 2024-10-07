@@ -230,6 +230,90 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8709996519378775096, guid: d43a844b316781443886add0dcd2b96b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8709996519378775096, guid: d43a844b316781443886add0dcd2b96b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8709996519378775096, guid: d43a844b316781443886add0dcd2b96b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8712808491859705594, guid: d43a844b316781443886add0dcd2b96b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8712841521498190868, guid: d43a844b316781443886add0dcd2b96b, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8713308214428189754, guid: d43a844b316781443886add0dcd2b96b, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8802993090858485572, guid: d43a844b316781443886add0dcd2b96b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 545c7a83cad13f54aa2dbb312ad322b6, type: 2}
+    - target: {fileID: 8804199024015511688, guid: d43a844b316781443886add0dcd2b96b, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804199024015511688, guid: d43a844b316781443886add0dcd2b96b, type: 3}
+      propertyPath: prewarm
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804199024015511688, guid: d43a844b316781443886add0dcd2b96b, type: 3}
+      propertyPath: lengthInSec
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804199024015511688, guid: d43a844b316781443886add0dcd2b96b, type: 3}
+      propertyPath: moveWithTransform
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804199024015511688, guid: d43a844b316781443886add0dcd2b96b, type: 3}
+      propertyPath: ShapeModule.enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804199024015511688, guid: d43a844b316781443886add0dcd2b96b, type: 3}
+      propertyPath: InitialModule.size3D
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804199024015511688, guid: d43a844b316781443886add0dcd2b96b, type: 3}
+      propertyPath: InitialModule.rotation3D
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804199024015511688, guid: d43a844b316781443886add0dcd2b96b, type: 3}
+      propertyPath: InitialModule.startSize.scalar
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804199024015511688, guid: d43a844b316781443886add0dcd2b96b, type: 3}
+      propertyPath: InitialModule.startSizeY.scalar
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804199024015511688, guid: d43a844b316781443886add0dcd2b96b, type: 3}
+      propertyPath: InitialModule.startSizeZ.scalar
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804199024015511688, guid: d43a844b316781443886add0dcd2b96b, type: 3}
+      propertyPath: InitialModule.startRotation.scalar
+      value: 1.5707963
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804199024015511688, guid: d43a844b316781443886add0dcd2b96b, type: 3}
+      propertyPath: InitialModule.startRotationY.scalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804199024015511688, guid: d43a844b316781443886add0dcd2b96b, type: 3}
+      propertyPath: InitialModule.gravityModifier.scalar
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8804199024015511688, guid: d43a844b316781443886add0dcd2b96b, type: 3}
+      propertyPath: InitialModule.startRotation.minScalar
+      value: 0.2617994
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

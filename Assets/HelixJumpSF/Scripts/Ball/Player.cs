@@ -31,14 +31,14 @@ namespace HelixJump
         /// <summary>
         /// Стартовое количество брони.
         /// </summary>
-        [SerializeField] private float m_Shild;
-        public float Shild { get => m_Shild; set => m_Shild = value; }
+        [SerializeField] private float m_Shield;
+        public float Shield { get => m_Shield; set => m_Shield = value; }
 
         /// <summary>
         /// Текущая броня.
         /// </summary>
         private float m_CurrentShild;
-        public float CurrentShild { get => m_CurrentShild; set => m_CurrentShild = value; }
+        public float CurrentShield { get => m_CurrentShild; set => m_CurrentShild = value; }
 
         /// <summary>
         /// Супер сила какашки.
@@ -59,7 +59,12 @@ namespace HelixJump
         /// <summary>
         /// Событиe старта после смерти.
         /// </summary>
-        public event Action OnStart;        
+        public event Action OnStart;  
+        
+        /// <summary>
+        /// Событиe старта после смерти.
+        /// </summary>
+        public event Action OnPause;        
         
         /// <summary>
         /// Событиe меню продолжения после смерти.
@@ -85,8 +90,8 @@ namespace HelixJump
         /// <summary>
         /// Событие обновления UI Armor.
         /// </summary>
-        [SerializeField] private UnityEvent<float> m_EventOnUpdateShild;
-        public UnityEvent<float> EventOnUpdateShild => m_EventOnUpdateShild;
+        [SerializeField] private UnityEvent<float> m_EventOnUpdateShield;
+        public UnityEvent<float> EventOnUpdateShield => m_EventOnUpdateShield;
         
         /// <summary>
         /// Событие обновления UI Armor.
@@ -152,10 +157,10 @@ namespace HelixJump
         public void KakaStart()
         {
             m_CurrentHitPoints = m_HitPoints;
-            m_CurrentShild = m_Shild;
-            m_SuperPower = 0;
+            m_CurrentShild = m_Shield;
+            //m_SuperPower = 0;
             EventOnUpdateHP?.Invoke(m_CurrentHitPoints);
-            EventOnUpdateShild?.Invoke(m_CurrentShild);
+            EventOnUpdateShield?.Invoke(m_CurrentShild);
             EventOnUpdateSuperPower?.Invoke(m_SuperPower);
             
             OnStart?.Invoke();
@@ -165,9 +170,28 @@ namespace HelixJump
         {
             m_Indestructible = false;
         }
+        public void EventPause()
+        {
+           OnPause?.Invoke();
+        }
         public void KakaFinish()
         {            
             OnFinish?.Invoke();           
+        }
+        public void AddShield(float shield)
+        {
+            m_CurrentShild = Mathf.Clamp(m_CurrentShild + shield, 0, m_Shield);
+            m_EventOnUpdateShield?.Invoke(m_CurrentShild);
+        }
+        public void AddHP(float hp)
+        {
+            CurrentHitPoint = Mathf.Clamp(CurrentHitPoint + hp, 0, HitPoints);
+            EventOnUpdateHP?.Invoke(m_CurrentHitPoints);
+        }
+        public void AddSuperPower(int sup)
+        {
+            SuperPower += sup;
+            EventOnUpdateSuperPower?.Invoke(m_SuperPower);  
         }
 
         /// <summary>
@@ -184,11 +208,11 @@ namespace HelixJump
             {
                 m_CurrentShild = 0;
                 m_CurrentHitPoints -= damage - m_CurrentShild;
+                OnDamage?.Invoke();
             }
 
             EventOnUpdateHP?.Invoke(m_CurrentHitPoints);
-            EventOnUpdateShild?.Invoke(m_CurrentShild);
-            OnDamage?.Invoke();
+            EventOnUpdateShield?.Invoke(m_CurrentShild);            
 
             if (m_CurrentHitPoints <= 0)
             {
@@ -248,11 +272,13 @@ namespace HelixJump
             if (m_SuperPower > 0)
             {
                 m_SuperPowerParticle.SetActive(true);
+                m_Indestructible = true;
             }
 
             else
             {
-                m_SuperPowerParticle.SetActive(false);            
+                m_SuperPowerParticle.SetActive(false);
+                m_Indestructible = false;
             }
         }
 

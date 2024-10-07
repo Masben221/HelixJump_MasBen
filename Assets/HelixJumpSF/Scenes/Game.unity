@@ -1099,6 +1099,10 @@ PrefabInstance:
       propertyPath: simulationSpeed
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8804236559545593052, guid: d43a844b316781443886add0dcd2b96b, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1124,18 +1128,6 @@ PrefabInstance:
       propertyPath: m_LivesUI
       value: 
       objectReference: {fileID: 1229018681}
-    - target: {fileID: 5172955138726162585, guid: 7bd49cbab6722c942b2e17e318a1ce19, type: 3}
-      propertyPath: m_MaxLives
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172955138726162585, guid: 7bd49cbab6722c942b2e17e318a1ce19, type: 3}
-      propertyPath: m_HitPoints
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 5172955138726162585, guid: 7bd49cbab6722c942b2e17e318a1ce19, type: 3}
-      propertyPath: m_Indestructible
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6779023948604643137, guid: 7bd49cbab6722c942b2e17e318a1ce19, type: 3}
       propertyPath: m_Name
       value: Kakashka
@@ -1373,6 +1365,14 @@ PrefabInstance:
       propertyPath: m_BallController
       value: 
       objectReference: {fileID: 366762499}
+    - target: {fileID: 2795369124159467491, guid: 3a547cd0f306925479577f732d14dd04, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2795369124159467491, guid: 3a547cd0f306925479577f732d14dd04, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
