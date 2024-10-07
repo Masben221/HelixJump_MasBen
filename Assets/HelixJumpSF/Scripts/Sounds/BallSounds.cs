@@ -13,6 +13,8 @@ namespace HelixJump
         [SerializeField] private Sound m_JumpSound = Sound.Jump;
         [SerializeField] private Sound m_FlySound = Sound.Fly;
         [SerializeField] private Sound m_DieSound = Sound.Die;
+        [SerializeField] private Sound m_DamageSound = Sound.Damage;
+
         protected override void Awake()
         {
             base.Awake();
@@ -24,6 +26,7 @@ namespace HelixJump
                 var player = Player.Instance;
 
                 player.OnDie += SoundDeath;                
+                player.OnDamage += SoundDamage;                
             }
         }
         protected override void OnBallCollisionSegment(SegmentType type, bool isKillZone)
@@ -61,6 +64,7 @@ namespace HelixJump
             }            
         } 
         private void SoundDeath () { m_DieSound.Play(); }
+        private void SoundDamage() { m_DamageSound.Play(); }
     }
 }
 

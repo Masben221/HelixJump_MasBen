@@ -160,6 +160,7 @@ namespace HelixJump
         {
             Time.timeScale = 1f;
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            Time.timeScale = 1f;
         }
 
         public void LoadLevel(int buildIndex)

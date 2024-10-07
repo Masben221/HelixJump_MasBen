@@ -16,6 +16,18 @@ namespace HelixJump
 
         private float fallSpeed;
         private float floorY;
+        private void Awake()
+        {
+            if (Player.Instance != null)
+            {
+                var player = Player.Instance;
+
+                player.OnDie += Death;
+                player.OnFinish += Stop;
+                player.OnStart += Jump;
+                player.OnDamage += Damage;
+            }
+        }
 
         private void Start()
         {
@@ -54,10 +66,10 @@ namespace HelixJump
         public void Jump()
         {
             animator.speed = 1;
-            animator.SetBool("Fly", false);
-            //animator.SetBool("Damage", false);
+            animator.SetBool("Fly", false);            
             animator.SetBool("Jump", true);            
-            fallSpeed = fallSpeedDefault;            
+            fallSpeed = fallSpeedDefault;
+            animator.speed = 1;
         }
 
         public void Fall(float startFloorY)
@@ -69,10 +81,10 @@ namespace HelixJump
         public void Fly()
         {
             animator.speed = 1;
-            animator.SetBool("Jump", false);
-            //animator.SetBool("Damage", false);
+            animator.SetBool("Jump", false);            
             animator.SetBool("Fly", true);
             fallSpeed = fallSpeedDefault;
+            animator.speed = 1;
         }
         public void FlyStop()
         {
@@ -90,15 +102,15 @@ namespace HelixJump
             animator.speed = 1;
             animator.SetTrigger("Death");
             animator.SetBool("Jump", false);
-            animator.SetBool("Fly", false);
-            //animator.SetBool("Damage", false);
-            Invoke(nameof(Stop), 1.5f);
+            animator.SetBool("Fly", false);            
+            Invoke(nameof(Stop), 1.0f);
         }
         public void Damage()
         {
             animator.speed = 1;
             animator.SetTrigger("Damage");
             fallSpeed = fallSpeedDefault;
+            animator.speed = 1;
         }
 
         public void Stop()

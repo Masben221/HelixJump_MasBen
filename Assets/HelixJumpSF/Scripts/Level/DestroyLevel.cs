@@ -14,21 +14,24 @@ namespace HelixJump
         {
             if (type == SegmentType.Empty)
             {
+                for (int i = 0; i < ballTrail.Blots.Count; i++)
+                {
+                    ballTrail.Blots[i].gameObject.SetActive(false);                    
+                }
+
                 Destroy(levelGenerator.Floors[levelGenerator.Floors.Count - 1].gameObject);
                 levelGenerator.Floors.Remove(levelGenerator.Floors[levelGenerator.Floors.Count - 1]);
 
                 Destroy(levelGenerator.DestroyFloors[levelGenerator.DestroyFloors.Count - 1].gameObject, 1.0f);
                 levelGenerator.DestroyFloors[levelGenerator.DestroyFloors.Count - 1].gameObject.SetActive(true);
-                levelGenerator.DestroyFloors.Remove(levelGenerator.DestroyFloors[levelGenerator.DestroyFloors.Count - 1]);                
-
-                if (type != SegmentType.Default && type != SegmentType.Spike)// тупое условие
+                levelGenerator.DestroyFloors.Remove(levelGenerator.DestroyFloors[levelGenerator.DestroyFloors.Count - 1]);
+               
+                for (int i = 0; i < ballTrail.Blots.Count; i++)
                 {
-                    for (int i = 0; i < ballTrail.Blots.Count; i++)
-                    {
-                        ballTrail.Blots[i].gameObject.SetActive(false);
-                        //Destroy(ballTrail.Blots[i].gameObject);
-                    }
-                }
+                    ballTrail.Blots[i].gameObject.SetActive(false);
+                    Destroy(ballTrail.Blots[i].gameObject);
+                    ballTrail.Blots.RemoveAt(i);                    
+                }   
             }
         }
     }

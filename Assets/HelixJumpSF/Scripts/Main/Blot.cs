@@ -14,6 +14,13 @@ namespace HelixJump
             transform.eulerAngles = new Vector3(0, Random.Range(0, 360), 0);
 
             spriteRenderer.color = color;
+
+            var particles = GetComponentsInChildren<ParticleSystem>();
+            for (int i = 0; i < particles.Length; i++)
+            {
+                ParticleSystem.MainModule main = particles[i].main;
+                main.startColor = color;
+            }
         }
     }
 }
