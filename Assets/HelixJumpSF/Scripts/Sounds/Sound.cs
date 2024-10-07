@@ -22,7 +22,9 @@ namespace HelixJump
         FirePickup = 14,
         FireDestroy = 15,
         Shield = 16,
-        Damage = 17
+        Damage = 17,
+        SuperPower = 18
+        
     }
 
     public static class SoundExtensions

@@ -52,7 +52,7 @@ namespace HelixJump
         public float CurrentDamage;
 
         /// <summary>
-        /// Событиe смерти объекта.
+        /// Событиe смерти.
         /// </summary>
         public event Action OnDie;       
 
@@ -62,14 +62,19 @@ namespace HelixJump
         public event Action OnStart;  
         
         /// <summary>
-        /// Событиe старта после смерти.
+        /// Событиe паузы.
         /// </summary>
         public event Action OnPause;        
         
         /// <summary>
-        /// Событиe меню продолжения после смерти.
+        /// Событиe использования суперсилы.
         /// </summary>
-        public event Action OnContinueMenu;        
+        public event Action OnSuperPower;        
+        
+        /// <summary>
+        /// Событиe использования щита.
+        /// </summary>
+        public event Action OnShield;        
         
         /// <summary>
         /// Событиe проигрыша.
@@ -135,14 +140,7 @@ namespace HelixJump
             m_NumLives = m_MaxLives;
             m_LivesUI.Setup(m_NumLives);
             KakaStart();
-        }
-
-        private void Start()
-        {
-            
-            
-            
-        }
+        }       
 
         private void Update()
         {
@@ -173,11 +171,16 @@ namespace HelixJump
         public void EventPause()
         {
            OnPause?.Invoke();
+        } 
+        public void EventSuperPower()
+        {
+            OnSuperPower?.Invoke();
         }
-        public void KakaFinish()
+        public void EventFinish()
         {            
             OnFinish?.Invoke();           
         }
+
         public void AddShield(float shield)
         {
             m_CurrentShild = Mathf.Clamp(m_CurrentShild + shield, 0, m_Shield);
@@ -203,7 +206,11 @@ namespace HelixJump
         {
             if (m_Indestructible) return;
 
-            if (damage <= m_CurrentShild) m_CurrentShild -= damage;
+            if (damage <= m_CurrentShild) 
+            { 
+                m_CurrentShild -= damage;
+                OnShield?.Invoke();
+            }
             else if (damage > m_CurrentShild)
             {
                 m_CurrentShild = 0;
@@ -246,7 +253,7 @@ namespace HelixJump
 
             if (m_NumLives > 0)
             {
-                OnContinueMenu?.Invoke();
+                
             }
             else
             {

@@ -1128,6 +1128,10 @@ PrefabInstance:
       propertyPath: m_LivesUI
       value: 
       objectReference: {fileID: 1229018681}
+    - target: {fileID: 5172955138726162585, guid: 7bd49cbab6722c942b2e17e318a1ce19, type: 3}
+      propertyPath: m_SuperPower
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6779023948604643137, guid: 7bd49cbab6722c942b2e17e318a1ce19, type: 3}
       propertyPath: m_Name
       value: Kakashka

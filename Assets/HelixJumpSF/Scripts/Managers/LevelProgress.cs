@@ -45,7 +45,7 @@ namespace HelixJump
                 {
                     currentLevel++;
                     Save();
-                    Player.Instance.KakaFinish();
+                    Player.Instance.EventFinish();
                     m_IsFinish = true;
                 }                    
             }
