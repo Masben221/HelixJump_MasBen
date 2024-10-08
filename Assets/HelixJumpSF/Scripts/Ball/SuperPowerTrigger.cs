@@ -15,7 +15,12 @@ namespace HelixJump
                 {
                     segment.Type = SegmentType.Empty;
                     Player.Instance.AddSuperPower(-1);
-                }                
+                    Player.Instance.EventSuperPower();
+                }
+                if (segment.Type == SegmentType.Finish)
+                {
+                    Player.Instance.AddSuperPower(-100);
+                }
             }           
         }       
     }

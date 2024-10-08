@@ -103,6 +103,12 @@ namespace HelixJump
         /// </summary>
         [SerializeField] private UnityEvent<int> m_EventOnUpdateSuperPower;
         public UnityEvent<int> EventOnUpdateSuperPower => m_EventOnUpdateSuperPower;
+        
+        /// <summary>
+        /// Событие обновления UI жизней.
+        /// </summary>
+        [SerializeField] private UnityEvent<int> m_EventOnUpdateNumLives;
+        public UnityEvent<int> EventOnUpdateNumLives => m_EventOnUpdateNumLives;
 
         /// <summary>
         /// Событие повреждения.
@@ -193,8 +199,13 @@ namespace HelixJump
         }
         public void AddSuperPower(int sup)
         {
-            SuperPower += sup;
+            SuperPower = Mathf.Clamp(SuperPower + sup, 0, SuperPower);            
             EventOnUpdateSuperPower?.Invoke(m_SuperPower);  
+        }
+         public void AddLifes(int life)
+        {
+            m_NumLives = Mathf.Clamp(m_NumLives + life, 0, m_MaxLives);
+            EventOnUpdateNumLives?.Invoke(m_NumLives);  
         }
 
         /// <summary>
@@ -247,9 +258,7 @@ namespace HelixJump
 
             OnDie?.Invoke();
 
-            m_NumLives--;
-
-            m_LivesUI.UpdateLivesUI(m_NumLives);
+            AddLifes(-1);
 
             if (m_NumLives > 0)
             {

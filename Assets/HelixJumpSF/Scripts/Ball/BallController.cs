@@ -38,7 +38,7 @@ namespace HelixJump
 
                 if (segment.Type == SegmentType.Finish)
                 {
-                    //movement.Stop();
+                    movement.Stop();
                 }
 
                 CollisionSegment.Invoke(segment.Type, isKillZone);

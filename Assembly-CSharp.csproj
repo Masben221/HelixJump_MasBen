@@ -68,6 +68,7 @@
     <Compile Include="Assets\Sources\StandartPlayer\Utility\SimpleActivatorMenu.cs" />
     <Compile Include="Assets\Sources\StandartPlayer\CrossPlatformInput\Scripts\TiltInput.cs" />
     <Compile Include="Assets\HelixJumpSF\Scripts\Main\Rotator.cs" />
+    <Compile Include="Assets\HelixJumpSF\Scripts\Main\ImpactEffect.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Language\LangYGAdditionalText.cs" />
     <Compile Include="Assets\Sources\StandartPlayer\Utility\FPSCounter.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\ForVisualScriptYG.cs" />
@@ -136,8 +137,10 @@
     <Compile Include="Assets\HelixJumpSF\Scripts\Main\MonoSingleton.cs" />
     <Compile Include="Assets\HelixJumpSF\Scripts\Ball\BallTrail.cs" />
     <Compile Include="Assets\Sources\StandartPlayer\CrossPlatformInput\Scripts\PlatformSpecific\StandaloneInput.cs" />
+    <Compile Include="Assets\HelixJumpSF\Scripts\Bonus\Powerup.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\GraphicSettingsYG.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\LocalStorage\LocalStorage_yg.cs" />
+    <Compile Include="Assets\KY_effects\Script\Lighting.cs" />
     <Compile Include="Assets\YandexGame\Example\Scripts\InitExample.cs" />
     <Compile Include="Assets\Sources\StandartPlayer\Utility\LerpControlledBob.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Initialization\InitYGAttribute.cs" />
@@ -165,6 +168,7 @@
     <Compile Include="Assets\YandexGame\ScriptsYG\Inside\CallingAnEvent.cs" />
     <Compile Include="Assets\Sources\StandartPlayer\CrossPlatformInput\Scripts\CrossPlatformInputManager.cs" />
     <Compile Include="Assets\YandexGame\Example\Scripts\YandexMetricaExample.cs" />
+    <Compile Include="Assets\HelixJumpSF\Scripts\Bonus\PowerupStats.cs" />
     <Compile Include="Assets\UnityTechnologies\ParticlePack\Shared\Ramps\Runtime\RampAsset.cs" />
     <Compile Include="Assets\HelixJumpSF\Scripts\Ball\BallMovement.cs" />
     <Compile Include="Assets\HelixJumpSF\Scripts\Managers\CseneSetup.cs" />
@@ -185,6 +189,7 @@
     <Compile Include="Assets\Sources\StandartPlayer\Utility\FollowTarget.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Leaderboards\InternalScripts\UtilsLB.cs" />
     <Compile Include="Assets\UnityTechnologies\ParticlePack\EffectExamples\Misc Effects\Scripts\SpawnEffect.cs" />
+    <Compile Include="Assets\KY_effects\Script\ConGUI.cs" />
     <Compile Include="Assets\Sources\StandartPlayer\Utility\ForcedReset.cs" />
     <Compile Include="Assets\Sources\StandartPlayer\Utility\WaypointCircuit.cs" />
     <Compile Include="Assets\HelixJumpSF\Scripts\UI\DamageStats.cs" />
@@ -213,6 +218,7 @@
     <None Include="Assets\UnityTechnologies\ParticlePack\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\UnityTechnologies\ParticlePack\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\UnityTechnologies\ParticlePack\EffectExamples\Misc Effects\Prefabs\Readme_Dissolve_Respawn_.txt" />
+    <None Include="Assets\KY_effects\MagicEffectsPackFree\ReadMe.txt" />
     <None Include="Assets\UnityTechnologies\ParticlePack\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
     <None Include="Assets\WebGLTemplates\Notices.txt" />
     <None Include="Assets\UnityTechnologies\ParticlePack\EffectExamples\Magic Effects\Shaders\Ice.shader" />

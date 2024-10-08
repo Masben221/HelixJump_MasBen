@@ -19,6 +19,7 @@ namespace HelixJump
             }
 
             UpdateLivesUI(maxLives);
+            Player.Instance.EventOnUpdateNumLives?.AddListener(UpdateLivesUI);
         }
 
         public void UpdateLivesUI(int lives)
