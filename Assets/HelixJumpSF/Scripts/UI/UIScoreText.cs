@@ -18,7 +18,7 @@ namespace HelixJump
         }
         protected override void OnBallCollisionSegment(SegmentType type, bool isKillZone)
         {
-            if (type != SegmentType.Spike)
+            if (type != SegmentType.Trap)
             {
                 scoreText.text = scoreCollector.Scores.ToString();
             }

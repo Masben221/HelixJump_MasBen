@@ -19,7 +19,7 @@ namespace HelixJump
       
         protected override void OnBallCollisionSegment(SegmentType type, bool isKillZone)
         {
-            if ((type == SegmentType.Default || type == SegmentType.Spike || type == SegmentType.Piston) && isKillZone == false)
+            if ((type == SegmentType.Default || type == SegmentType.Trap || type == SegmentType.Bonus) && isKillZone == false)
             {
                 Blot blot = Instantiate(blotPrefab, parentTransform);
                 blot.Init(new Vector3(visualMeshRenderer.transform.position.x, transform.position.y, visualMeshRenderer.transform.position.z), visualMeshRenderer.material.color);

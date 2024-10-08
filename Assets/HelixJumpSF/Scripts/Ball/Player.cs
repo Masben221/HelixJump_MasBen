@@ -31,13 +31,13 @@ namespace HelixJump
         /// <summary>
         /// Стартовое количество брони.
         /// </summary>
-        [SerializeField] private float m_Shield;
-        public float Shield { get => m_Shield; set => m_Shield = value; }
+        [SerializeField] private float m_MaxShield;
+        public float MaxShield { get => m_MaxShield; set => m_MaxShield = value; }
 
         /// <summary>
         /// Текущая броня.
         /// </summary>
-        private float m_CurrentShild;
+        [SerializeField] private float m_CurrentShild;
         public float CurrentShield { get => m_CurrentShild; set => m_CurrentShild = value; }
 
         /// <summary>
@@ -45,6 +45,12 @@ namespace HelixJump
         /// </summary>
         [SerializeField] private int m_SuperPower;
         public int SuperPower { get => m_SuperPower; set => m_SuperPower = value; }
+        
+        /// <summary>
+        /// Максимальная супер сила какашки.
+        /// </summary>
+        [SerializeField] private int m_MaxSuperPower;
+        public int MaxSuperPower { get => m_MaxSuperPower; set => m_MaxSuperPower = value; }
 
         /// <summary>
         /// Текущий дамаг.
@@ -161,8 +167,8 @@ namespace HelixJump
         public void KakaStart()
         {
             m_CurrentHitPoints = m_HitPoints;
-            m_CurrentShild = m_Shield;
-            //m_SuperPower = 0;
+            //m_CurrentShild = m_Shield;
+            
             EventOnUpdateHP?.Invoke(m_CurrentHitPoints);
             EventOnUpdateShield?.Invoke(m_CurrentShild);
             EventOnUpdateSuperPower?.Invoke(m_SuperPower);
@@ -189,17 +195,17 @@ namespace HelixJump
 
         public void AddShield(float shield)
         {
-            m_CurrentShild = Mathf.Clamp(m_CurrentShild + shield, 0, m_Shield);
+            m_CurrentShild = Mathf.Clamp(m_CurrentShild + shield, 0, m_MaxShield);
             m_EventOnUpdateShield?.Invoke(m_CurrentShild);
         }
         public void AddHP(float hp)
         {
-            CurrentHitPoint = Mathf.Clamp(CurrentHitPoint + hp, 0, HitPoints);
+            CurrentHitPoint = Mathf.Clamp(CurrentHitPoint + hp, 0, m_HitPoints);
             EventOnUpdateHP?.Invoke(m_CurrentHitPoints);
         }
         public void AddSuperPower(int sup)
         {
-            SuperPower = Mathf.Clamp(SuperPower + sup, 0, SuperPower);            
+            SuperPower = Mathf.Clamp(SuperPower + sup, 0, m_MaxSuperPower);            
             EventOnUpdateSuperPower?.Invoke(m_SuperPower);  
         }
          public void AddLifes(int life)

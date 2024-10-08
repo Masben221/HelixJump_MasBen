@@ -1496,6 +1496,14 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4617534608097943740, guid: 19e841138d9b00c46bb5efb77fae9e38, type: 3}
+      propertyPath: maxBonusSegment
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617534608097943740, guid: 19e841138d9b00c46bb5efb77fae9e38, type: 3}
+      propertyPath: minBonusSegment
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4617534608097943740, guid: 19e841138d9b00c46bb5efb77fae9e38, type: 3}
       propertyPath: defaultFloorAmount
       value: 3
       objectReference: {fileID: 0}

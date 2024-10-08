@@ -47,12 +47,12 @@ namespace HelixJump
                 m_FinishSound.Play();                
             } 
 
-            if (type == SegmentType.Spike && isKillZone)
+            if (type == SegmentType.Trap && isKillZone)
             {
                 m_SpikeSound.Play();                
             }
 
-            if (type == SegmentType.Piston && isKillZone)
+            if (type == SegmentType.Bonus && isKillZone)
             {
                 m_PistonSound.Play();                
             }

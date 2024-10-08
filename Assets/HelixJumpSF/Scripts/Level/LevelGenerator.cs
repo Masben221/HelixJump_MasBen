@@ -21,6 +21,8 @@ namespace HelixJump
         [SerializeField] private int emptySegmentAmount;
         [SerializeField] private int minTrapSegment;
         [SerializeField] private int maxTrapSegment;
+        [SerializeField] private int minBonusSegment;
+        [SerializeField] private int maxBonusSegment;
 
         private float floorAmount = 0;
         public float FloorAmount => floorAmount;
@@ -59,7 +61,7 @@ namespace HelixJump
                     floor.SetRandomRotation();
                     floor.AddEmptySegment(emptySegmentAmount);
                     floor.AddRandomTrapSegment(Random.Range(minTrapSegment, maxTrapSegment + 1));
-                    //floor.AddDefaultSegment();
+                    floor.AddRandomBonusSegment(Random.Range(minBonusSegment, maxBonusSegment + 1));                    
                 }
 
                 if (i == floorAmount - 1)

@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace HelixJump
 {
@@ -14,9 +15,20 @@ namespace HelixJump
     {
         [SerializeField] private EffectType m_EffectType;
         public EffectType EffectType => m_EffectType;
-
-        [SerializeField] private float m_Value;
         
+        [SerializeField] private int m_MinValue;
+        [SerializeField] private int m_MaxValue;
+        
+        private float m_Value;
+
+        [SerializeField] private Text m_ValueText;
+
+
+        private void Start()
+        {
+            m_Value = Random.Range(m_MinValue, m_MaxValue);
+            m_ValueText.text = m_Value.ToString();
+        }
         //ƒобавл€ет бонусы в зависимоти от их типа.
         protected override void OnPickedUp(Player player)
         {

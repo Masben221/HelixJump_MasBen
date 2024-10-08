@@ -11,7 +11,7 @@ namespace HelixJump
 
             if (segment != null)
             {
-                if (segment.Type == SegmentType.Piston || segment.Type == SegmentType.Default || segment.Type == SegmentType.Fan || segment.Type == SegmentType.Spike)
+                if (segment.Type == SegmentType.Bonus || segment.Type == SegmentType.Default || segment.Type == SegmentType.Fan || segment.Type == SegmentType.Trap)
                 {
                     segment.Type = SegmentType.Empty;
                     Player.Instance.AddSuperPower(-1);

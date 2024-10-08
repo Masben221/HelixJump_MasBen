@@ -12,8 +12,10 @@ namespace HelixJump
         [SerializeField] private ImpactEffect m_ImpactEffectPrefab;
 
         private void OnTriggerEnter(Collider collision)
-        {            
-            if (collision.TryGetComponent(out Player player))
+        {
+            var player = collision.GetComponentInParent<Player>();
+
+            if (player != null)
             {
                 OnPickedUp(player);
                 if (m_ImpactEffectPrefab != null) Instantiate(m_ImpactEffectPrefab, transform.position, Quaternion.identity);

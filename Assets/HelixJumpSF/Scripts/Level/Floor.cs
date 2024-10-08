@@ -26,11 +26,24 @@ namespace HelixJump
             for (int i = 0; i < amount; i++)
             {
                 int index = Random.Range(0, defaultSegments.Count);
-                int typeTrap = Random.Range(0, 3);
-                if (typeTrap == 0) defaultSegments[index].SetSpike();
-                if (typeTrap == 1) defaultSegments[index].SetPiston();
-                if (typeTrap == 2) defaultSegments[index].SetFan();
+                int typeTrap = Random.Range(0, 4);
+                if (typeTrap == 0) defaultSegments[index].SetFan();
+                if (typeTrap > 0) defaultSegments[index].SetTrap();
+                
                 defaultSegments.RemoveAt(index);
+            }
+        }
+        public void AddRandomBonusSegment(int amount)
+        {
+            for (int i = 0; i < amount; i++)
+            {
+                int index = Random.Range(0, defaultSegments.Count);
+                int bonus = Random.Range(0, 100);
+                if (bonus == 0)
+                {
+                    defaultSegments[index].SetBonus();
+                    defaultSegments.RemoveAt(index);
+                }
             }
         }
 
