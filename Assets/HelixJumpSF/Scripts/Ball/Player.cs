@@ -85,7 +85,7 @@ namespace HelixJump
         /// <summary>
         /// Событиe проигрыша.
         /// </summary>
-        public event Action OnLose;
+        //public event Action OnLose;
         
         /// <summary>
         /// Событиe выигрыша.
@@ -174,7 +174,7 @@ namespace HelixJump
             EventOnUpdateSuperPower?.Invoke(m_SuperPower);
             
             OnStart?.Invoke();
-            Invoke(nameof(SetIndestructible), 2.0f);
+            Invoke(nameof(SetIndestructible), 3.0f);
         }
         private void SetIndestructible()
         {
@@ -187,6 +187,7 @@ namespace HelixJump
         public void EventSuperPower()
         {
             OnSuperPower?.Invoke();
+            m_Indestructible = true;
         }
         public void EventFinish()
         {            
@@ -197,6 +198,7 @@ namespace HelixJump
         {
             m_CurrentShild = Mathf.Clamp(m_CurrentShild + shield, 0, m_MaxShield);
             m_EventOnUpdateShield?.Invoke(m_CurrentShild);
+
         }
         public void AddHP(float hp)
         {
@@ -206,7 +208,8 @@ namespace HelixJump
         public void AddSuperPower(int sup)
         {
             SuperPower = Mathf.Clamp(SuperPower + sup, 0, m_MaxSuperPower);            
-            EventOnUpdateSuperPower?.Invoke(m_SuperPower);  
+            EventOnUpdateSuperPower?.Invoke(m_SuperPower);
+            if (m_SuperPower <= 0) SetIndestructible();
         }
          public void AddLifes(int life)
         {
@@ -225,21 +228,21 @@ namespace HelixJump
 
             if (damage <= m_CurrentShild) 
             { 
-                m_CurrentShild -= damage;
+                AddShield (-damage);
                 OnShield?.Invoke();
             }
             else if (damage > m_CurrentShild)
-            {
-                m_CurrentShild = 0;
-                m_CurrentHitPoints -= damage - m_CurrentShild;
+            {                
+                AddHP(- damage + m_CurrentShild);
                 OnDamage?.Invoke();
             }
 
-            EventOnUpdateHP?.Invoke(m_CurrentHitPoints);
-            EventOnUpdateShield?.Invoke(m_CurrentShild);            
+            //EventOnUpdateHP?.Invoke(m_CurrentHitPoints);
+            //EventOnUpdateShield?.Invoke(m_CurrentShild);            
 
             if (m_CurrentHitPoints <= 0)
             {
+                m_Indestructible = true;
                 OnDeath();
                 return; // чтобы 0 не показывало
             }
@@ -256,24 +259,13 @@ namespace HelixJump
         /// </summary>
         public void OnDeath()
         {
-            if (m_ImpactEffect != null) Instantiate(m_ImpactEffect, transform.position, Quaternion.identity);
+            if (m_ImpactEffect != null) Instantiate(m_ImpactEffect, transform.position, Quaternion.identity);                        
 
-            m_Indestructible = true;
-
-            var pos = gameObject.transform.position;
+            //var pos = gameObject.transform.position;
 
             OnDie?.Invoke();
 
-            AddLifes(-1);
-
-            if (m_NumLives > 0)
-            {
-                
-            }
-            else
-            {
-                OnLose?.Invoke();
-            }
+            AddLifes(-1);            
         }
 
         private void ActionShield()
@@ -293,14 +285,12 @@ namespace HelixJump
         {
             if (m_SuperPower > 0)
             {
-                m_SuperPowerParticle.SetActive(true);
-                m_Indestructible = true;
+                m_SuperPowerParticle.SetActive(true);                
             }
 
             else
             {
-                m_SuperPowerParticle.SetActive(false);
-                m_Indestructible = false;
+                m_SuperPowerParticle.SetActive(false);                
             }
         }
 

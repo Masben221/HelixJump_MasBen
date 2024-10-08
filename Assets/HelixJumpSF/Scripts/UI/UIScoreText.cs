@@ -14,20 +14,29 @@ namespace HelixJump
         }
         private void Start()
         {
-            maxScoreText.text = scoreCollector.MaxScore.ToString();
+            if (Player.Instance != null)
+            {
+                var player = Player.Instance;
+
+                player.OnDie += UpdateUIScore;
+                player.OnFinish += UpdateUIScore;
+                player.OnStart += UpdateUIScore;
+                player.OnDamage += UpdateUIScore;
+            }
         }
         protected override void OnBallCollisionSegment(SegmentType type, bool isKillZone)
         {
-            if (type != SegmentType.Trap)
+            if (type != SegmentType.Trap || type == SegmentType.Finish || type == SegmentType.Empty)
             {
-                scoreText.text = scoreCollector.Scores.ToString();
-            }
-            if (type == SegmentType.Finish)
-            {
-                maxScoreText.text = scoreCollector.MaxScore.ToString();
-            }
+                UpdateUIScore();
+            }           
+        }
 
-        }        
+        private void UpdateUIScore()
+        {
+            scoreText.text = scoreCollector.Scores.ToString();
+            maxScoreText.text = scoreCollector.MaxScore.ToString();
+        }
     }
 
 }

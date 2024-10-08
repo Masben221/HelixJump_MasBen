@@ -10,6 +10,7 @@ namespace HelixJump
         {            
             if (Player.Instance != null && m_BallController == null) m_BallController = Player.Instance.BallController;
             m_BallController.CollisionSegment.AddListener(OnBallCollisionSegment);
+            m_BallController.OnFly += OnBallFlying;
         }
 
         private void OnDestroy()
@@ -19,7 +20,8 @@ namespace HelixJump
 
         protected virtual void OnBallCollisionSegment(SegmentType type, bool isKillZone)
         { }
-
+        protected virtual void OnBallFlying()
+        { }
     }
 }
 

@@ -2785,7 +2785,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u042D\u0442\u043E \u0443\u0441\u043F\u0435\u0445!"
+  m_Text: "\u042D\u0442\u043E \u0443\u043F\u043E\u0438\u0442\u0435\u043B\u044C\u043D\u043E!"
 --- !u!114 &5271620291847778545
 MonoBehaviour:
   m_ObjectHideFlags: 0

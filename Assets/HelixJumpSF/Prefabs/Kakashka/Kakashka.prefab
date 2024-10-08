@@ -5869,6 +5869,14 @@ PrefabInstance:
       propertyPath: m_Radius
       value: 0.13
       objectReference: {fileID: 0}
+    - target: {fileID: 3817923662833698650, guid: eceb998d8490289408ff2d3fbf9d0a4d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6899132287376838905, guid: eceb998d8490289408ff2d3fbf9d0a4d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7468169674569743043, guid: eceb998d8490289408ff2d3fbf9d0a4d, type: 3}
       propertyPath: m_Name
       value: Kaka

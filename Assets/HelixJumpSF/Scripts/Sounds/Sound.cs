@@ -19,12 +19,13 @@ namespace HelixJump
         BGM_1 = 12,
         BGM_2 = 13,
 
-        FirePickup = 14,
-        FireDestroy = 15,
+        AddShield = 14,
+        AddHP = 15,
         Shield = 16,
         Damage = 17,
-        SuperPower = 18
-        
+        SuperPower = 18,
+        AddLife = 19,
+        AddSuperPower = 20        
     }
 
     public static class SoundExtensions

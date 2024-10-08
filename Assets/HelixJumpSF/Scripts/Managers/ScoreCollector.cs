@@ -19,6 +19,16 @@ namespace HelixJump
             base.Awake();
             LoadMaxScores();
         }
+        private void Start()
+        {
+            if (Player.Instance != null)
+            {
+                var player = Player.Instance;
+
+                player.OnDie += ReduceScoreDeath;
+                player.OnDamage += ReduceScoreDamage;
+            }
+        }
 
         protected override void OnBallCollisionSegment(SegmentType type, bool isKillZone)
         {
@@ -29,8 +39,8 @@ namespace HelixJump
 
             if (type == SegmentType.Empty)
             {
-                scores += levelProgress.CurrentLevel;
-                if (doubleShoot == true) scores += levelProgress.CurrentLevel;
+                AddScore(levelProgress.CurrentLevel);
+                if (doubleShoot == true) AddScore(levelProgress.CurrentLevel);
                 doubleShoot = true;
             }
 
@@ -43,6 +53,21 @@ namespace HelixJump
                 }
             }
         }
+
+
+        public void AddScore(int score)
+        {
+            scores = Mathf.Clamp(scores + score, 0, int.MaxValue); 
+        }
+        public void ReduceScoreDamage()
+        {
+            AddScore(-levelProgress.CurrentLevel); 
+        }
+        public void ReduceScoreDeath()
+        {
+            AddScore(- levelProgress.CurrentLevel ^ 2); 
+        }
+
         private void SaveMaxScores()
         {
             PlayerPrefs.SetInt("ScoreCollector:MaxScore", maxScore);

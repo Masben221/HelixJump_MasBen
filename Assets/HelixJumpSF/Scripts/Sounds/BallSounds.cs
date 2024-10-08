@@ -66,7 +66,13 @@ namespace HelixJump
             {
                 m_FloorDestroySound.Play();
             }            
-        } 
+        }
+
+        protected override void OnBallFlying()
+        {
+            m_FlySound.Play();
+        }
+
         private void SoundDeath () { m_DieSound.Play(); }
         private void SoundDamage() { m_DamageSound.Play(); }
         private void SoundShield() { m_ShieldSound.Play(); }

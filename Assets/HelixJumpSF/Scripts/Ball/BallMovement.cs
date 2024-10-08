@@ -32,7 +32,7 @@ namespace HelixJump
                 var player = Player.Instance;
 
                 player.OnDie += Death;
-                player.OnFinish += Stop;
+                player.OnFinish += Finish;
                 player.OnStart += Jump;
                 player.OnDamage += Damage;                
             }
@@ -95,13 +95,17 @@ namespace HelixJump
             animator.SetTrigger("Death");
             animator.SetBool("Jump", false);
             animator.SetBool("Fly", false);            
-            Invoke(nameof(Stop), 1.0f);
+            Invoke(nameof(Stop), 0.6f);
         }
         public void Damage()
         {
             animator.speed = 1;
             animator.SetTrigger("Damage");
             fallSpeed = fallSpeedDefault;           
+        }
+        public void Finish()
+        {
+            Invoke(nameof(Stop), 0.2f);
         }
 
         public void Stop()

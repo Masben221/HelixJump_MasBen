@@ -74,11 +74,12 @@ namespace HelixJump
         public void Continue() //Продолжает игру и показывает рекламу
         {
             // показ рекламы
-            LevelPanel();           
+            LevelPanel();
 
-            if (Player.Instance != null)
-            {
-                var player = Player.Instance;
+            var player = Player.Instance;
+
+            if (player != null)
+            {                
                 player.KakaStart();
             }
         }

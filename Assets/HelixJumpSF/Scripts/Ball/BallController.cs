@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -10,12 +11,15 @@ namespace HelixJump
         [SerializeField] private BallMovement movement;
 
         [HideInInspector] public UnityEvent<SegmentType, bool> CollisionSegment;
-        
+
+        public event Action OnFly;
+        private bool m_IsFly;
+
         protected override void OnOneTriggerEnter(Collider other, bool isKillZone)
         {
             Segment segment = other.GetComponent<Segment>();
 
-            if (segment == null) segment = other.GetComponentInParent<Segment>();
+            //if (segment == null) segment = other.GetComponentInParent<Segment>();
 
             if (segment != null)
             {
@@ -23,12 +27,12 @@ namespace HelixJump
                 {
                     movement.enabled = true;
                     movement.Fall(other.transform.position.y);
-                    segment.GetComponent<MeshCollider>().enabled = false;
+                    segment.GetComponent<MeshCollider>().enabled = false;                    
                 }
 
                 if (segment.Type == SegmentType.Default)
                 {
-                    movement.Jump();
+                    movement.Jump();                    
                 }                
 
                 if (segment.Type == SegmentType.Fan)
@@ -68,8 +72,14 @@ namespace HelixJump
             {
                 if (segment.Type == SegmentType.Fan)
                 {
-                    movement.Fly();                    
-                }               
+                    movement.Fly();
+
+                    if (m_IsFly == false) 
+                    { 
+                        OnFly?.Invoke();
+                        m_IsFly = true;
+                    }
+                }                 
             }
         }
 
@@ -85,7 +95,8 @@ namespace HelixJump
             {
                 if (segment.Type == SegmentType.Fan)
                 {
-                    movement.Jump();                    
+                    movement.Jump();
+                    m_IsFly = false;
                 }               
             }
         }

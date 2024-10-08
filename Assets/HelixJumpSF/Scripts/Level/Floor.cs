@@ -38,7 +38,7 @@ namespace HelixJump
             for (int i = 0; i < amount; i++)
             {
                 int index = Random.Range(0, defaultSegments.Count);
-                int bonus = Random.Range(0, 100);
+                int bonus = Random.Range(0, 50);
                 if (bonus == 0)
                 {
                     defaultSegments[index].SetBonus();
@@ -46,7 +46,6 @@ namespace HelixJump
                 }
             }
         }
-
         public void SetRandomRotation()
         {
             transform.eulerAngles = new Vector3(0, Random.Range(0, 360), 0);

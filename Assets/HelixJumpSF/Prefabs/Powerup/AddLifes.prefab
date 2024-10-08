@@ -171,7 +171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4aa89f40b3dbef241bfd80fdbfc63b36, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_ImpactEffectPrefab: {fileID: 0}
+  m_ImpactEffectPrefab: {fileID: 6618101895653482275, guid: c0c17632057346d49915587216d5bb31, type: 3}
   m_EffectType: 1
   m_MinValue: 1
   m_MaxValue: 3
