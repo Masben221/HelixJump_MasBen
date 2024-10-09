@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 4026047760218649500}
   - component: {fileID: 8152817603192207910}
   - component: {fileID: 8729693104370790191}
+  - component: {fileID: 3124207276188857477}
   m_Layer: 0
   m_Name: Hammer
   m_TagString: Untagged
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 3095844760414139230}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.27, z: 0}
   m_LocalScale: {x: 0.18128, y: 0.18128, z: 0.18128}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -103,7 +104,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -122,6 +123,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Damage: 1
+  m_ImpactEffectPrefab: {fileID: 0}
 --- !u!95 &8729693104370790191
 Animator:
   serializedVersion: 5
@@ -143,6 +145,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &3124207276188857477
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3095844760414139230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9569a0600c98dac41babcd6a2df3e04e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Sound: 27
 --- !u!1 &9031061494171713825
 GameObject:
   m_ObjectHideFlags: 0
@@ -158,7 +173,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &6728845391045701283
 Transform:
   m_ObjectHideFlags: 0
@@ -169,7 +184,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7513531483670277646}

@@ -15,7 +15,7 @@ A:/CODE/SKILLFACTORY/МОИ ПРОЕКТЫ/HelixJump_MasBen
 -logFile
 Logs/AssetImportWorker6.log
 -srvPort
-64415
+57018
 Successfully changed project path to: A:/CODE/SKILLFACTORY/МОИ ПРОЕКТЫ/HelixJump_MasBen
 A:/CODE/SKILLFACTORY/МОИ ПРОЕКТЫ/HelixJump_MasBen
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,16 +49,16 @@ A:/CODE/SKILLFACTORY/МОИ ПРОЕКТЫ/HelixJump_MasBen
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [12476]  Target information:
+Player connection [33732]  Target information:
 
-Player connection [12476]  * "[IP] 192.168.0.105 [Port] 0 [Flags] 2 [Guid] 3814917894 [EditorId] 3814917894 [Version] 1048832 [Id] WindowsEditor(7,MasBen-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [33732]  * "[IP] 192.168.0.105 [Port] 0 [Flags] 2 [Guid] 1624363297 [EditorId] 1624363297 [Version] 1048832 [Id] WindowsEditor(7,MasBen-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [12476]  * "[IP] 26.117.147.127 [Port] 0 [Flags] 2 [Guid] 3814917894 [EditorId] 3814917894 [Version] 1048832 [Id] WindowsEditor(7,MasBen-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [33732]  * "[IP] 26.117.147.127 [Port] 0 [Flags] 2 [Guid] 1624363297 [EditorId] 1624363297 [Version] 1048832 [Id] WindowsEditor(7,MasBen-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [12476] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [12476] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [33732] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [33732] Host joined alternative multi-casting on [225.0.0.222:34997]...
 [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-Refreshing native plugins compatible for Editor in 3.86 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 3.84 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.45f1 (a13dfa44d684)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.45f1/Editor/Data/Resources/UnitySubsystems
@@ -74,7 +74,7 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.45f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.45f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.45f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56688
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56720
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
@@ -82,47 +82,47 @@ Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.45f1/
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
-Registered in 0.014463 seconds.
-- Loaded All Assemblies, in  0.357 seconds
+Registered in 0.013595 seconds.
+- Loaded All Assemblies, in  0.363 seconds
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 310 ms
+Android Extension - Scanning For ADB Devices 283 ms
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.617 seconds
-Domain Reload Profiling: 972ms
-	BeginReloadAssembly (103ms)
+- Finished resetting the current domain, in  0.569 seconds
+Domain Reload Profiling: 930ms
+	BeginReloadAssembly (106ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (32ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (67ms)
-	LoadAllAssembliesAndSetupDomain (144ms)
-		LoadAssemblies (103ms)
+	RebuildCommonClasses (34ms)
+	RebuildNativeTypeToScriptingClass (9ms)
+	initialDomainReloadingComplete (65ms)
+	LoadAllAssembliesAndSetupDomain (146ms)
+		LoadAssemblies (106ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (140ms)
-			TypeCache.Refresh (139ms)
-				TypeCache.ScanAssembly (126ms)
+		AnalyzeDomain (143ms)
+			TypeCache.Refresh (141ms)
+				TypeCache.ScanAssembly (129ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (617ms)
+	FinalizeReload (569ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (574ms)
+		SetupLoadedEditorAssemblies (528ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (401ms)
-			SetLoadedEditorAssemblies (5ms)
+			InitializePlatformSupportModulesInManaged (368ms)
+			SetLoadedEditorAssemblies (4ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (121ms)
-			ProcessInitializeOnLoadMethodAttributes (45ms)
+			ProcessInitializeOnLoadAttributes (112ms)
+			ProcessInitializeOnLoadMethodAttributes (42ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -131,7 +131,7 @@ Domain Reload Profiling: 972ms
 Worker process is ready to serve import requests
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.492 seconds
+- Loaded All Assemblies, in  0.454 seconds
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for iOS target not found
@@ -142,47 +142,47 @@ Package Manager log level set to [2]
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.515 seconds
-Domain Reload Profiling: 1005ms
-	BeginReloadAssembly (149ms)
+- Finished resetting the current domain, in  0.501 seconds
+Domain Reload Profiling: 954ms
+	BeginReloadAssembly (133ms)
 		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (7ms)
+		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (25ms)
-	RebuildCommonClasses (31ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (42ms)
-	LoadAllAssembliesAndSetupDomain (258ms)
-		LoadAssemblies (251ms)
+		CreateAndSetChildDomain (21ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (37ms)
+	LoadAllAssembliesAndSetupDomain (245ms)
+		LoadAssemblies (231ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (91ms)
+		AnalyzeDomain (90ms)
 			TypeCache.Refresh (77ms)
-				TypeCache.ScanAssembly (64ms)
+				TypeCache.ScanAssembly (65ms)
 			ScanForSourceGeneratedMonoScriptInfo (9ms)
 			ResolveRequiredComponents (4ms)
-	FinalizeReload (516ms)
+	FinalizeReload (502ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (389ms)
+		SetupLoadedEditorAssemblies (372ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (33ms)
+			InitializePlatformSupportModulesInManaged (29ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (46ms)
-			ProcessInitializeOnLoadAttributes (279ms)
+			BeforeProcessingInitializeOnLoad (47ms)
+			ProcessInitializeOnLoadAttributes (265ms)
 			ProcessInitializeOnLoadMethodAttributes (20ms)
 			AfterProcessingInitializeOnLoad (8ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
 		AwakeInstancesAfterBackupRestoration (6ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
-Refreshing native plugins compatible for Editor in 1.91 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 2.05 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1606 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 14 unused Assets / (53.7 KB). Loaded Objects now: 2094.
-Memory consumption went from 171.0 MB to 171.0 MB.
-Total: 2.687000 ms (FindLiveObjects: 0.141300 ms CreateObjectMapping: 0.075500 ms MarkObjects: 2.347400 ms  DeleteObjects: 0.121400 ms)
+Unloading 14 unused Assets / (53.4 KB). Loaded Objects now: 2094.
+Memory consumption went from 171.0 MB to 170.9 MB.
+Total: 2.842800 ms (FindLiveObjects: 0.144800 ms CreateObjectMapping: 0.072500 ms MarkObjects: 2.505300 ms  DeleteObjects: 0.119400 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
@@ -198,30 +198,10 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
 ========================================================================
-Received Import Request.
-  Time since last request: 496765.155101 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Traps/Piston.prefab
-  artifactKey: Guid(67608a1fbee9e874c85bef834bc4b571) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Traps/Piston.prefab using Guid(67608a1fbee9e874c85bef834bc4b571) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '5c58bf0e6f0499db5c300d8d777d4edc') in 0.105761 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 44
-========================================================================
-Received Import Request.
-  Time since last request: 186.825687 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Level/Floor.prefab
-  artifactKey: Guid(e633f9580caf03a4eace45ab3126d968) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Level/Floor.prefab using Guid(e633f9580caf03a4eace45ab3126d968) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'b9361cf5920837bf2cb7093d69cd512c') in 0.200868 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 4655
-========================================================================
 Received Prepare
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.378 seconds
+- Loaded All Assemblies, in  0.371 seconds
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for iOS target not found
@@ -231,46 +211,46 @@ Native extension for WebGL target not found
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.630 seconds
-Domain Reload Profiling: 1007ms
-	BeginReloadAssembly (157ms)
+- Finished resetting the current domain, in  0.589 seconds
+Domain Reload Profiling: 958ms
+	BeginReloadAssembly (135ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (5ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (35ms)
-	RebuildCommonClasses (27ms)
+		CreateAndSetChildDomain (28ms)
+	RebuildCommonClasses (37ms)
 	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (29ms)
-	LoadAllAssembliesAndSetupDomain (154ms)
-		LoadAssemblies (225ms)
+	initialDomainReloadingComplete (27ms)
+	LoadAllAssembliesAndSetupDomain (161ms)
+		LoadAssemblies (229ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (18ms)
-			TypeCache.Refresh (8ms)
-				TypeCache.ScanAssembly (2ms)
-			ScanForSourceGeneratedMonoScriptInfo (6ms)
+		AnalyzeDomain (8ms)
+			TypeCache.Refresh (3ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (3ms)
-	FinalizeReload (631ms)
+	FinalizeReload (589ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (382ms)
+		SetupLoadedEditorAssemblies (355ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (33ms)
-			SetLoadedEditorAssemblies (3ms)
+			InitializePlatformSupportModulesInManaged (30ms)
+			SetLoadedEditorAssemblies (2ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (45ms)
-			ProcessInitializeOnLoadAttributes (268ms)
-			ProcessInitializeOnLoadMethodAttributes (24ms)
+			ProcessInitializeOnLoadAttributes (248ms)
+			ProcessInitializeOnLoadMethodAttributes (20ms)
 			AfterProcessingInitializeOnLoad (9ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-Refreshing native plugins compatible for Editor in 2.27 ms, found 2 plugins.
+		AwakeInstancesAfterBackupRestoration (8ms)
+Refreshing native plugins compatible for Editor in 1.93 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1581 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 10 unused Assets / (26.0 KB). Loaded Objects now: 2111.
-Memory consumption went from 171.6 MB to 171.6 MB.
-Total: 2.849300 ms (FindLiveObjects: 0.168800 ms CreateObjectMapping: 0.095700 ms MarkObjects: 2.513800 ms  DeleteObjects: 0.069500 ms)
+Unloading 1582 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 9 unused Assets / (25.9 KB). Loaded Objects now: 2097.
+Memory consumption went from 165.7 MB to 165.7 MB.
+Total: 2.837300 ms (FindLiveObjects: 0.134000 ms CreateObjectMapping: 0.066300 ms MarkObjects: 2.578300 ms  DeleteObjects: 0.058000 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -288,591 +268,100 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 525.455260 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Traps/Blade.prefab
-  artifactKey: Guid(e8be3efe251e28040aa724228ab3a127) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Traps/Blade.prefab using Guid(e8be3efe251e28040aa724228ab3a127) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '1a1abff4831feb8c61a091b1fbe9d139') in 0.003773 seconds
+  Time since last request: 513943.102329 seconds.
+  path: Assets/HelixJumpSF/Prefabs/Traps/ElectricTrap.prefab
+  artifactKey: Guid(4d1d00d6b6b66534297a083cae2495f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HelixJumpSF/Prefabs/Traps/ElectricTrap.prefab using Guid(4d1d00d6b6b66534297a083cae2495f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '591ee1de42feeb47b36b7f21ff5ca65b') in 0.004589 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.010171 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Traps/Bomb.prefab
-  artifactKey: Guid(9fb1dca86beb5c348b39ac4f65aee5b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Traps/Bomb.prefab using Guid(9fb1dca86beb5c348b39ac4f65aee5b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '10ff27f40429c5e7254aa96bedf90a76') in 0.000477 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000055 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Traps/Flamethrower.prefab
-  artifactKey: Guid(33fb150e8a5e1574caf08203dce2a2c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Traps/Flamethrower.prefab using Guid(33fb150e8a5e1574caf08203dce2a2c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '5c2e9044bfe1154bb0d43ff4f97bb020') in 0.000367 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Traps/Poisonthrower.prefab
-  artifactKey: Guid(71aaca33d86203b49b67ac3f36839489) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Traps/Poisonthrower.prefab using Guid(71aaca33d86203b49b67ac3f36839489) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '6c5a775c633707a75ef89262fdac8756') in 0.000460 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000047 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Traps/Hammer.prefab
-  artifactKey: Guid(280539de4098aea4cbe1110f30b41b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Traps/Hammer.prefab using Guid(280539de4098aea4cbe1110f30b41b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'fc0491196f7e47afea0fbe41fe357c02') in 0.000409 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000058 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Traps/Punch Trap.prefab
-  artifactKey: Guid(2bbcaf04b845e6c478def836dedf183d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Traps/Punch Trap.prefab using Guid(2bbcaf04b845e6c478def836dedf183d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '1ace55c88374a7bb24407835a24caa9a') in 0.000395 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 9.280784 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Traps/blade spinner.prefab
-  artifactKey: Guid(19f7815a2aae955488356383569ec15d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Traps/blade spinner.prefab using Guid(19f7815a2aae955488356383569ec15d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '7362631e73e8ee5742d16921504d8139') in 0.000467 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Traps/Gylotine.prefab
-  artifactKey: Guid(ba3ca1ee28fcb104291ffcf0d7bd1e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Traps/Gylotine.prefab using Guid(ba3ca1ee28fcb104291ffcf0d7bd1e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'e83f80699db12d66a51c90f64da59242') in 0.000312 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000067 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Traps/Spike.prefab
-  artifactKey: Guid(dacf41b4e0eb1a443bb00997fcbbb401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Traps/Spike.prefab using Guid(dacf41b4e0eb1a443bb00997fcbbb401) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '97aa6c062048fe97033c1ea286dbd5c6') in 0.000287 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000054 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Traps/Flamethrower.prefab
-  artifactKey: Guid(33fb150e8a5e1574caf08203dce2a2c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Traps/Flamethrower.prefab using Guid(33fb150e8a5e1574caf08203dce2a2c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '5c2e9044bfe1154bb0d43ff4f97bb020') in 0.000276 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000179 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Traps/Hammer.prefab
-  artifactKey: Guid(280539de4098aea4cbe1110f30b41b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Traps/Hammer.prefab using Guid(280539de4098aea4cbe1110f30b41b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'fc0491196f7e47afea0fbe41fe357c02') in 0.000475 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000056 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Traps/Punch Trap.prefab
-  artifactKey: Guid(2bbcaf04b845e6c478def836dedf183d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Traps/Punch Trap.prefab using Guid(2bbcaf04b845e6c478def836dedf183d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '1ace55c88374a7bb24407835a24caa9a') in 0.000328 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 24.453367 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Traps/Bomb.prefab
-  artifactKey: Guid(9fb1dca86beb5c348b39ac4f65aee5b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Traps/Bomb.prefab using Guid(9fb1dca86beb5c348b39ac4f65aee5b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '10ff27f40429c5e7254aa96bedf90a76') in 0.000514 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000056 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Traps/Gylotine.prefab
-  artifactKey: Guid(ba3ca1ee28fcb104291ffcf0d7bd1e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Traps/Gylotine.prefab using Guid(ba3ca1ee28fcb104291ffcf0d7bd1e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'e83f80699db12d66a51c90f64da59242') in 0.000402 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000064 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Traps/spin blade.prefab
-  artifactKey: Guid(8f2ed8c459297bb48823c3c90b8701a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Traps/spin blade.prefab using Guid(8f2ed8c459297bb48823c3c90b8701a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'dd07237a3400e3cdcfdd0a16dc9c3147') in 0.000470 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Traps/Poisonthrower.prefab
-  artifactKey: Guid(71aaca33d86203b49b67ac3f36839489) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Traps/Poisonthrower.prefab using Guid(71aaca33d86203b49b67ac3f36839489) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '6c5a775c633707a75ef89262fdac8756') in 0.000314 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000071 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Traps/Spin blade 1.prefab
-  artifactKey: Guid(cc185967692eb214caa4199a75b6aea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Traps/Spin blade 1.prefab using Guid(cc185967692eb214caa4199a75b6aea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '288721188a93d2df2add8cab41dff471') in 0.000329 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 21.747252 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Traps/Flamethrower.prefab
-  artifactKey: Guid(33fb150e8a5e1574caf08203dce2a2c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Traps/Flamethrower.prefab using Guid(33fb150e8a5e1574caf08203dce2a2c7) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '5c2e9044bfe1154bb0d43ff4f97bb020') in 0.000459 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Traps/Spike.prefab
-  artifactKey: Guid(dacf41b4e0eb1a443bb00997fcbbb401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Traps/Spike.prefab using Guid(dacf41b4e0eb1a443bb00997fcbbb401) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '97aa6c062048fe97033c1ea286dbd5c6') in 0.000387 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Traps/spin blade.prefab
-  artifactKey: Guid(8f2ed8c459297bb48823c3c90b8701a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Traps/spin blade.prefab using Guid(8f2ed8c459297bb48823c3c90b8701a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'dd07237a3400e3cdcfdd0a16dc9c3147') in 0.000321 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000077 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Traps/Hammer.prefab
-  artifactKey: Guid(280539de4098aea4cbe1110f30b41b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Traps/Hammer.prefab using Guid(280539de4098aea4cbe1110f30b41b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'fc0491196f7e47afea0fbe41fe357c02') in 0.000292 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Traps/Punch Trap.prefab
-  artifactKey: Guid(2bbcaf04b845e6c478def836dedf183d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Traps/Punch Trap.prefab using Guid(2bbcaf04b845e6c478def836dedf183d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '1ace55c88374a7bb24407835a24caa9a') in 0.000423 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 6.882773 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Traps/Gylotine.prefab
-  artifactKey: Guid(ba3ca1ee28fcb104291ffcf0d7bd1e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Traps/Gylotine.prefab using Guid(ba3ca1ee28fcb104291ffcf0d7bd1e58) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'e83f80699db12d66a51c90f64da59242') in 0.000452 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Traps/Spike.prefab
-  artifactKey: Guid(dacf41b4e0eb1a443bb00997fcbbb401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Traps/Spike.prefab using Guid(dacf41b4e0eb1a443bb00997fcbbb401) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '97aa6c062048fe97033c1ea286dbd5c6') in 0.000292 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
+  Time since last request: 0.013291 seconds.
   path: Assets/HelixJumpSF/Prefabs/Traps/Piston.prefab
   artifactKey: Guid(67608a1fbee9e874c85bef834bc4b571) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/HelixJumpSF/Prefabs/Traps/Piston.prefab using Guid(67608a1fbee9e874c85bef834bc4b571) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'f5bf67de6db2316546c6ab67912a091f') in 0.000374 seconds
+ -> (artifact id: 'f5bf67de6db2316546c6ab67912a091f') in 0.000582 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000054 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Traps/Spin blade 1.prefab
-  artifactKey: Guid(cc185967692eb214caa4199a75b6aea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Traps/Spin blade 1.prefab using Guid(cc185967692eb214caa4199a75b6aea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '288721188a93d2df2add8cab41dff471') in 0.000280 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 18.223964 seconds.
+  Time since last request: 0.000048 seconds.
   path: Assets/HelixJumpSF/Prefabs/Traps/Hammer.prefab
   artifactKey: Guid(280539de4098aea4cbe1110f30b41b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/HelixJumpSF/Prefabs/Traps/Hammer.prefab using Guid(280539de4098aea4cbe1110f30b41b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'fc0491196f7e47afea0fbe41fe357c02') in 0.000506 seconds
+ -> (artifact id: '13fbeec7fb9a2c9c470d41332b368123') in 0.000466 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000083 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Traps/Spike.prefab
-  artifactKey: Guid(dacf41b4e0eb1a443bb00997fcbbb401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Traps/Spike.prefab using Guid(dacf41b4e0eb1a443bb00997fcbbb401) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '97aa6c062048fe97033c1ea286dbd5c6') in 0.000394 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000051 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Traps/Poisonthrower.prefab
-  artifactKey: Guid(71aaca33d86203b49b67ac3f36839489) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Traps/Poisonthrower.prefab using Guid(71aaca33d86203b49b67ac3f36839489) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '6c5a775c633707a75ef89262fdac8756') in 0.000307 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000057 seconds.
+  Time since last request: 0.000050 seconds.
   path: Assets/HelixJumpSF/Prefabs/Traps/Punch Trap.prefab
   artifactKey: Guid(2bbcaf04b845e6c478def836dedf183d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/HelixJumpSF/Prefabs/Traps/Punch Trap.prefab using Guid(2bbcaf04b845e6c478def836dedf183d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '1ace55c88374a7bb24407835a24caa9a') in 0.000362 seconds
+ -> (artifact id: '69fc511d502dc644cad0f0ba3b0aa003') in 0.000486 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 7.719261 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Traps/Industrial_Fan.prefab
-  artifactKey: Guid(6b4795f691cdcd1419a96be302fbbbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Traps/Industrial_Fan.prefab using Guid(6b4795f691cdcd1419a96be302fbbbd2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'b8338fdcd275293e10a0e65566cf719c') in 0.078354 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 43
-========================================================================
-Received Import Request.
-  Time since last request: 361.440311 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Traps/Piston.prefab
-  artifactKey: Guid(67608a1fbee9e874c85bef834bc4b571) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Traps/Piston.prefab using Guid(67608a1fbee9e874c85bef834bc4b571) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'f5bf67de6db2316546c6ab67912a091f') in 0.000707 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.018572 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Traps/Spike.prefab
-  artifactKey: Guid(dacf41b4e0eb1a443bb00997fcbbb401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Traps/Spike.prefab using Guid(dacf41b4e0eb1a443bb00997fcbbb401) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '97aa6c062048fe97033c1ea286dbd5c6') in 0.000678 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000092 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Traps/spin blade.prefab
-  artifactKey: Guid(8f2ed8c459297bb48823c3c90b8701a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Traps/spin blade.prefab using Guid(8f2ed8c459297bb48823c3c90b8701a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'dd07237a3400e3cdcfdd0a16dc9c3147') in 0.000568 seconds
+  Time since last request: 80.698439 seconds.
+  path: Assets/HelixJumpSF/Prefabs/Traps/ElectricTrap.prefab
+  artifactKey: Guid(4d1d00d6b6b66534297a083cae2495f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HelixJumpSF/Prefabs/Traps/ElectricTrap.prefab using Guid(4d1d00d6b6b66534297a083cae2495f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '591ee1de42feeb47b36b7f21ff5ca65b') in 0.000474 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
   Time since last request: 0.000061 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Traps/Spin blade 1.prefab
-  artifactKey: Guid(cc185967692eb214caa4199a75b6aea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Traps/Spin blade 1.prefab using Guid(cc185967692eb214caa4199a75b6aea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '288721188a93d2df2add8cab41dff471') in 0.000490 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000454 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Traps/Punch Trap.prefab
-  artifactKey: Guid(2bbcaf04b845e6c478def836dedf183d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Traps/Punch Trap.prefab using Guid(2bbcaf04b845e6c478def836dedf183d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '1ace55c88374a7bb24407835a24caa9a') in 0.000494 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 9.317987 seconds.
   path: Assets/HelixJumpSF/Prefabs/Traps/Piston.prefab
   artifactKey: Guid(67608a1fbee9e874c85bef834bc4b571) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/HelixJumpSF/Prefabs/Traps/Piston.prefab using Guid(67608a1fbee9e874c85bef834bc4b571) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'f5bf67de6db2316546c6ab67912a091f') in 0.000604 seconds
+ -> (artifact id: 'f5bf67de6db2316546c6ab67912a091f') in 0.000286 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Traps/Spike.prefab
-  artifactKey: Guid(dacf41b4e0eb1a443bb00997fcbbb401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Traps/Spike.prefab using Guid(dacf41b4e0eb1a443bb00997fcbbb401) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '97aa6c062048fe97033c1ea286dbd5c6') in 0.000456 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000029 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Traps/spin blade.prefab
-  artifactKey: Guid(8f2ed8c459297bb48823c3c90b8701a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Traps/spin blade.prefab using Guid(8f2ed8c459297bb48823c3c90b8701a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'dd07237a3400e3cdcfdd0a16dc9c3147') in 0.000345 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000058 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Traps/Spin blade 1.prefab
-  artifactKey: Guid(cc185967692eb214caa4199a75b6aea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Traps/Spin blade 1.prefab using Guid(cc185967692eb214caa4199a75b6aea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '288721188a93d2df2add8cab41dff471') in 0.000330 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.245347 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Traps/Spike.prefab
-  artifactKey: Guid(dacf41b4e0eb1a443bb00997fcbbb401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Traps/Spike.prefab using Guid(dacf41b4e0eb1a443bb00997fcbbb401) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '97aa6c062048fe97033c1ea286dbd5c6') in 0.000535 seconds
+  Time since last request: 0.013392 seconds.
+  path: Assets/HelixJumpSF/Prefabs/Traps/Poisonthrower.prefab
+  artifactKey: Guid(71aaca33d86203b49b67ac3f36839489) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HelixJumpSF/Prefabs/Traps/Poisonthrower.prefab using Guid(71aaca33d86203b49b67ac3f36839489) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'a5af639e30aa8a81330512479e82cee3') in 0.000422 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
   Time since last request: 0.000057 seconds.
+  path: Assets/HelixJumpSF/Prefabs/Traps/Spike.prefab
+  artifactKey: Guid(dacf41b4e0eb1a443bb00997fcbbb401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HelixJumpSF/Prefabs/Traps/Spike.prefab using Guid(dacf41b4e0eb1a443bb00997fcbbb401) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '97aa6c062048fe97033c1ea286dbd5c6') in 0.000527 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/HelixJumpSF/Prefabs/Traps/Hammer.prefab
+  artifactKey: Guid(280539de4098aea4cbe1110f30b41b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HelixJumpSF/Prefabs/Traps/Hammer.prefab using Guid(280539de4098aea4cbe1110f30b41b7f) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '13fbeec7fb9a2c9c470d41332b368123') in 0.000402 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
   path: Assets/HelixJumpSF/Prefabs/Traps/Spin blade 1.prefab
   artifactKey: Guid(cc185967692eb214caa4199a75b6aea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/HelixJumpSF/Prefabs/Traps/Spin blade 1.prefab using Guid(cc185967692eb214caa4199a75b6aea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '288721188a93d2df2add8cab41dff471') in 0.000360 seconds
+ -> (artifact id: 'b66b8030cc06faa7873dc9baff9cce70') in 0.000333 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
-  Time since last request: 18.644724 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Traps/Spin blade 1.prefab
-  artifactKey: Guid(cc185967692eb214caa4199a75b6aea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Traps/Spin blade 1.prefab using Guid(cc185967692eb214caa4199a75b6aea6) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '288721188a93d2df2add8cab41dff471') in 0.000432 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 53.465094 seconds.
-  path: Assets/HelixJumpSF/Audio/Sounds/ИииииХааа_out.mp3
-  artifactKey: Guid(190570105787c0542b86697aefc9c01c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Audio/Sounds/ИииииХааа_out.mp3 using Guid(190570105787c0542b86697aefc9c01c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '80ff6f97b2595b954de26ab85cbc7bb2') in 0.029423 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2
-========================================================================
-Received Prepare
-Caller must complete domain reload
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.426 seconds
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.602 seconds
-Domain Reload Profiling: 1027ms
-	BeginReloadAssembly (188ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (41ms)
-	RebuildCommonClasses (35ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (26ms)
-	LoadAllAssembliesAndSetupDomain (165ms)
-		LoadAssemblies (257ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (18ms)
-			TypeCache.Refresh (7ms)
-				TypeCache.ScanAssembly (2ms)
-			ScanForSourceGeneratedMonoScriptInfo (6ms)
-			ResolveRequiredComponents (3ms)
-	FinalizeReload (603ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (372ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (31ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (47ms)
-			ProcessInitializeOnLoadAttributes (261ms)
-			ProcessInitializeOnLoadMethodAttributes (23ms)
-			AfterProcessingInitializeOnLoad (8ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-Refreshing native plugins compatible for Editor in 1.88 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1581 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 9 unused Assets / (25.9 KB). Loaded Objects now: 2116.
-Memory consumption went from 171.7 MB to 171.6 MB.
-Total: 2.753400 ms (FindLiveObjects: 0.145000 ms CreateObjectMapping: 0.073300 ms MarkObjects: 2.499600 ms  DeleteObjects: 0.034600 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-========================================================================
-Received Import Request.
-  Time since last request: 602.720396 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Traps/Spike.prefab
-  artifactKey: Guid(dacf41b4e0eb1a443bb00997fcbbb401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Traps/Spike.prefab using Guid(dacf41b4e0eb1a443bb00997fcbbb401) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '97aa6c062048fe97033c1ea286dbd5c6') in 0.003783 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 2.757916 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Traps/Spike.prefab
-  artifactKey: Guid(dacf41b4e0eb1a443bb00997fcbbb401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Traps/Spike.prefab using Guid(dacf41b4e0eb1a443bb00997fcbbb401) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '97aa6c062048fe97033c1ea286dbd5c6') in 0.000436 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 4.497880 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Traps/Piston.prefab
-  artifactKey: Guid(67608a1fbee9e874c85bef834bc4b571) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Traps/Piston.prefab using Guid(67608a1fbee9e874c85bef834bc4b571) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'f5bf67de6db2316546c6ab67912a091f') in 0.000465 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Prepare
-Caller must complete domain reload
-Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.350 seconds
-Native extension for UWP target not found
-Native extension for WindowsStandalone target not found
-Native extension for iOS target not found
-Native extension for Android target not found
-Native extension for WebGL target not found
-[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
-[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
-[Package Manager] Cannot connect to Unity Package Manager local server
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.579 seconds
-Domain Reload Profiling: 927ms
-	BeginReloadAssembly (141ms)
-		ExecutionOrderSort (0ms)
-		DisableScriptedObjects (5ms)
-		BackupInstance (0ms)
-		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (33ms)
-	RebuildCommonClasses (26ms)
-	RebuildNativeTypeToScriptingClass (8ms)
-	initialDomainReloadingComplete (27ms)
-	LoadAllAssembliesAndSetupDomain (145ms)
-		LoadAssemblies (213ms)
-		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (8ms)
-			TypeCache.Refresh (4ms)
-				TypeCache.ScanAssembly (0ms)
-			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (579ms)
-		ReleaseScriptCaches (0ms)
-		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (351ms)
-			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (31ms)
-			SetLoadedEditorAssemblies (3ms)
-			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (44ms)
-			ProcessInitializeOnLoadAttributes (246ms)
-			ProcessInitializeOnLoadMethodAttributes (18ms)
-			AfterProcessingInitializeOnLoad (8ms)
-			EditorAssembliesLoaded (0ms)
-		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (6ms)
-Refreshing native plugins compatible for Editor in 2.61 ms, found 2 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 1581 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 9 unused Assets / (26.0 KB). Loaded Objects now: 2119.
-Memory consumption went from 171.7 MB to 171.6 MB.
-Total: 2.650600 ms (FindLiveObjects: 0.152200 ms CreateObjectMapping: 0.083400 ms MarkObjects: 2.369800 ms  DeleteObjects: 0.043700 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-========================================================================
-Received Import Request.
-  Time since last request: 5.708784 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Traps/Piston.prefab
-  artifactKey: Guid(67608a1fbee9e874c85bef834bc4b571) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Traps/Piston.prefab using Guid(67608a1fbee9e874c85bef834bc4b571) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'f5bf67de6db2316546c6ab67912a091f') in 0.003109 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Traps/Spike.prefab
-  artifactKey: Guid(dacf41b4e0eb1a443bb00997fcbbb401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Traps/Spike.prefab using Guid(dacf41b4e0eb1a443bb00997fcbbb401) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '97aa6c062048fe97033c1ea286dbd5c6') in 0.000412 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 0
-========================================================================
-Received Import Request.
-  Time since last request: 355.698014 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Traps/Piston.prefab
-  artifactKey: Guid(67608a1fbee9e874c85bef834bc4b571) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Traps/Piston.prefab using Guid(67608a1fbee9e874c85bef834bc4b571) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'f5bf67de6db2316546c6ab67912a091f') in 0.000601 seconds
+  Time since last request: 0.000060 seconds.
+  path: Assets/HelixJumpSF/Prefabs/Traps/Punch Trap.prefab
+  artifactKey: Guid(2bbcaf04b845e6c478def836dedf183d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HelixJumpSF/Prefabs/Traps/Punch Trap.prefab using Guid(2bbcaf04b845e6c478def836dedf183d) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '69fc511d502dc644cad0f0ba3b0aa003') in 0.000449 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0

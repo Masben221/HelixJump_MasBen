@@ -17,7 +17,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4581698417380863640
 Transform:
   m_ObjectHideFlags: 0
@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 6966026489211428435}
   - component: {fileID: 4447043681484164844}
   - component: {fileID: 3840903111885597691}
+  - component: {fileID: 7316242966376898019}
   m_Layer: 0
   m_Name: 'KillZone '
   m_TagString: Untagged
@@ -152,6 +153,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Damage: 1
+  m_ImpactEffectPrefab: {fileID: 0}
+--- !u!114 &7316242966376898019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8457533108774716436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9569a0600c98dac41babcd6a2df3e04e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Sound: 21
 --- !u!1001 &6531104658080842942
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -306,6 +321,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Damage: 1
+  m_ImpactEffectPrefab: {fileID: 0}
 --- !u!4 &6533897227177681356 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4000013488956786, guid: abb9f519b142e304d9c45b56afa768bc, type: 3}

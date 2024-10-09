@@ -132,7 +132,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &8928254268763841170
 Transform:
   m_ObjectHideFlags: 0
@@ -143,7 +143,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3058556379358889788}
@@ -163,6 +163,7 @@ GameObject:
   - component: {fileID: 2568389026998383426}
   - component: {fileID: 4847666520361470769}
   - component: {fileID: 441172591979415732}
+  - component: {fileID: 5717741542978304165}
   m_Layer: 0
   m_Name: blade spinner
   m_TagString: Obstacle
@@ -291,6 +292,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Damage: 1
+  m_ImpactEffectPrefab: {fileID: 0}
+--- !u!114 &5717741542978304165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5987722555309413571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9569a0600c98dac41babcd6a2df3e04e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Sound: 24
 --- !u!1 &6600610266440903009
 GameObject:
   m_ObjectHideFlags: 0

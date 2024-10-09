@@ -15,7 +15,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &4394063084746220250
 Transform:
   m_ObjectHideFlags: 0
@@ -298,6 +298,7 @@ GameObject:
   - component: {fileID: 2594270660391614804}
   - component: {fileID: 6818484493622296686}
   - component: {fileID: 6889632936249945739}
+  - component: {fileID: 6096877804798925493}
   m_Layer: 0
   m_Name: NurbsCurve.001
   m_TagString: Obstcales
@@ -404,6 +405,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Damage: 1
+  m_ImpactEffectPrefab: {fileID: 0}
+--- !u!114 &6096877804798925493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6702924902539183147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9569a0600c98dac41babcd6a2df3e04e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Sound: 23
 --- !u!1 &8552598873566206425
 GameObject:
   m_ObjectHideFlags: 0

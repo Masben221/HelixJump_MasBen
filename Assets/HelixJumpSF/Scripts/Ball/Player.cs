@@ -172,7 +172,7 @@ namespace HelixJump
 
         public void KakaStart()
         {
-            m_NumLives = m_DefaultNumLives;            
+            //m_NumLives = m_DefaultNumLives;            
             m_CurrentHitPoints = m_DefaultHitPoints;
             m_CurrentShild = m_DefaultShield;
             m_SuperPower = m_DefaultSuperPower;

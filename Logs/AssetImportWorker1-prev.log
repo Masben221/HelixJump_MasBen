@@ -15,7 +15,7 @@ A:/CODE/SKILLFACTORY/МОИ ПРОЕКТЫ/HelixJump_MasBen
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-64374
+59384
 Successfully changed project path to: A:/CODE/SKILLFACTORY/МОИ ПРОЕКТЫ/HelixJump_MasBen
 A:/CODE/SKILLFACTORY/МОИ ПРОЕКТЫ/HelixJump_MasBen
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,16 +49,16 @@ A:/CODE/SKILLFACTORY/МОИ ПРОЕКТЫ/HelixJump_MasBen
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [31612]  Target information:
+Player connection [37620]  Target information:
 
-Player connection [31612]  * "[IP] 192.168.0.105 [Port] 0 [Flags] 2 [Guid] 2804470140 [EditorId] 2804470140 [Version] 1048832 [Id] WindowsEditor(7,MasBen-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [37620]  * "[IP] 192.168.0.105 [Port] 0 [Flags] 2 [Guid] 3336137158 [EditorId] 3336137158 [Version] 1048832 [Id] WindowsEditor(7,MasBen-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [31612]  * "[IP] 26.117.147.127 [Port] 0 [Flags] 2 [Guid] 2804470140 [EditorId] 2804470140 [Version] 1048832 [Id] WindowsEditor(7,MasBen-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
+Player connection [37620]  * "[IP] 26.117.147.127 [Port] 0 [Flags] 2 [Guid] 3336137158 [EditorId] 3336137158 [Version] 1048832 [Id] WindowsEditor(7,MasBen-PC) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" 
 
-Player connection [31612] Host joined multi-casting on [225.0.0.222:54997]...
-Player connection [31612] Host joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [37620] Host joined multi-casting on [225.0.0.222:54997]...
+Player connection [37620] Host joined alternative multi-casting on [225.0.0.222:34997]...
 [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-Refreshing native plugins compatible for Editor in 3.59 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 4.92 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.45f1 (a13dfa44d684)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.45f1/Editor/Data/Resources/UnitySubsystems
@@ -74,7 +74,7 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.45f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.45f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.45f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56224
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56564
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
@@ -82,47 +82,47 @@ Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.45f1/
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.45f1/Editor/Data/PlaybackEngines/MetroSupport/UnityEditor.UWP.Extensions.dll
-Registered in 0.015134 seconds.
-- Loaded All Assemblies, in  0.391 seconds
+Registered in 0.013951 seconds.
+- Loaded All Assemblies, in  0.409 seconds
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
 Native extension for iOS target not found
 Native extension for Android target not found
-Android Extension - Scanning For ADB Devices 1853 ms
+Android Extension - Scanning For ADB Devices 1341 ms
 Native extension for WebGL target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  2.207 seconds
-Domain Reload Profiling: 2596ms
-	BeginReloadAssembly (99ms)
+- Finished resetting the current domain, in  1.675 seconds
+Domain Reload Profiling: 2081ms
+	BeginReloadAssembly (100ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (30ms)
-	RebuildNativeTypeToScriptingClass (10ms)
-	initialDomainReloadingComplete (66ms)
-	LoadAllAssembliesAndSetupDomain (184ms)
-		LoadAssemblies (98ms)
+	RebuildCommonClasses (39ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (68ms)
+	LoadAllAssembliesAndSetupDomain (188ms)
+		LoadAssemblies (100ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (180ms)
-			TypeCache.Refresh (179ms)
-				TypeCache.ScanAssembly (161ms)
+		AnalyzeDomain (183ms)
+			TypeCache.Refresh (182ms)
+				TypeCache.ScanAssembly (169ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
 			ResolveRequiredComponents (0ms)
-	FinalizeReload (2208ms)
+	FinalizeReload (1675ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (2154ms)
+		SetupLoadedEditorAssemblies (1628ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (1965ms)
-			SetLoadedEditorAssemblies (4ms)
+			InitializePlatformSupportModulesInManaged (1448ms)
+			SetLoadedEditorAssemblies (5ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (3ms)
-			ProcessInitializeOnLoadAttributes (134ms)
-			ProcessInitializeOnLoadMethodAttributes (48ms)
+			BeforeProcessingInitializeOnLoad (4ms)
+			ProcessInitializeOnLoadAttributes (125ms)
+			ProcessInitializeOnLoadMethodAttributes (45ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -131,7 +131,7 @@ Domain Reload Profiling: 2596ms
 Worker process is ready to serve import requests
 Caller must complete domain reload
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.524 seconds
+- Loaded All Assemblies, in  0.555 seconds
 Native extension for UWP target not found
 Native extension for WindowsStandalone target not found
 Native extension for iOS target not found
@@ -142,47 +142,47 @@ Package Manager log level set to [2]
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.584 seconds
-Domain Reload Profiling: 1107ms
-	BeginReloadAssembly (171ms)
+- Finished resetting the current domain, in  0.569 seconds
+Domain Reload Profiling: 1121ms
+	BeginReloadAssembly (185ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (8ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (25ms)
-	RebuildCommonClasses (40ms)
-	RebuildNativeTypeToScriptingClass (9ms)
-	initialDomainReloadingComplete (41ms)
-	LoadAllAssembliesAndSetupDomain (261ms)
+		CreateAndSetChildDomain (30ms)
+	RebuildCommonClasses (36ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (52ms)
+	LoadAllAssembliesAndSetupDomain (268ms)
 		LoadAssemblies (257ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (102ms)
-			TypeCache.Refresh (90ms)
-				TypeCache.ScanAssembly (76ms)
-			ScanForSourceGeneratedMonoScriptInfo (8ms)
-			ResolveRequiredComponents (3ms)
-	FinalizeReload (585ms)
+		AnalyzeDomain (111ms)
+			TypeCache.Refresh (94ms)
+				TypeCache.ScanAssembly (81ms)
+			ScanForSourceGeneratedMonoScriptInfo (11ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (570ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (437ms)
+		SetupLoadedEditorAssemblies (420ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (33ms)
+			InitializePlatformSupportModulesInManaged (35ms)
 			SetLoadedEditorAssemblies (3ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (49ms)
-			ProcessInitializeOnLoadAttributes (319ms)
-			ProcessInitializeOnLoadMethodAttributes (24ms)
+			BeforeProcessingInitializeOnLoad (48ms)
+			ProcessInitializeOnLoadAttributes (305ms)
+			ProcessInitializeOnLoadMethodAttributes (20ms)
 			AfterProcessingInitializeOnLoad (8ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (8ms)
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
-Refreshing native plugins compatible for Editor in 2.35 ms, found 2 plugins.
+		AwakeInstancesAfterBackupRestoration (7ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
+Refreshing native plugins compatible for Editor in 1.99 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 1606 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 14 unused Assets / (53.6 KB). Loaded Objects now: 2094.
-Memory consumption went from 170.9 MB to 170.9 MB.
-Total: 2.779100 ms (FindLiveObjects: 0.149100 ms CreateObjectMapping: 0.073900 ms MarkObjects: 2.434700 ms  DeleteObjects: 0.120200 ms)
+Unloading 14 unused Assets / (53.3 KB). Loaded Objects now: 2094.
+Memory consumption went from 171.0 MB to 170.9 MB.
+Total: 2.721700 ms (FindLiveObjects: 0.142700 ms CreateObjectMapping: 0.066800 ms MarkObjects: 2.394600 ms  DeleteObjects: 0.116600 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
@@ -199,61 +199,250 @@ AssetImportParameters requested are different than current active one (requested
   custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 487491.708196 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Bonus/AddHP.prefab
-  artifactKey: Guid(7039267b6d23949498787d49027c95ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Bonus/AddHP.prefab using Guid(7039267b6d23949498787d49027c95ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '517c2a4172c5bede1a0259509eba1717') in 0.112849 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 46
-========================================================================
-Received Import Request.
-  Time since last request: 82.928765 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Traps/Piston.prefab
-  artifactKey: Guid(67608a1fbee9e874c85bef834bc4b571) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Traps/Piston.prefab using Guid(67608a1fbee9e874c85bef834bc4b571) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
-[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'f839c9703f752eb76f632fe7be38cce7') in 0.031645 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 44
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
+  Time since last request: 499101.079258 seconds.
   path: Assets/HelixJumpSF/Prefabs/Traps/Spike.prefab
   artifactKey: Guid(dacf41b4e0eb1a443bb00997fcbbb401) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/HelixJumpSF/Prefabs/Traps/Spike.prefab using Guid(dacf41b4e0eb1a443bb00997fcbbb401) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'ba2a20984df63d8c52e1a23152673f24') in 0.007375 seconds
+ -> (artifact id: '4637eb8aadbea4097fca99dd60dffd9d') in 0.108288 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 11
 ========================================================================
 Received Import Request.
-  Time since last request: 3.336613 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Level/FloorDestroy.prefab
-  artifactKey: Guid(6136ad378bec14844b08bb08eed000ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Level/FloorDestroy.prefab using Guid(6136ad378bec14844b08bb08eed000ae) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+  Time since last request: 0.000018 seconds.
+  path: Assets/HelixJumpSF/Prefabs/Traps/Fire.prefab
+  artifactKey: Guid(580e2bf98fc38254aa4d1df855f32f54) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HelixJumpSF/Prefabs/Traps/Fire.prefab using Guid(580e2bf98fc38254aa4d1df855f32f54) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '676d53e90fc926a5f786ee839de4213b') in 0.006619 seconds
+ -> (artifact id: '6fbee03d194fb2db40497eae37b85d4d') in 0.045141 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 79
+Number of asset objects unloaded after import = 33
 ========================================================================
 Received Import Request.
-  Time since last request: 0.009672 seconds.
-  path: Assets/HelixJumpSF/Prefabs/Level/segment.prefab
-  artifactKey: Guid(e2861f57834c5d94fb13402e8e36c232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/HelixJumpSF/Prefabs/Level/segment.prefab using Guid(e2861f57834c5d94fb13402e8e36c232) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+  Time since last request: 0.000024 seconds.
+  path: Assets/HelixJumpSF/Prefabs/Traps/Piston.prefab
+  artifactKey: Guid(67608a1fbee9e874c85bef834bc4b571) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HelixJumpSF/Prefabs/Traps/Piston.prefab using Guid(67608a1fbee9e874c85bef834bc4b571) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: 'dae1b1984e1819973be91ac825403efb') in 0.038691 seconds
+ -> (artifact id: '38ac6529ae848190083a887d061799ce') in 0.014830 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 459
+Number of asset objects unloaded after import = 44
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000025 seconds.
+  Time since last request: 256.242500 seconds.
+  path: Assets/KY_effects/MagicEffectsPackFree/prefab/skillAttack2.prefab
+  artifactKey: Guid(75369bb81385f4904842bf20a51c14a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/KY_effects/MagicEffectsPackFree/prefab/skillAttack2.prefab using Guid(75369bb81385f4904842bf20a51c14a2) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'a6fdc5c1b828e65868610ac680e85320') in 0.023681 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 1071.323447 seconds.
   path: Assets/HelixJumpSF/Prefabs/Level/Level.prefab
   artifactKey: Guid(19e841138d9b00c46bb5efb77fae9e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/HelixJumpSF/Prefabs/Level/Level.prefab using Guid(19e841138d9b00c46bb5efb77fae9e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
- -> (artifact id: '15334b8b87c14829e2fe28624c55eb24') in 0.062252 seconds
+ -> (artifact id: '0982702d2f3a9f3f5cdda4e5b66c8530') in 0.173380 seconds
 Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 2819
+Number of asset objects unloaded after import = 5176
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/HelixJumpSF/Prefabs/Level/segment.prefab
+  artifactKey: Guid(e2861f57834c5d94fb13402e8e36c232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HelixJumpSF/Prefabs/Level/segment.prefab using Guid(e2861f57834c5d94fb13402e8e36c232) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '6e603c6ebfb47bd728ef9d3e4ee649d4') in 0.082638 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 968
+========================================================================
+Received Import Request.
+  Time since last request: 4.599282 seconds.
+  path: Assets/HelixJumpSF/Prefabs/Level/Level.prefab
+  artifactKey: Guid(19e841138d9b00c46bb5efb77fae9e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HelixJumpSF/Prefabs/Level/Level.prefab using Guid(19e841138d9b00c46bb5efb77fae9e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '8e7d3ba9efdb00635f58063007ac2e9a') in 0.139704 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5176
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/HelixJumpSF/Prefabs/Level/segment.prefab
+  artifactKey: Guid(e2861f57834c5d94fb13402e8e36c232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HelixJumpSF/Prefabs/Level/segment.prefab using Guid(e2861f57834c5d94fb13402e8e36c232) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '464fd6899ed32978d78272e55fcb9ad6') in 0.081575 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 968
+========================================================================
+Received Import Request.
+  Time since last request: 25.746631 seconds.
+  path: Assets/HelixJumpSF/Prefabs/Level/Level.prefab
+  artifactKey: Guid(19e841138d9b00c46bb5efb77fae9e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HelixJumpSF/Prefabs/Level/Level.prefab using Guid(19e841138d9b00c46bb5efb77fae9e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'd525ebd0246d4fd420311435988efd5f') in 0.178492 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5176
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/HelixJumpSF/Prefabs/Level/segment.prefab
+  artifactKey: Guid(e2861f57834c5d94fb13402e8e36c232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HelixJumpSF/Prefabs/Level/segment.prefab using Guid(e2861f57834c5d94fb13402e8e36c232) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '890833c48328e8b655dc069274da3aeb') in 0.081873 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 968
+========================================================================
+Received Import Request.
+  Time since last request: 2.847279 seconds.
+  path: Assets/HelixJumpSF/Prefabs/Level/Level.prefab
+  artifactKey: Guid(19e841138d9b00c46bb5efb77fae9e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HelixJumpSF/Prefabs/Level/Level.prefab using Guid(19e841138d9b00c46bb5efb77fae9e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'd02f65193d043791d3a9d6a663f35e49') in 0.145042 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5176
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/HelixJumpSF/Prefabs/Level/segment.prefab
+  artifactKey: Guid(e2861f57834c5d94fb13402e8e36c232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HelixJumpSF/Prefabs/Level/segment.prefab using Guid(e2861f57834c5d94fb13402e8e36c232) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '3d60488f224525823de12cca56719320') in 0.078429 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 968
+========================================================================
+Received Import Request.
+  Time since last request: 6.094182 seconds.
+  path: Assets/HelixJumpSF/Prefabs/Level/Level.prefab
+  artifactKey: Guid(19e841138d9b00c46bb5efb77fae9e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HelixJumpSF/Prefabs/Level/Level.prefab using Guid(19e841138d9b00c46bb5efb77fae9e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '5b00c162f94e587041c169a86443dc35') in 0.149253 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5176
+========================================================================
+Received Import Request.
+  Time since last request: 0.000030 seconds.
+  path: Assets/HelixJumpSF/Prefabs/Level/segment.prefab
+  artifactKey: Guid(e2861f57834c5d94fb13402e8e36c232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HelixJumpSF/Prefabs/Level/segment.prefab using Guid(e2861f57834c5d94fb13402e8e36c232) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'ee10fc8d45a10688a9d44adc53df9cbd') in 0.076895 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 968
+========================================================================
+Received Import Request.
+  Time since last request: 1.759764 seconds.
+  path: Assets/HelixJumpSF/Prefabs/Level/Level.prefab
+  artifactKey: Guid(19e841138d9b00c46bb5efb77fae9e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HelixJumpSF/Prefabs/Level/Level.prefab using Guid(19e841138d9b00c46bb5efb77fae9e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '0f6a6f2afb0f6c3d0bf23807cc67fd20') in 0.160758 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5176
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/HelixJumpSF/Prefabs/Level/segment.prefab
+  artifactKey: Guid(e2861f57834c5d94fb13402e8e36c232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HelixJumpSF/Prefabs/Level/segment.prefab using Guid(e2861f57834c5d94fb13402e8e36c232) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: 'ca7594d7a6f6072137b46dca67d1da9a') in 0.077966 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 968
+========================================================================
+Received Import Request.
+  Time since last request: 14.320699 seconds.
+  path: Assets/HelixJumpSF/Prefabs/Level/Level.prefab
+  artifactKey: Guid(19e841138d9b00c46bb5efb77fae9e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HelixJumpSF/Prefabs/Level/Level.prefab using Guid(19e841138d9b00c46bb5efb77fae9e38) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '2ba0f86a43a4c1913fee142a9bd68978') in 0.151735 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5176
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/HelixJumpSF/Prefabs/Level/segment.prefab
+  artifactKey: Guid(e2861f57834c5d94fb13402e8e36c232) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/HelixJumpSF/Prefabs/Level/segment.prefab using Guid(e2861f57834c5d94fb13402e8e36c232) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 12 workers.
+ -> (artifact id: '7195b4551e9211b666098670188144e9') in 0.079095 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 968
+========================================================================
+Received Prepare
+Caller must complete domain reload
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.373 seconds
+Native extension for UWP target not found
+Native extension for WindowsStandalone target not found
+Native extension for iOS target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.604 seconds
+Domain Reload Profiling: 975ms
+	BeginReloadAssembly (144ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (5ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (31ms)
+	RebuildCommonClasses (29ms)
+	RebuildNativeTypeToScriptingClass (14ms)
+	initialDomainReloadingComplete (30ms)
+	LoadAllAssembliesAndSetupDomain (154ms)
+		LoadAssemblies (225ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (8ms)
+			TypeCache.Refresh (4ms)
+				TypeCache.ScanAssembly (0ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (4ms)
+	FinalizeReload (604ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (350ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (29ms)
+			SetLoadedEditorAssemblies (2ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (52ms)
+			ProcessInitializeOnLoadAttributes (241ms)
+			ProcessInitializeOnLoadMethodAttributes (18ms)
+			AfterProcessingInitializeOnLoad (8ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Refreshing native plugins compatible for Editor in 2.18 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 1581 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 11 unused Assets / (27.6 KB). Loaded Objects now: 2112.
+Memory consumption went from 171.5 MB to 171.5 MB.
+Total: 2.801700 ms (FindLiveObjects: 0.149100 ms CreateObjectMapping: 0.071600 ms MarkObjects: 2.517200 ms  DeleteObjects: 0.062800 ms)
+
+Prepare: number of updated asset objects reloaded= 0
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:CustomObjectIndexerAttribute: 9a22284fe3817be447336de3de66b15e -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 

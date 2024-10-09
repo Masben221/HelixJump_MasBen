@@ -25,7 +25,15 @@ namespace HelixJump
         Damage = 17,
         SuperPower = 18,
         AddLife = 19,
-        AddSuperPower = 20        
+        AddSuperPower = 20,
+        Poison = 21,
+        Gylotine = 22,
+        PunchTrap = 23,
+        Blade = 24,
+        SpinBlade = 25,
+        BladeSpiner = 26,
+        Hammer = 27,
+        ElectricTrap = 28        
     }
 
     public static class SoundExtensions
