@@ -1124,10 +1124,30 @@ PrefabInstance:
       propertyPath: m_SplashParticle
       value: 
       objectReference: {fileID: 1357742912}
+    - target: {fileID: 3118961211588331000, guid: 7bd49cbab6722c942b2e17e318a1ce19, type: 3}
+      propertyPath: m_Radius
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3419057426745529108, guid: 7bd49cbab6722c942b2e17e318a1ce19, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5172955138726162585, guid: 7bd49cbab6722c942b2e17e318a1ce19, type: 3}
       propertyPath: m_LivesUI
       value: 
       objectReference: {fileID: 1229018681}
+    - target: {fileID: 5172955138726162585, guid: 7bd49cbab6722c942b2e17e318a1ce19, type: 3}
+      propertyPath: m_SuperPower
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5172955138726162585, guid: 7bd49cbab6722c942b2e17e318a1ce19, type: 3}
+      propertyPath: m_MaxSuperPower
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6692590422565081095, guid: 7bd49cbab6722c942b2e17e318a1ce19, type: 3}
+      propertyPath: m_Radius
+      value: 0.11
+      objectReference: {fileID: 0}
     - target: {fileID: 6779023948604643137, guid: 7bd49cbab6722c942b2e17e318a1ce19, type: 3}
       propertyPath: m_Name
       value: Kakashka

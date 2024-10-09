@@ -7,11 +7,17 @@ namespace HelixJump
     {                  
         protected override void OnOneTriggerEnter(Collider other, bool isKillZone)
         {
-            Segment segment = other.GetComponent<Segment>();            
+            Segment segment = other.GetComponent<Segment>();
+
+            if (segment == null)
+            {
+                segment = other.GetComponentInParent<Segment>();
+                Destroy(other.gameObject);
+            }
 
             if (segment != null)
             {
-                if (segment.Type == SegmentType.Bonus || segment.Type == SegmentType.Default || segment.Type == SegmentType.Fan || segment.Type == SegmentType.Trap)
+                if (segment.Type != SegmentType.Empty && segment.Type != SegmentType.Finish)
                 {
                     segment.Type = SegmentType.Empty;
                     Player.Instance.AddSuperPower(-1);
