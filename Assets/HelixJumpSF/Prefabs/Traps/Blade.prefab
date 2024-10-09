@@ -162,6 +162,7 @@ GameObject:
   - component: {fileID: 4518896520866385296}
   - component: {fileID: 2568389026998383426}
   - component: {fileID: 4847666520361470769}
+  - component: {fileID: 441172591979415732}
   m_Layer: 0
   m_Name: blade spinner
   m_TagString: Obstacle
@@ -271,12 +272,25 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 2.2628145, y: 0.3602588, z: 2.2628143}
   m_Center: {x: 0.000000669238, y: 0.09042337, z: 0.00000011920933}
+--- !u!114 &441172591979415732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5987722555309413571}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2c928119517e1c4c84bc6355c014c17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Damage: 1
 --- !u!1 &6600610266440903009
 GameObject:
   m_ObjectHideFlags: 0

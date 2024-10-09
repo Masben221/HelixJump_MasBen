@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 8592706474510279569}
   - component: {fileID: 646180806767300956}
   - component: {fileID: 2617002785652926427}
+  - component: {fileID: 7522409739897553420}
+  - component: {fileID: 7895039519747046397}
   m_Layer: 0
   m_Name: Bomb
   m_TagString: Untagged
@@ -32,7 +34,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7857150034645883055}
-  m_LocalEulerAnglesHint: {x: -81.55398, y: 89.41786, z: -89.41786}
+  m_LocalEulerAnglesHint: {x: -86.40907, y: 69.7768, z: -69.77679}
 --- !u!137 &646180806767300956
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -108,6 +110,41 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!135 &7522409739897553420
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7780648825519538040}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Radius: 0.005892803
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7895039519747046397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7780648825519538040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2c928119517e1c4c84bc6355c014c17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Damage: 1
+  m_ImpactEffectPrefab: {fileID: 0}
 --- !u!1 &8274329904592699152
 GameObject:
   m_ObjectHideFlags: 0
@@ -118,7 +155,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7857150034645883055}
   - component: {fileID: 727811972063739981}
-  - component: {fileID: 6212392389475922687}
   m_Layer: 0
   m_Name: Bomb
   m_TagString: Untagged
@@ -169,24 +205,3 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &6212392389475922687
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8274329904592699152}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}

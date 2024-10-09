@@ -26,7 +26,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
+  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3963471312650797664}
@@ -297,6 +297,7 @@ GameObject:
   - component: {fileID: 1791793355707835196}
   - component: {fileID: 2594270660391614804}
   - component: {fileID: 6818484493622296686}
+  - component: {fileID: 6889632936249945739}
   m_Layer: 0
   m_Name: NurbsCurve.001
   m_TagString: Obstcales
@@ -390,6 +391,19 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.07051854, y: 0.0811739, z: 0.10918883}
   m_Center: {x: -0.001647965, y: -0.0017515973, z: -0.22361757}
+--- !u!114 &6889632936249945739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6702924902539183147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c2c928119517e1c4c84bc6355c014c17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Damage: 1
 --- !u!1 &8552598873566206425
 GameObject:
   m_ObjectHideFlags: 0

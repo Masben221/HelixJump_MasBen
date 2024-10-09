@@ -9,7 +9,7 @@ namespace HelixJump
         Toilet = 3,
         PistonHit = 4,
         FireHit = 5,
-        BallHit = 6,
+        BombHit = 6,
         SpikeHit = 7,
         Finish = 8,
         Die = 9,        
