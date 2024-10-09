@@ -5002,13 +5002,13 @@ GameObject:
   m_Component:
   - component: {fileID: 6779023948604643150}
   - component: {fileID: 425816385131246}
-  - component: {fileID: 6770112291159489473}
   - component: {fileID: 5172955138726162585}
   - component: {fileID: 1169256811}
   - component: {fileID: 1169256812}
   - component: {fileID: 2724685440607524911}
-  - component: {fileID: 6677313025283608458}
   - component: {fileID: 938645641277141327}
+  - component: {fileID: 6677313025283608458}
+  - component: {fileID: 6770112291159489473}
   m_Layer: 9
   m_Name: Kakashka
   m_TagString: Untagged
@@ -5055,33 +5055,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!54 &6770112291159489473
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6779023948604643137}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!114 &5172955138726162585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5097,11 +5070,14 @@ MonoBehaviour:
   m_DoNotDestroyOnLoad: 0
   m_BallController: {fileID: 1169256811}
   m_Indestructible: 0
-  m_HitPoints: 3
-  m_MaxShield: 3
-  m_CurrentShild: 0
-  m_SuperPower: 0
-  m_MaxSuperPower: 3
+  m_MaxLives: 5
+  m_NumLives: 2
+  m_LivesUI: {fileID: 0}
+  m_HitPoints: 5
+  m_MaxShield: 5
+  m_CurrentShild: 1
+  m_SuperPower: 1
+  m_MaxSuperPower: 5
   CurrentDamage: 0
   m_EventOnUpdateHP:
     m_PersistentCalls:
@@ -5119,8 +5095,6 @@ MonoBehaviour:
   m_DamageStatsPrefab: {fileID: 0}
   m_ShieldParticle: {fileID: 4915599319795532983}
   m_SuperPowerParticle: {fileID: 3419057426745529108}
-  m_MaxLives: 2
-  m_LivesUI: {fileID: 0}
 --- !u!114 &1169256811
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5170,6 +5144,31 @@ MonoBehaviour:
   visualMeshRenderer: {fileID: 8551122849007211482}
   blotPrefab: {fileID: 7796030945595199937, guid: 3ad7520f8edd7db4b9575af4d7c5e0c9, type: 3}
   m_SplashParticle: {fileID: 0}
+--- !u!114 &938645641277141327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6779023948604643137}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bca1892389cb63449473762bfcba922, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_BallController: {fileID: 1169256811}
+  m_FloorDestroySound: 10
+  m_FinishSound: 8
+  m_ToiletSound: 3
+  m_SpikeSound: 7
+  m_PistonSound: 4
+  m_BoltSound: 2
+  m_JumpSound: 0
+  m_FlySound: 1
+  m_DieSound: 9
+  m_DamageSound: 17
+  m_ShieldSound: 16
+  m_SuperPowerSound: 18
 --- !u!82 &6677313025283608458
 AudioSource:
   m_ObjectHideFlags: 0
@@ -5266,31 +5265,33 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &938645641277141327
-MonoBehaviour:
+--- !u!54 &6770112291159489473
+Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6779023948604643137}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9bca1892389cb63449473762bfcba922, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_BallController: {fileID: 1169256811}
-  m_FloorDestroySound: 10
-  m_FinishSound: 8
-  m_ToiletSound: 3
-  m_SpikeSound: 7
-  m_PistonSound: 4
-  m_BoltSound: 2
-  m_JumpSound: 0
-  m_FlySound: 1
-  m_DieSound: 9
-  m_DamageSound: 17
-  m_ShieldSound: 16
-  m_SuperPowerSound: 18
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &8842986384506793814
 GameObject:
   m_ObjectHideFlags: 0

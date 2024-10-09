@@ -17,8 +17,8 @@ namespace HelixJump
 
                 LivesIcons.Add(newIcon);               
             }
-
-            UpdateLivesUI(maxLives);
+            var lives = Player.Instance.NumLives;
+            UpdateLivesUI(lives);
             Player.Instance.EventOnUpdateNumLives?.AddListener(UpdateLivesUI);
         }
 

@@ -27,7 +27,8 @@ namespace HelixJump
                 {
                     movement.enabled = true;
                     movement.Fall(other.transform.position.y);
-                    segment.GetComponent<MeshCollider>().enabled = false;                    
+                    segment.GetComponent<MeshCollider>().enabled = false;
+                    Player.Instance.UpdateIndestructible();
                 }
 
                 if (segment.Type == SegmentType.Default)

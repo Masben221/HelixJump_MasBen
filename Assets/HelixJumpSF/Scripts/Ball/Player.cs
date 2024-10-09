@@ -15,43 +15,52 @@ namespace HelixJump
         /// </summary>
         [SerializeField] private bool m_Indestructible;
         public bool IsIndestructibe { get => m_Indestructible; set => m_Indestructible = value; }
+        
+        [SerializeField] private int m_MaxLives; //Максимальное колличество жизней.
 
+        [SerializeField] private int m_NumLives = 2; // текущее количество жизней.
+        private int m_DefaultNumLives;
+        public int NumLives => m_NumLives; //Ссылка на текущее количество жизней.
+
+        [SerializeField] private LivesUI m_LivesUI; //Ссылка на UI отображения колличества жизней.
+        
         /// <summary>
         /// Стартовое количество хитпоинтов.
         /// </summary>
-        [SerializeField] private float m_HitPoints;
+        [SerializeField] private float m_HitPoints = 5;
         public float HitPoints { get => m_HitPoints; set => m_HitPoints = value; }
 
         /// <summary>
         /// Текущие хиитпоинты.
         /// </summary>
-        private float m_CurrentHitPoints;
+        [SerializeField] private float m_CurrentHitPoints = 3;
         public float CurrentHitPoint { get => m_CurrentHitPoints; set => m_CurrentHitPoints = value; }
-
+        private float m_DefaultHitPoints;
         /// <summary>
         /// Стартовое количество брони.
         /// </summary>
-        [SerializeField] private float m_MaxShield;
+        [SerializeField] private float m_MaxShield = 5;
         public float MaxShield { get => m_MaxShield; set => m_MaxShield = value; }
 
         /// <summary>
         /// Текущая броня.
         /// </summary>
-        [SerializeField] private float m_CurrentShild;
+        [SerializeField] private float m_CurrentShild = 1;
         public float CurrentShield { get => m_CurrentShild; set => m_CurrentShild = value; }
+        private float m_DefaultShield;
 
-        /// <summary>
-        /// Супер сила какашки.
-        /// </summary>
-        [SerializeField] private int m_SuperPower;
-        public int SuperPower { get => m_SuperPower; set => m_SuperPower = value; }
-        
         /// <summary>
         /// Максимальная супер сила какашки.
         /// </summary>
-        [SerializeField] private int m_MaxSuperPower;
+        [SerializeField] private int m_MaxSuperPower = 5;
         public int MaxSuperPower { get => m_MaxSuperPower; set => m_MaxSuperPower = value; }
-
+        /// <summary>
+        /// Супер сила какашки.
+        /// </summary>
+        [SerializeField] private int m_SuperPower = 0;
+        public int SuperPower { get => m_SuperPower; set => m_SuperPower = value; }        
+        
+        private int m_DefaultSuperPower;
         /// <summary>
         /// Текущий дамаг.
         /// </summary>
@@ -131,27 +140,24 @@ namespace HelixJump
         public GameObject ShieldParticle => m_ShieldParticle;
 
         [SerializeField] private GameObject m_SuperPowerParticle;
-        public GameObject SuperPowerParticle => m_SuperPowerParticle;
-
-        [SerializeField] private int m_MaxLives; //Максимальное колличество жизней.
-
-        private int m_NumLives; // текущее количество жизней.
-        public int NumLives => m_NumLives; //Ссылка на текущее количество жизней.
-
-        [SerializeField] private LivesUI m_LivesUI; //Ссылка на UI отображения колличества жизней.
-
-        //[SerializeField] private UIHPProgress m_UIHPProgress; //UI уровня HP.
-        //[SerializeField] private UIShieldProgress m_UIShieldProgress;//UI уровня щита.
-        //[SerializeField] private UISuperPowerProgress m_UISuperPowerProgress;//UI уровня супер силы.
+        public GameObject SuperPowerParticle => m_SuperPowerParticle;        
 
         #endregion
         #region Unity Events
         protected override void Awake()
         {
             base.Awake();
-            m_NumLives = m_MaxLives;
-            m_LivesUI.Setup(m_NumLives);
-            KakaStart();
+
+            m_DefaultNumLives = m_NumLives;
+            m_DefaultHitPoints = m_CurrentHitPoints;
+            m_DefaultShield = m_CurrentShild;
+            m_DefaultSuperPower = m_SuperPower;
+
+            m_LivesUI.Setup(m_MaxLives);
+
+            //KakaStart();
+
+            OnSuperPower += UpdateIndestructible;
         }       
 
         private void Update()
@@ -166,24 +172,32 @@ namespace HelixJump
 
         public void KakaStart()
         {
-            m_CurrentHitPoints = m_HitPoints;
-            //m_CurrentShild = m_Shield;
-            
+            m_NumLives = m_DefaultNumLives;            
+            m_CurrentHitPoints = m_DefaultHitPoints;
+            m_CurrentShild = m_DefaultShield;
+            m_SuperPower = m_DefaultSuperPower;
+
             EventOnUpdateHP?.Invoke(m_CurrentHitPoints);
             EventOnUpdateShield?.Invoke(m_CurrentShild);
             EventOnUpdateSuperPower?.Invoke(m_SuperPower);
             
             OnStart?.Invoke();
-            Invoke(nameof(SetIndestructible), 3.0f);
+            Invoke(nameof(SetIndestructibleFalse), 3.0f);            
         }
-        private void SetIndestructible()
+        private void SetIndestructibleFalse()
         {
             m_Indestructible = false;
+        }
+        public void UpdateIndestructible()
+        {
+            if (m_SuperPower > 0) m_Indestructible = true;
+            else m_Indestructible = false;
         }
         public void EventPause()
         {
            OnPause?.Invoke();
         } 
+
         public void EventSuperPower()
         {
             OnSuperPower?.Invoke();
@@ -209,7 +223,7 @@ namespace HelixJump
         {
             SuperPower = Mathf.Clamp(SuperPower + sup, 0, m_MaxSuperPower);            
             EventOnUpdateSuperPower?.Invoke(m_SuperPower);
-            if (m_SuperPower <= 0) SetIndestructible();
+            if (m_SuperPower <= 0) SetIndestructibleFalse();
         }
          public void AddLifes(int life)
         {

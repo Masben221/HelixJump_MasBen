@@ -12,7 +12,8 @@ namespace HelixJump
         [SerializeField] private int maxScore;
         public int MaxScore => maxScore;
 
-        private bool doubleShoot = false;
+        private bool m_IsDoubleShoot = false;
+        private int m_NumberSuperPower;
 
         protected override void Awake()
         {
@@ -27,6 +28,7 @@ namespace HelixJump
 
                 player.OnDie += ReduceScoreDeath;
                 player.OnDamage += ReduceScoreDamage;
+                player.OnSuperPower += ResetNumberSuperPower;
             }
         }
 
@@ -34,14 +36,20 @@ namespace HelixJump
         {
             if (type != SegmentType.Empty)
             {
-                doubleShoot = false;
+                m_IsDoubleShoot = false;
+                ResetNumberSuperPower();
             }
 
             if (type == SegmentType.Empty)
             {
                 AddScore(levelProgress.CurrentLevel);
-                if (doubleShoot == true) AddScore(levelProgress.CurrentLevel);
-                doubleShoot = true;
+                if (m_IsDoubleShoot == true) AddScore(levelProgress.CurrentLevel);
+                m_IsDoubleShoot = true;
+                m_NumberSuperPower ++;
+                if (m_NumberSuperPower >= 3)
+                {
+                    Player.Instance.AddSuperPower(1);                    
+                }
             }
 
             if (type == SegmentType.Finish)
@@ -53,7 +61,10 @@ namespace HelixJump
                 }
             }
         }
-
+        private void ResetNumberSuperPower()
+        {
+            m_NumberSuperPower = 0;
+        }
 
         public void AddScore(int score)
         {

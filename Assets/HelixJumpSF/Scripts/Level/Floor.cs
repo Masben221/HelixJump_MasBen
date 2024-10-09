@@ -38,7 +38,7 @@ namespace HelixJump
             for (int i = 0; i < amount; i++)
             {
                 int index = Random.Range(0, defaultSegments.Count);
-                int bonus = Random.Range(0, 50);
+                int bonus = Random.Range(0, 100);
                 if (bonus == 0)
                 {
                     defaultSegments[index].SetBonus();

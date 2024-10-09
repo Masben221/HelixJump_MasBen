@@ -354,7 +354,7 @@ MonoBehaviour:
   m_ImpactEffectPrefab: {fileID: 228066051833457623, guid: d45ccb9e521a81546828c2f6ec3b4157, type: 3}
   m_EffectType: 2
   m_MinValue: 1
-  m_MaxValue: 3
+  m_MaxValue: 5
   m_ValueText: {fileID: 2320828433064688304}
 --- !u!114 &5726817997446460959
 MonoBehaviour:
