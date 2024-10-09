@@ -31,12 +31,12 @@ namespace HelixJump
                     Player.Instance.UpdateIndestructible();
                 }
 
-                if (segment.Type == SegmentType.Default)
+                if (segment.Type == SegmentType.Default && Player.Instance.SuperPower == 0)
                 {
                     movement.Jump();                    
                 }                
 
-                if (segment.Type == SegmentType.Fan)
+                if (segment.Type == SegmentType.Fan && Player.Instance.SuperPower == 0)
                 {
                     movement.Fly();
                 }               
@@ -71,7 +71,7 @@ namespace HelixJump
 
             if (segment != null)
             {
-                if (segment.Type == SegmentType.Fan)
+                if (segment.Type == SegmentType.Fan && Player.Instance.SuperPower == 0)
                 {
                     movement.Fly();
 

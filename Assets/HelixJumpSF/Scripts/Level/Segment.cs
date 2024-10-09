@@ -52,6 +52,16 @@ namespace HelixJump
             m_Default.SetActive(false);
         }
 
+        void OnTriggerEnter(Collider col)
+        {
+            var player = col.GetComponentInParent<Player>();
+
+            if (player != null)
+            {
+                if (player.SuperPower > 0 && m_Type != SegmentType.Finish) m_Type = SegmentType.Empty;                
+            }
+        }
+
         public void SetTrap()
         {            
             meshRender.enabled = true;

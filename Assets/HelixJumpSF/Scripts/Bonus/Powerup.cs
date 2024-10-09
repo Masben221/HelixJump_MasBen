@@ -17,8 +17,12 @@ namespace HelixJump
 
             if (player != null)
             {
-                OnPickedUp(player);
-                if (m_ImpactEffectPrefab != null) Instantiate(m_ImpactEffectPrefab, transform.position, Quaternion.identity);
+                if (player.SuperPower == 0)
+                {
+                    OnPickedUp(player);
+                    if (m_ImpactEffectPrefab != null) Instantiate(m_ImpactEffectPrefab, transform.position, Quaternion.identity);
+                }
+
                 Destroy(gameObject);
             }
         }

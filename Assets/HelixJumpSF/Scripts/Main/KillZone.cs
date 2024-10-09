@@ -17,6 +17,11 @@ namespace HelixJump
 
 			if (player != null && player.CurrentHitPoint > 0)
 			{
+				if (player.SuperPower > 0) 
+				{ 
+					Destroy(gameObject);
+					return;
+				}
 				if (TryGetComponent(out SoundHook soundHit)) soundHit.Play();
 				if (m_ImpactEffectPrefab != null) Instantiate(m_ImpactEffectPrefab, transform.position, Quaternion.identity);
 			}

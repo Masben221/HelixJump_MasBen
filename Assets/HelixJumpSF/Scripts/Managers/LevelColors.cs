@@ -9,10 +9,10 @@ namespace HelixJump
         public Color AxisColor;
         public Color BallColor;
         public Color DefaultSegmentColor;
-        public Color SpikeSegmentColor;
+        public Color TrapSegmentColor;
         public Color FinishSegmentColor;
         public Color FanSegmentColor;
-        public Color PistonSegmentColor;
+        public Color BonusSegmentColor;
         public Color BackgroundColor;
         public Color CameraBackgroundColor;
     }
@@ -37,10 +37,10 @@ namespace HelixJump
             m_AxisMaterial.color = pallette[index].AxisColor;
             m_BallMaterial.color = pallette[index].BallColor;
             m_DefaultMaterial.color = pallette[index].DefaultSegmentColor;
-            m_SpikeMaterial.color = pallette[index].SpikeSegmentColor;
+            m_SpikeMaterial.color = pallette[index].TrapSegmentColor;
             m_FinishMaterial.color = pallette[index].FinishSegmentColor;
             m_FanMaterial.color = pallette[index].FanSegmentColor;
-            m_PistonMaterial.color = pallette[index].PistonSegmentColor;
+            m_PistonMaterial.color = pallette[index].BonusSegmentColor;
             m_BackgroundImage.color = pallette[index].BackgroundColor;
             camera.backgroundColor = pallette[index].CameraBackgroundColor;
         }

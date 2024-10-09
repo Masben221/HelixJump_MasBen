@@ -15,11 +15,7 @@ namespace HelixJump
         private Animator animator;
 
         private float fallSpeed;
-        private float floorY;
-        private void Awake()
-        {
-            
-        }
+        private float floorY;        
 
         private void Start()
         {
