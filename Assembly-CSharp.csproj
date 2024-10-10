@@ -180,6 +180,7 @@
     <Compile Include="Assets\YandexGame\ScriptsYG\AdNotificationYG.cs" />
     <Compile Include="Assets\UnityTechnologies\ParticlePack\Shared\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\HelixJumpSF\Scripts\Sounds\BallSounds.cs" />
+    <Compile Include="Assets\HelixJumpSF\Scripts\UI\RandomText.cs" />
     <Compile Include="Assets\Sources\StandartPlayer\CrossPlatformInput\Scripts\TouchPad.cs" />
     <Compile Include="Assets\HelixJumpSF\Scripts\Level\Floor.cs" />
     <Compile Include="Assets\HelixJumpSF\Scripts\Level\FloorDestroy.cs" />

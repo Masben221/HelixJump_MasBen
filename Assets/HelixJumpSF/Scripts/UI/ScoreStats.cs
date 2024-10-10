@@ -34,7 +34,7 @@ namespace HelixJump
                 {
                     m_Text.text = m_ScoreStats.ToString();
                     m_Text.color = Color.yellow;
-                    transform.position = new Vector3(transform.position.x, transform.position.y + 2, transform.position.z);
+                    transform.position += new Vector3(0, 2, 0);
                 }
             }                
         }
