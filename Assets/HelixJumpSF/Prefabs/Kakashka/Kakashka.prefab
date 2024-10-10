@@ -5077,8 +5077,8 @@ MonoBehaviour:
   m_CurrentHitPoints: 3
   m_MaxShield: 5
   m_CurrentShild: 1
-  m_MaxSuperPower: 100
-  m_SuperPower: 100
+  m_MaxSuperPower: 10
+  m_SuperPower: 0
   CurrentDamage: 0
   m_EventOnUpdateHP:
     m_PersistentCalls:
@@ -5869,7 +5869,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3183078850372178922, guid: eceb998d8490289408ff2d3fbf9d0a4d, type: 3}
       propertyPath: m_Radius
-      value: 0.15
+      value: 0.11
       objectReference: {fileID: 0}
     - target: {fileID: 3817923662833698650, guid: eceb998d8490289408ff2d3fbf9d0a4d, type: 3}
       propertyPath: m_IsActive
@@ -5877,7 +5877,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6899132287376838905, guid: eceb998d8490289408ff2d3fbf9d0a4d, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7468169674569743043, guid: eceb998d8490289408ff2d3fbf9d0a4d, type: 3}
       propertyPath: m_Name
@@ -5937,7 +5937,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.5
+  m_Radius: 0.4
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &35421927246675123
 MonoBehaviour:

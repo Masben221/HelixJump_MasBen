@@ -53,7 +53,7 @@ namespace HelixJump
 
             if (killZone == null) killZone = other.GetComponentInParent<KillZone>();
 
-            if (killZone != null)
+            if (killZone != null && other.GetComponentInParent<Segment>().Type != SegmentType.Fan)
             {
                 if (Player.Instance != null)
                 {

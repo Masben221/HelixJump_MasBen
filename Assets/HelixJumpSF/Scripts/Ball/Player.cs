@@ -35,7 +35,10 @@ namespace HelixJump
         /// </summary>
         [SerializeField] private float m_CurrentHitPoints = 3;
         public float CurrentHitPoint { get => m_CurrentHitPoints; set => m_CurrentHitPoints = value; }
+        
         private float m_DefaultHitPoints;
+        public float DefaultHitPoints => m_DefaultHitPoints;
+
         /// <summary>
         /// Стартовое количество брони.
         /// </summary>

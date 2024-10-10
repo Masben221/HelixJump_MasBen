@@ -46,6 +46,7 @@ namespace HelixJump
                 if (m_IsDoubleShoot == true) AddScore(levelProgress.CurrentLevel);
                 m_IsDoubleShoot = true;
                 m_NumberSuperPower ++;
+
                 if (m_NumberSuperPower >= 3)
                 {
                     Player.Instance.AddSuperPower(1);                    
@@ -72,11 +73,11 @@ namespace HelixJump
         }
         public void ReduceScoreDamage()
         {
-            AddScore(-levelProgress.CurrentLevel); 
+            AddScore( - levelProgress.CurrentLevel); 
         }
         public void ReduceScoreDeath()
         {
-            AddScore(- levelProgress.CurrentLevel ^ 2); 
+            AddScore( - levelProgress.CurrentLevel * 5); 
         }
 
         private void SaveMaxScores()
