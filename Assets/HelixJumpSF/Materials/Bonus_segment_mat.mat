@@ -41,6 +41,6 @@ Material:
     - _Cutoff: 0.333
     - _WindQuality: 0
     m_Colors:
-    - _Color: {r: 0.21026169, g: 0.7801391, b: 0.990566, a: 0}
+    - _Color: {r: 0, g: 0.9056604, b: 0.04183269, a: 0}
     - _HueVariation: {r: 1, g: 0.5, b: 0, a: 0.1}
   m_BuildTextureStacks: []

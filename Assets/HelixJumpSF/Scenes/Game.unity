@@ -935,6 +935,7 @@ MonoBehaviour:
   levelProgress: {fileID: 1515895996}
   scores: 0
   maxScore: 0
+  m_ScoreStatsPrefab: {fileID: 2323904657167600286, guid: 5009e1bce830e20409a35c192cf5a092, type: 3}
 --- !u!114 &1515895999
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1302,6 +1303,14 @@ PrefabInstance:
       propertyPath: m_LivesUI
       value: 
       objectReference: {fileID: 1229018681}
+    - target: {fileID: 5172955138726162585, guid: 7bd49cbab6722c942b2e17e318a1ce19, type: 3}
+      propertyPath: m_SuperPower
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5172955138726162585, guid: 7bd49cbab6722c942b2e17e318a1ce19, type: 3}
+      propertyPath: m_MaxSuperPower
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 6779023948604643137, guid: 7bd49cbab6722c942b2e17e318a1ce19, type: 3}
       propertyPath: m_Name
       value: Kakashka

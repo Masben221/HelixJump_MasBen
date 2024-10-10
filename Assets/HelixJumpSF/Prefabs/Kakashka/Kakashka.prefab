@@ -5093,7 +5093,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_ImpactEffect: {fileID: 0}
-  m_DamageStatsPrefab: {fileID: 0}
+  m_DamageStatsPrefab: {fileID: 3898824892843097912, guid: 31d786caed112aa4287af85bcf56ddf8, type: 3}
   m_ShieldParticle: {fileID: 4915599319795532983}
   m_SuperPowerParticle: {fileID: 3419057426745529108}
 --- !u!114 &1169256811
@@ -5937,7 +5937,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.4
+  m_Radius: 0.2
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &35421927246675123
 MonoBehaviour:

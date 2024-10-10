@@ -3,9 +3,9 @@ using UnityEngine.Events;
 
 namespace HelixJump
 {
-    public class SuperPowerTrigger : OnColliderTrigger
+    public class SuperPowerTrigger : MonoBehaviour
     {                  
-        protected override void OnOneTriggerEnter(Collider other, bool isKillZone)
+        protected void OnTriggerEnter(Collider other)
         {
             Segment segment = other.GetComponent<Segment>();
 

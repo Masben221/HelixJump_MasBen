@@ -35,7 +35,7 @@ namespace HelixJump
             }
 
             float stepLenght = Time.deltaTime * m_Velocity; // шаг текста за один кадр
-            Vector2 step = transform.up * stepLenght; // превращение в вектор по направлению
+            Vector2 step = transform.right * stepLenght; // превращение в вектор по направлению
             transform.position += new Vector3(step.x, step.y, 0);// перемещение в заданном направлении}           
         }
     }

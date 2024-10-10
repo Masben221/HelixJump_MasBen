@@ -205,6 +205,7 @@
     <Compile Include="Assets\YandexGame\Example\Scripts\ReceivingPurchaseExample.cs" />
     <Compile Include="Assets\Sources\StandartPlayer\Characters\ThirdPersonCharacter\Scripts\ThirdPersonUserControl.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Language\LanguageYG.cs" />
+    <Compile Include="Assets\HelixJumpSF\Scripts\UI\ScoreStats.cs" />
     <Compile Include="Assets\YandexGame\ScriptsYG\Payments\PurchaseYG.cs" />
     <Compile Include="Assets\HelixJumpSF\Scripts\Ball\BallEvent.cs" />
     <Compile Include="Assets\Sources\StandartPlayer\Characters\FirstPersonCharacter\Scripts\FirstPersonController.cs" />

@@ -33,7 +33,8 @@ namespace HelixJump
 
                 if (segment.Type == SegmentType.Default && Player.Instance.SuperPower == 0)
                 {
-                    movement.Jump();                    
+                    movement.Jump();
+                    Player.Instance.UpdateIndestructible();
                 }                
 
                 if (segment.Type == SegmentType.Fan && Player.Instance.SuperPower == 0)

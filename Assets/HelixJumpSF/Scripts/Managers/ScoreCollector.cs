@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace HelixJump
@@ -11,6 +12,9 @@ namespace HelixJump
 
         [SerializeField] private int maxScore;
         public int MaxScore => maxScore;
+
+        //—сылка на текст очков.
+        [SerializeField] private ScoreStats m_ScoreStatsPrefab;
 
         private bool m_IsDoubleShoot = false;
         private int m_NumberSuperPower;
@@ -41,9 +45,9 @@ namespace HelixJump
             }
 
             if (type == SegmentType.Empty)
-            {
-                AddScore(levelProgress.CurrentLevel);
-                if (m_IsDoubleShoot == true) AddScore(levelProgress.CurrentLevel);
+            {                
+                if (m_IsDoubleShoot == true) AddScore(2 * levelProgress.CurrentLevel);
+                else AddScore(levelProgress.CurrentLevel);
                 m_IsDoubleShoot = true;
                 m_NumberSuperPower ++;
 
@@ -69,15 +73,20 @@ namespace HelixJump
 
         public void AddScore(int score)
         {
+            if (m_ScoreStatsPrefab != null)
+            {                
+                var scoreStats = Instantiate(m_ScoreStatsPrefab, Player.Instance.transform.position, Quaternion.identity);
+                scoreStats.ScoreStatistic = score;
+            }
             scores = Mathf.Clamp(scores + score, 0, int.MaxValue); 
         }
         public void ReduceScoreDamage()
         {
-            AddScore( - levelProgress.CurrentLevel); 
+            if (Player.Instance.CurrentHitPoint > 0) AddScore( - levelProgress.CurrentLevel); 
         }
         public void ReduceScoreDeath()
         {
-            AddScore( - levelProgress.CurrentLevel * 5); 
+           AddScore( - levelProgress.CurrentLevel * 5); 
         }
 
         private void SaveMaxScores()
